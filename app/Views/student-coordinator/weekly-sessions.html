@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Website Name</title>
+    <meta charset="utf-8"> 
+    <base href="../">
+    
+    <!-- CSS -->
+    <!-- favicon -->
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+    <!-- components css -->
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+    <!-- slick slider -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <!-- custom css stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <!-- responsive css stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+  </head>
+  <body>
+    <div id="wrapper">
+      <!-- header -->
+      <header>
+        <nav class="navbar">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar1">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar1">
+              <form class="navbar-form navbar-left" role="search">
+                <button type="submit" class="btn btn-link"><i class="glyphicon glyphicon-search"></i></button>
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Search">
+                </div>
+              </form>
+              <ul class="ht-right">
+                <!-- notifications -->
+                <li class="dropdown menu-parent">
+                  <a class="btn btn-link dropdown-toggle noti-alert" type="button" id="notifictions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <i class="fa fa-bell-o" aria-hidden="true"></i>
+                    <!-- alert -->
+                    <small></small>
+                  </a>
+                  <ul class="dropdown-menu custom-menu" aria-labelledby="notifictions">
+                    <!--menu header -->
+                    <li class="custom-menu-header">Notifications</li>
+                    <!--menu body -->
+                    <li class="scrollable-container">
+                      <!-- notification -->
+                      <a href="#" class="notification-content unread">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content unread">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <!--menu fooster -->
+                    <li class="custom-menu-footer">
+                      <a href="notifications.html">See all notifications</a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- messages -->
+                <li class="dropdown menu-parent">
+                  <a class="btn btn-link dropdown-toggle" type="button" id="messages" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <!-- alert -->
+                    <small></small>
+                  </a>
+                  <ul class="dropdown-menu custom-menu" aria-labelledby="notifictions">
+                    <!--menu header -->
+                    <li class="custom-menu-header">messages</li>
+                    <!--menu body -->
+                    <li class="scrollable-container">
+                      <!-- notification -->
+                      <a href="#" class="notification-content unread">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content unread">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <!--menu fooster -->
+                    <li class="custom-menu-footer">
+                      <a href="inbox.html">See all messages</a>
+                    </li>
+                  </ul>
+                </li>
+                
+                <!-- profile -->
+                <li class="dropdown menu-parent">
+                  <a href="javascript:void(0)" class="btn btn-link dropdown-toggle" type="button" id="profile-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <span class="avatar"><img src="images/avatar.png" alt=""></span>
+                  </a>
+                  <!-- dropdown menu -->
+                  <ul class="dropdown-menu profile-menu" aria-labelledby="profile-menu">
+                    <li>
+                      <a href="javascript:void(0)">
+                        <span class="avatar">
+                          <img src="images/avatar.png" alt="">
+                        </span>
+                        <span>Jhon Deo</span>
+                      </a>
+                    </li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="profile-view.html"><i class="fa fa-user" aria-hidden="true"></i>view profile</a></li>
+                    <li><a href="inbox.html"><i class="fa fa-envelope" aria-hidden="true"></i>My inbox</a></li>
+                    <li><a href="pracicles-list.html"><i class="fa fa-tasks" aria-hidden="true"></i>my tasks</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i>logout</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- main navigation starts-->
+      <div class="header-nav">
+        <nav class="navbar bg-6" id="sticky-nav">
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li>
+                <a href="student-coordinator/tasks.html">my tasks</a>
+              </li>
+              <li class="dropdown menu-parent">
+                <a href="javascript:void(0)">unassigned students</a>
+                <ul class="dropdown-menu dropdown-menu-right custom-menu">
+                  <li>
+                    <a href="student-coordinator/new-students.html" class="text-capitalize notification-content">new students</a>
+                  </li>
+                  <li>
+                  <a href="student-coordinator/old-students.html" class="text-capitalize notification-content">old studnets</a>
+                </li>
+                </ul>
+              </li>
+              <li class="dropdown menu-parent">
+                <a href="javascript:void(0)">Batches</a>
+                <ul class="dropdown-menu dropdown-menu-right custom-menu">
+                  <li>
+                    <a href="student-coordinator/batch-list.html" class="text-capitalize notification-content">ongoing bacthes</a>
+                  </li>
+                  <li>
+                    <a href="student-coordinator/unassigned-bacthes.html" class="text-capitalize notification-content">unassigned bacthes</a>
+                  </li>
+                  <li>
+                    <a href="student-coordinator/expired-bacthes.html" class="text-capitalize notification-content">expired bacthes</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="student-coordinator/sc-students-list.html">students</a>
+              </li>
+              <li>
+                <a href="student-coordinator/student-reviews.html">Student reviews</a>
+              </li>
+              <li>
+                <a href="student-coordinator/sc-faculty-list.html">faculties</a>
+              </li>
+              <li class="active">
+                <a href="student-coordinator/weekly-sessions.html">weekly sessions</a>
+              </li>
+              <li>
+                <a href="student-coordinator/pending-topics.html">pending topics</a>
+              </li>
+              <li>
+                <a href="student-coordinator/add-event.html">News / Events</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <!-- main navigation ends here-->
+      <main>
+        <div class="content-wrapper">
+          <div class="content-wrapper-before bg-6"></div>
+          <!-- page title -->
+          <div class="content-header">
+            <h2 class="text-capitalize">Weekely Sessions</h2>
+            <div class="header-elements scStdntsListTabs">
+              <ul class="nav nav-pills nav-stacked">
+                <li class="active"><a data-toggle="tab" href="#upCmngSessions" class="text-capitalize" aria-expanded="false">upcoming sessions</a></li>
+                <li><a data-toggle="tab" href="#trainersList" class="text-capitalize" aria-expanded="false">trainers</a></li>
+                <li><a data-toggle="tab" href="#endedSessions" class="text-capitalize" aria-expanded="false">ended sessions</a></li>
+                <li><a data-toggle="tab" href="#cancelledSessions" class="text-capitalize" aria-expanded="false">cancelled sessions</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- content -->
+          <div class="content-body">
+            <div class="tab-content">
+              <!-- trainers -->
+              <div id="trainersList"  class="tab-pane fade in">
+                  <div class="card">
+                    <div class="card-header">
+                      <h3>trainers list</h3>
+                      <div class="header-elements">
+                        <button type="button" class="btn btn-primary text-capitalize" data-toggle="modal" data-target="#addTrainerModal">add trainer</button>
+                      </div>
+                    </div>
+                    <div class="card-content">
+                      <div class="table-responsive">
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th class="text-capitalize">s no</th>
+                              <th class="text-capitalize">trainer name</th>
+                              <th class="text-capitalize">trainer email</th>
+                              <th class="text-capitalize">trainer number</th>
+                              <th class="text-capitalize">skills</th>
+                              <th class="text-capitalize">description</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td class="text-capitalize">Pradeep</td>
+                              <td>info@acedezines.com</td>
+                              <td>9876543210</td>
+                              <td class="text-uppercase skils-column">
+                                <span class="badge">html</span>
+                                <span class="badge">css</span>
+                                <span class="badge">javascript</span>
+                              </td>
+                              <td>lorem ipsum dolor split emit</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <!-- upcoming sessions -->
+              <div id="upCmngSessions" class="tab-pane fade in active">
+              <!-- filters -->
+                <div class="card">
+                  <div class="card-content">
+                    <!-- filters -->
+                    <div class="filets-nav weekSnsFilters">
+                      <!-- batch performence -->
+                      <div class="form-group selctbox-filter">
+                        <label class="white">search by topic :&nbsp;</label><br>
+                        <input type="text" class="form-control" placeholder="search by topic">
+                      </div>
+                      <!-- search by -->
+                      <div class="form-group selctbox-filter">
+                        <label class="white">sort by trainer :&nbsp;</label><br>
+                        <select class="form-control">
+                          <option class="text-capitalize">
+                            all
+                          </option>
+                          <option class="text-capitalize">Pradeep</option>
+                          <option class="text-capitalize">abhinay</option>
+                          <option class="text-capitalize">vinay</option>
+                        </select>
+                      </div>
+                      <!-- Dates -->
+                      <div style="width: 500px;">
+                        <label class="text-capitalize">select dates&nbsp;</label><br>
+                        <div style="display: inline-block;vertical-align: middle;width: 50%;">
+                          <div class="input-group">
+                            <span class="input-group-addon">From</span>
+                            <input type="date" class="form-control">
+                            <span class="input-group-addon">To</span>
+                            <input type="date" class="form-control">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- content -->
+                <!-- today session info -->
+                <div class="card border-success">
+                  <div class="card-header">
+                    <h2 class="text-capitalize text-center">today sessions</h2>
+                  </div>
+                  <div class="table-responsive">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th class="text-capitalize">s no</th>
+                          <th class="text-capitalize">time</th>
+                          <th class="text-capitalize">Topic</th>
+                          <th class="text-capitalize">trainer name</th>
+                          <th class="text-capitalize">trainer number</th>
+                          <th class="text-capitalize">trainer email</th>
+                          <th class="text-capitalize">action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <!-- scheduled sessions -->
+                        <tr>
+                          <td class="text-capitalize">1</td>
+                          <td class="text-capitalize">12:00 pm</td>
+                          <td class="text-capitalize">How to Perform in Interview</td>
+                          <td class="text-capitalize">Pradeep</td>
+                          <td>9876543210</td>
+                          <td>info@gmial.com</td>
+                          <td class="text-capitalize">
+                            <button class="btn btn-sm btn-primary text-capitalize" style="width: 100px;">Done</button>
+                            <button class="btn btn-sm btn-default text-capitalize" style="width: 100px;" data-toggle="modal" data-target="#cancelSession">cancel</button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="table-responsive">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th class="text-capitalize">s no</th>
+                          <th class="text-capitalize">date</th>
+                          <th class="text-capitalize">time</th>
+                          <th class="text-capitalize">Topic</th>
+                          <th class="text-capitalize">trainer name</th>
+                          <th class="text-capitalize">trainer number</th>
+                          <th class="text-capitalize">trainer email</th>
+                          <th class="text-capitalize">action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <!-- scheduled sessions -->
+                        <tr>
+                          <td class="text-capitalize">1</td>
+                          <td class="text-capitalize">12-04-2019</td>
+                          <td class="text-capitalize">12:00 pm</td>
+                          <td class="text-capitalize">How to Perform in Interview</td>
+                          <td class="text-capitalize">Pradeep</td>
+                          <td>9876543210</td>
+                          <td>info@gmial.com</td>
+                          <td class="text-capitalize">
+                            <button class="btn btn-sm btn-default text-capitalize" style="width: 100px;" data-toggle="modal" data-target="#addSessionModal">Edit</button>
+                          </td>
+                        </tr>
+                        <!-- un scheduled session -->
+                        <tr>
+                          <td class="text-capitalize">1</td>
+                          <td class="text-capitalize">12-04-2019</td>
+                          <td class="text-capitalize">12:00 pm</td>
+                          <td class="text-capitalize">How to Perform in Interview</td>
+                          <td class="text-capitalize">N/A</td>
+                          <td>N/A</td>
+                          <td>N/A</td>
+                          <td class="text-capitalize">
+                            <button data-toggle="modal" data-target="#addSessionModal" class="btn btn-sm btn-primary text-capitalize" style="width: 100px;">schedule</button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <!-- ended sessions -->
+              <div id="endedSessions" class="tab-pane fade in">
+                <!-- filters -->
+                <div class="card">
+                  <div class="card-content">
+                    <!-- filters -->
+                    <div class="filets-nav weekSnsFilters">
+                      <!-- batch performence -->
+                      <div class="form-group selctbox-filter">
+                        <label class="white">search by topic :&nbsp;</label><br>
+                        <input type="text" class="form-control" placeholder="search by topic">
+                      </div>
+                      <!-- search by -->
+                      <div class="form-group selctbox-filter">
+                        <label class="white">sort by trainer :&nbsp;</label><br>
+                        <select class="form-control">
+                          <option class="text-capitalize">
+                            all
+                          </option>
+                          <option class="text-capitalize">Pradeep</option>
+                          <option class="text-capitalize">abhinay</option>
+                          <option class="text-capitalize">vinay</option>
+                        </select>
+                      </div>
+                      <!-- Dates -->
+                      <div style="width: 500px;">
+                        <label class="text-capitalize">select dates&nbsp;</label><br>
+                        <div style="display: inline-block;vertical-align: middle;width: 50%;">
+                          <div class="input-group">
+                            <span class="input-group-addon">From</span>
+                            <input type="date" class="form-control">
+                            <span class="input-group-addon">To</span>
+                            <input type="date" class="form-control">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- content -->
+                <div class="card">
+                  <div class="table-responsive">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th class="text-capitalize">s no</th>
+                          <th class="text-capitalize">date</th>
+                          <th class="text-capitalize">Topic</th>
+                          <th class="text-capitalize">attended</th>
+                          <th class="text-capitalize">trainer name</th>
+                          <th class="text-capitalize">trainer number</th>
+                          <th class="text-capitalize">trainer email</th>
+                          <th class="text-capitalize">rating</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="text-capitalize">1</td>
+                          <td class="text-capitalize">12-04-2019</td>
+                          <td class="text-capitalize">How to Perform in Interview</td>
+                          <td class="text-capitalize">15</td>
+                          <td class="text-capitalize">trainer name</td>
+                          <td>9876543210</td>
+                          <td>info@gmail.com</td>
+                          <td class="text-capitalize text-nowrap">
+                            <span class="star-rating custom-rating">
+                              <span class="fa fa-star checked"></span>
+                              <span class="fa fa-star checked"></span>
+                              <span class="fa fa-star checked"></span>
+                              <span class="fa fa-star"></span>
+                              <span class="fa fa-star"></span>
+                            </span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <!-- cancelled sessions -->
+              <div id="cancelledSessions" class="tab-pane fade in">
+                <div class="card">
+                  <div class="table-responsive">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th class="text-capitalize">s no</th>
+                          <th class="text-capitalize">topic</th>
+                          <th class="text-capitalize">date of cancelled</th>
+                          <th class="text-capitalize">faculty</th>
+                          <th class="text-capitalize">reason</th>
+                          <th class="text-capitalize">description</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="text-capitalize">1</td>
+                          <td>How to Perform in Interview</td>
+                          <td class="text-capitalize">12-04-2019</td>
+                          <td class="text-capitalize">Pradeep</td>
+                          <td class="text-capitalize">faculty absent</td>
+                          <td class="text-capitalize">How to Perform in Interview</td>
+                        </tr>
+                        <tr>
+                          <td class="text-capitalize">1</td>
+                          <td>How to Perform in Interview</td>
+                          <td class="text-capitalize">12-04-2019</td>
+                          <td class="text-capitalize">holiday</td>
+                          <td class="text-capitalize">faculty absent</td>
+                          <td class="text-capitalize">How to Perform in Interview</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    
+    <!-- schedule and eidt session information-->
+    <div id="addSessionModal" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-md">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title text-capitalize">Shedule session</h4>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <!-- title -->
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="text-capitalize">topic</label>
+                  <input class="form-control" type="text">
+                </div>
+              </div>
+              <!-- date -->
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="text-capitalize">date</label>
+                  <input class="form-control" type="date">
+                </div>
+              </div>
+              <!-- time -->
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="text-capitalize">time</label>
+                  <input class="form-control" type="time">
+                </div>
+              </div>
+              
+              <!-- trainer -->
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="text-capitalize">select trainer</label>
+                  <select class="form-control text-capitalize" id="facultySelect">
+                    <option class="text-capitalize">
+                      all
+                    </option>
+                    <option class="text-capitalize">Pradeep</option>
+                    <option class="text-capitalize">abhinay</option>
+                    <option class="text-capitalize">vinay</option>
+                    <option class="text-capitalize" value="othFacInfo">others</option>
+                  </select>
+                </div>
+              </div>
+              <!-- branch -->
+              <div class="col-md-6 form-group">
+                  <label class="text-capitalize">sort by branch</label><br>
+                  <select class="text-capitalize form-control">
+                    <option class="text-capitalize">all</option>
+                    <option class="text-capitalize">hyderabad</option>
+                    <option class="text-capitalize">secunderabad</option>
+                  </select>
+                </div>
+              <!-- discription -->
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label class="text-capitalize">discription</label>
+                  <textarea class="form-control" rows="3"></textarea> 
+                </div>
+              </div>
+              <div class='col-md-12 ssntrainerInfo' id="othFacInfo">
+                <h4 class="text-capitalize">trainer deatiles</h4>
+                <div class="row">
+                  <div class="col-md-4">
+                    <label class="text-capitalize">trainer name</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="col-md-4">
+                    <label class="text-capitalize">trainer number</label>
+                    <input type="number" class="form-control">
+                  </div>
+                  <div class="col-md-4">
+                    <label class="text-capitalize">trainer email</label>
+                    <input type="email" class="form-control">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-default text-capitalize text-capitalize" data-dismiss="modal">cancel</button>
+            <button type="submit" class="btn btn-default text-capitalize text-capitalize btn-primary">submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- today session cancel -->
+    <div id="cancelSession" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-md">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title text-capitalize">write comment</h4>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <label class="text-capitalize">select reason</label>
+              <select class="form-control text-capitalize">
+                <option class="text-capitalize" selected disabled>select reason</option>
+                <option class="text-capitalize">trainer absent</option>
+                <option class="text-capitalize">students absent</option>
+                <option class="text-capitalize">others</option>
+              </select>
+            </div>
+            <div class="form-group">
+                <textarea class="form-control"></textarea>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-default text-capitalize text-capitalize" data-dismiss="modal">cancel</button>
+            <button type="submit" class="btn btn-default text-capitalize text-capitalize btn-primary">submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- addTrainerModal -->
+      <div id="addTrainerModal" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-md">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title text-capitalize">add trainer</h4>
+          </div>
+          <div class="modal-body">
+            <!-- name -->
+            <div class="form-group">
+              <label class="text-capitalize">trainer name</label>
+              <input type="text" class="form-control">
+            </div>
+            <!-- email -->
+            <div class="form-group">
+              <label class="text-capitalize">trainer email</label>
+              <input type="emial" class="form-control">
+            </div>
+            <!-- number -->
+            <div class="form-group">
+              <label class="text-capitalize">trainer number</label>
+              <input type="number" class="form-control">
+            </div>
+            <!-- skills -->
+            <div class="form-group">
+              <label class="text-capitalize">add skills</label>
+              <div class="form-control" style="height: auto;">
+                <div class="text-uppercase skils-column">
+                  <div class="customradio">
+                    <input type="checkbox" name="selectComapny">
+                    <span class="text-uppercase">html</span>
+                  </div>
+                  <div class="customradio">
+                    <input type="checkbox" name="selectComapny">
+                    <span class="text-uppercase">css</span>
+                  </div>
+                  <div class="customradio disable">
+                    <input type="checkbox" name="selectComapny">
+                    <span class="text-uppercase">javascript</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- discription -->
+            <div class="form-group">
+              <label class="text-capitalize">add description</label>
+              <textarea class="form-control"></textarea>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-default text-capitalize text-capitalize" data-dismiss="modal">cancel</button>
+            <button type="submit" class="btn btn-default text-capitalize text-capitalize btn-primary">submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- js includes -->
+    <!-- jquery library -->
+    <script src='js/jquery-3.3.1.min.js'></script>
+
+    <!-- Latest bootstrap compiled JavaScript -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- slick slider -->
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    
+    <script>
+      $(function() {
+        $('#facultySelect').change(function(){
+          $('.ssntrainerInfo').hide();
+          $('#' + $(this).val()).show();
+        });
+      });
+    </script>
+  </body>
+</html>

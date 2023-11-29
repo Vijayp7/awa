@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Website Name</title>
+    <meta charset="utf-8"> 
+    <base href="../">
+    
+    <!-- CSS -->
+    <!-- favicon -->
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+    <!-- components css -->
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+    <!-- custom css stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <!-- responsive css stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+   
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <nav class="navbar">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+              </button>
+              <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <form class="navbar-form navbar-left" role="search">
+                <button type="submit" class="btn btn-link"><i class="glyphicon glyphicon-search"></i></button>
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Search">
+                </div>
+              </form>
+              <ul class="ht-right">
+                <!-- notifications -->
+                <li class="dropdown menu-parent">
+                  <a class="btn btn-link dropdown-toggle noti-alert" type="button" id="notifictions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <i class="fa fa-bell-o" aria-hidden="true"></i>
+                    <!-- alert -->
+                    <small></small>
+                  </a>
+                  <ul class="dropdown-menu custom-menu" aria-labelledby="notifictions">
+                    <!--menu header -->
+                    <li class="custom-menu-header">Notifications</li>
+                    <!--menu body -->
+                    <li class="scrollable-container">
+                      <!-- notification -->
+                      <a href="#" class="notification-content unread">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content unread">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <!--menu fooster -->
+                    <li class="custom-menu-footer">
+                      <a href="student/notifications.html">See all notifications</a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- messages -->
+                <li class="dropdown menu-parent">
+                  <a class="btn btn-link dropdown-toggle" type="button" id="messages" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <!-- alert -->
+                    <small></small>
+                  </a>
+                  <ul class="dropdown-menu custom-menu" aria-labelledby="notifictions">
+                    <!--menu header -->
+                    <li class="custom-menu-header">messages</li>
+                    <!--menu body -->
+                    <li class="scrollable-container">
+                      <!-- notification -->
+                      <a href="#" class="notification-content unread">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content unread">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <!--menu fooster -->
+                    <li class="custom-menu-footer">
+                      <a href="inbox.html">See all messages</a>
+                    </li>
+                  </ul>
+                </li>
+                
+                <!-- profile -->
+                <li class="dropdown menu-parent">
+                  <a class="btn btn-link dropdown-toggle" type="button" id="profile-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <span class="avatar"><img src="images/avatar.png" alt=""></span>
+                  </a>
+                  <!-- dropdown menu -->
+                  <ul class="dropdown-menu profile-menu" aria-labelledby="profile-menu">
+                    <li>
+                      <a href="javascript:void(0)">
+                        <span class="avatar">
+                          <img src="images/avatar.png" alt="">
+                        </span>
+                        <span>Jhon Deo</span>
+                      </a>
+                    </li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="student/profile-view.html"><i class="fa fa-user" aria-hidden="true"></i>view profile</a></li>
+                    <li><a href="student/inbox.html"><i class="fa fa-envelope" aria-hidden="true"></i>My inbox</a></li>
+                    <li><a href="student/pracicles-list.html"><i class="fa fa-tasks" aria-hidden="true"></i>my tasks</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i>logout</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- navigation -->
+      <div class="header-nav">
+          <nav class="navbar bg-1" id="sticky-nav">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav">
+                <li><a href="student/index.html">Dashboard</a></li>
+                <li>
+                  <a href="student/myTrainingTopics.html">My Training topics</a>
+                </li>
+                <li class="active"><a href="student/pracicles-list.html">My Practicals list</a></li>
+                <li><a href="student/myPerformence.html">my cource / performence</a></li>
+                <li class="dropdown menu-parent">
+                  <a href="student/news-events.html">News / events</a>
+                </li>
+                <li><a href="student/apply-job.html">Apply for job</a></li>
+                <li><a href="student/terms-conditions.html">terms and conditions</a></li>
+              </ul>
+            </div>
+          </nav>
+      </div>
+      <!-- main content -->
+      <main>
+        <div class="content-wrapper">
+          <div class="content-wrapper-before bg-1"></div>
+          <!-- header -->
+          <div class="content-header">
+            <h2>My Practicals list</h2>
+          </div>
+          <div class="content-body">
+            <!-- Today's Practicals -->
+            <div class="card">
+              <div class="card-header tdy_practicles">
+                <h3 class="text-capitalize">Today's practicals</h3>
+                <!-- minmize -->
+                <button class="btn btn-link minmize-btn" data-toggle="collapse" data-target="#todayPracticals"><i class="fa fa-minus" aria-hidden="true"></i></button>
+              </div>
+              <!-- card-content -->
+              <div class="card-content collapse in" id="todayPracticals">
+                <div class="table-responsive">       
+                  <table class="table table-striped custom-table">
+                    <thead>
+                      <tr>
+                        <th class="text-capitalize">S no</th>
+                        <th class="text-capitalize">Module</th>
+                        <th class="text-capitalize">Practicals</th>
+                        <th class="text-capitalize">Description</th>
+                        <th class="text-capitalize">task file</th>
+                        <th class="text-capitalize">Upload work file</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>HTML</td>
+                        <td>Div structure</td>
+                        <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</td>
+                        <td class="p-0 text-center">
+                          <a href='images/logo.png' download="file" class="btn btn-link file-btn"><i class="fa fa-cloud-download" aria-hidden="true"></i>
+                          </a>
+                        </td>
+                        <td class="p-0 text-center">
+                          <button class="btn btn-link file-btn" type="button" data-toggle="modal" data-target="#fileUplaodModal"><i class="fa fa-cloud-upload" aria-hidden="true"></i>
+                          </button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <!-- Pending Practicals -->
+            <div class="card">
+              <div class="card-header pending_practicles">
+                <h3 class="text-capitalize">Pending practicals</h3>
+                <button class="btn btn-link minmize-btn" data-toggle="collapse" data-target="#pendingPracticles"><i class="fa fa-minus" aria-hidden="true"></i></button>
+              </div>
+              <!-- card-content -->
+              <div class="card-content collapse in" id="pendingPracticles">
+                <div class="table-responsive">       
+                  <table class="table table-striped custom-table">
+                    <thead>
+                      <tr>
+                        <th class="text-capitalize">S no</th>
+                        <th class="text-capitalize">Module</th>
+                        <th class="text-capitalize">Practicals</th>
+                        <th class="text-capitalize">Description</th>
+                        <th class="text-capitalize">task file</th>
+                        <th class="text-capitalize">Upload work file</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>HTML</td>
+                        <td>Div structure</td>
+                        <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</td>
+                        <td class="p-0 text-center">
+                          <a href='images/logo.png' download="file" class="btn btn-link file-btn"><i class="fa fa-cloud-download" aria-hidden="true"></i>
+                          </a>
+                        </td>
+                        <td class="p-0 text-center">
+                          <a href="JavaScript:void(0)" class="btn btn-link file-btn"><i class="fa fa-cloud-upload" aria-hidden="true"></i>
+                          </a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <!-- Waiting for approval Practicals -->
+            <div class="card">
+              <div class="card-header approval_practicles">
+                <h3 class="text-capitalize">Waiting for approval practicals</h3>
+                <button class="btn btn-link minmize-btn" data-toggle="collapse" data-target="#approvalPracticals"><i class="fa fa-minus" aria-hidden="true"></i></button>
+              </div>
+              <!-- card-content -->
+              <div class="card-content collapse in" id="approvalPracticals">
+                <div class="table-responsive">       
+                  <table class="table table-striped custom-table">
+                    <thead>
+                      <tr>
+                        <th class="text-capitalize">S no</th>
+                        <th class="text-capitalize">Module</th>
+                        <th class="text-capitalize">Practicals</th>
+                        <th class="text-capitalize">Description</th>
+                        <th class="text-capitalize">task file</th>
+                        <th class="text-capitalize">My Work File</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>HTML</td>
+                        <td>Div structure</td>
+                        <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</td>
+                        <td class="p-0 text-center">
+                          <a href='images/logo.png' download="file" class="btn btn-link file-btn"><i class="fa fa-cloud-download" aria-hidden="true"></i>
+                          </a>
+                        </td>
+                        <td class="p-0 text-center">
+                          <a href='images/logo.png' download="file" class="btn btn-link file-btn"><i class="fa fa-cloud-download" aria-hidden="true"></i>
+                          </a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <!-- Completed Practicals -->
+            <div class="card">
+              <div class="card-header completed_practicles">
+                <h3 class="text-capitalize">Completed practicals</h3>
+                <button class="btn btn-link minmize-btn" data-toggle="collapse" data-target="#completedPracticals"><i class="fa fa-minus" aria-hidden="true"></i></button>
+              </div>
+              <!-- card-content -->
+              <div class="card-content collapse in" id="completedPracticals">
+                <div class="table-responsive">       
+                  <table class="table table-striped custom-table">
+                    <thead>
+                      <tr>
+                        <th class="text-capitalize text-nowrap">S no</th>
+                        <th class="text-capitalize text-nowrap">Module</th>
+                        <th class="text-capitalize text-nowrap">Practicals</th>
+                        <th class="text-capitalize text-nowrap">Description</th>
+                        <th class="text-capitalize text-nowrap">task file</th>
+                        <th class="text-capitalize text-nowrap">My Work File</th>
+                        <th class="text-capitalize text-nowrap">Marks</th>
+                        <th class="text-capitalize text-nowrap">Faculty Comment</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>HTML</td>
+                        <td>Div structure</td>
+                        <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</td>
+                        <td class="p-0 text-center">
+                          <a href='images/logo.png' download="file" class="btn btn-link file-btn"><i class="fa fa-cloud-download" aria-hidden="true"></i>
+                          </a>
+                        </td>
+                        <td class="p-0 text-center">
+                          <a href='images/logo.png' download="file" class="btn btn-link file-btn"><i class="fa fa-cloud-download" aria-hidden="true"></i>
+                          </a>
+                        </td>
+                        <td>
+                          <div class="progress m-0">
+                            <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:90%">90%
+                            </div>
+                          </div>
+                        </td>
+                        <td class="text-center">
+                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#facultyCommentModal">view</button>
+                        </td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>HTML</td>
+                        <td>Div structure</td>
+                        <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</td>
+                        <td class="p-0 text-center">
+                          <a href='images/logo.png' download="file" class="btn btn-link file-btn"><i class="fa fa-cloud-download" aria-hidden="true"></i>
+                          </a>
+                        </td>
+                        <td class="p-0 text-center">
+                          <a href='images/logo.png' download="file" class="btn btn-link file-btn"><i class="fa fa-cloud-download" aria-hidden="true"></i>
+                          </a>
+                        </td>
+                        <td>
+                          <div class="progress m-0">
+                            <div class="progress">
+                              <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:60%">60%
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="text-center">
+                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#facultyCommentModal">view</button>
+                        </td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>HTML</td>
+                        <td>Div structure</td>
+                        <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</td>
+                        <td class="p-0 text-center">
+                          <a href='images/logo.png' download="file" class="btn btn-link file-btn"><i class="fa fa-cloud-download" aria-hidden="true"></i>
+                          </a>
+                        </td>
+                        <td class="p-0 text-center">
+                          <a href='images/logo.png' download="file" class="btn btn-link file-btn"><i class="fa fa-cloud-download" aria-hidden="true"></i>
+                          </a>
+                        </td>
+                        <td>
+                          <div class="progress m-0">
+                            <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:50%">50%
+                                </div>
+                          </div>
+                        </td>
+                        <td class="text-center">
+                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#facultyCommentModal">view</button>
+                        </td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>HTML</td>
+                        <td>Div structure</td>
+                        <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</td>
+                        <td class="p-0 text-center">
+                          <a href='images/logo.png' download="file" class="btn btn-link file-btn"><i class="fa fa-cloud-download" aria-hidden="true"></i>
+                          </a>
+                        </td>
+                        <td class="p-0 text-center">
+                          <a href='images/logo.png' download="file" class="btn btn-link file-btn"><i class="fa fa-cloud-download" aria-hidden="true"></i>
+                          </a>
+                        </td>
+                        <td>
+                          <div class="progress m-0">
+                            <div class="progress">
+                              <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">40%
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="text-center">
+                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#facultyCommentModal">view</button>
+                        </td>
+                        <td></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <!-- wraper ends here -->
+    <!-- faculty comment popup-->
+    <div class="modal fade" id="facultyCommentModal" role="dialog">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Comment</h4>
+          </div>
+          <div class="modal-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- upload file popup-->
+    <div class="modal fade" id="fileUplaodModal" role="dialog">
+      <div class="modal-dialog modal-md">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Upload your files</h4>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="file-upload">
+                <label class="text-left text-capitalize">Upload your file</label>
+                <div class="file-select">
+                  <div class="file-select-button" id="fileName">Choose File</div>
+                  <div class="file-select-name" id="noFile">No file chosen...</div> 
+                  <input type="file" name="chooseFile" id="chooseFile">
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Write your comment</label>
+                <textarea class="form-control"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- js includes -->
+    <!-- jquery library -->
+    <script src='js/jquery-3.3.1.min.js'></script>
+
+    <!-- Latest bootstrap compiled JavaScript -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- custom js  -->
+    <script src='js/main.js'></script>
+  </body>
+</html>

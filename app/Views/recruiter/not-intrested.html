@@ -1,0 +1,752 @@
+  <!DOCTYPE html>
+<html>
+  <head>
+    <title>Website Name</title>
+    <meta charset="utf-8"> 
+    <base href="../">
+    <!-- CSS -->
+    <!-- favicon -->
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+    <!-- components css -->
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+    <!-- custom css stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <!-- responsive css stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+   
+  </head>
+  <body>
+    <div id="wrapper">
+      <!-- header -->
+      <header>
+        <nav class="navbar">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar1">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar1">
+              <form class="navbar-form navbar-left" role="search">
+                <button type="submit" class="btn btn-link"><i class="glyphicon glyphicon-search"></i></button>
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Search">
+                </div>
+              </form>
+              <ul class="ht-right">
+                <!-- notifications -->
+                <li class="dropdown menu-parent">
+                  <a class="btn btn-link dropdown-toggle noti-alert" type="button" id="notifictions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <i class="fa fa-bell-o" aria-hidden="true"></i>
+                    <!-- alert -->
+                    <small></small>
+                  </a>
+                  <ul class="dropdown-menu custom-menu" aria-labelledby="notifictions">
+                    <!--menu header -->
+                    <li class="custom-menu-header">Notifications</li>
+                    <!--menu body -->
+                    <li class="scrollable-container">
+                      <!-- notification -->
+                      <a href="#" class="notification-content unread">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content unread">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <!--menu fooster -->
+                    <li class="custom-menu-footer">
+                      <a href="notifications.html">See all notifications</a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- messages -->
+                <li class="dropdown menu-parent">
+                  <a class="btn btn-link dropdown-toggle" type="button" id="messages" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <!-- alert -->
+                    <small></small>
+                  </a>
+                  <ul class="dropdown-menu custom-menu" aria-labelledby="notifictions">
+                    <!--menu header -->
+                    <li class="custom-menu-header">messages</li>
+                    <!--menu body -->
+                    <li class="scrollable-container">
+                      <!-- notification -->
+                      <a href="#" class="notification-content unread">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content unread">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <!--menu fooster -->
+                    <li class="custom-menu-footer">
+                      <a href="inbox.html">See all messages</a>
+                    </li>
+                  </ul>
+                </li>
+                
+                <!-- profile -->
+                <li class="dropdown menu-parent">
+                  <a href="javascript:void(0)" class="btn btn-link dropdown-toggle" type="button" id="profile-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <span class="avatar"><img src="images/avatar.png" alt=""></span>
+                  </a>
+                  <!-- dropdown menu -->
+                  <ul class="dropdown-menu profile-menu" aria-labelledby="profile-menu">
+                    <li>
+                      <a href="javascript:void(0)">
+                        <span class="avatar">
+                          <img src="images/avatar.png" alt="">
+                        </span>
+                        <span>Jhon Deo</span>
+                      </a>
+                    </li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="profile-view.html"><i class="fa fa-user" aria-hidden="true"></i>view profile</a></li>
+                    <li><a href="inbox.html"><i class="fa fa-envelope" aria-hidden="true"></i>My inbox</a></li>
+                    <li><a href="pracicles-list.html"><i class="fa fa-tasks" aria-hidden="true"></i>my tasks</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i>logout</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      
+      <!-- main navigation starts-->
+      <div class="header-nav">
+        <nav class="navbar bg-4" id="sticky-nav">
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li><a href="recruiter/recruiter-dashboard.html">dahboard</a></li>
+              <li><a href="recruiter/recruiter-current-jobs.html">current jobs</a></li>
+              <li class="active dropdown menu-parent">
+                <a href="JavaScript:void(0)" class="dropdown-toggle" type="button" id="notifictions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">students</a>
+                <ul class="dropdown-menu dropdown-menu-right custom-menu" aria-labelledby="notifictions">
+                  <li><a href="recruiter/recruiter-students.html" class="text-capitalize notification-content">ready for placement</a></li>
+                  <li><a href="recruiter/recruiter-interns.html" class="text-capitalize notification-content">ready for internship</a></li>
+                  <li><a href="recruiter/recruiter-placed.html" class="text-capitalize notification-content">placed students</a></li>
+                  <li><a href="recruiter/not-intrested.html" class="text-capitalize notification-content">not intrested</a></li>
+                </ul>
+              </li>
+              <li><a href="recruiter/recruiter-companies-list.html">List of companies</a></li>
+              <li><a href="recruiter/resume-buider.html">Resume builder</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <!-- main navigation ends here-->
+      <main>
+        <div class="content-wrapper">
+          <div class="content-wrapper-before bg-4"></div>
+          <!-- page title -->
+          <div class="content-header">
+            <h2 class="text-capitalize">not intrested students</h2>
+          </div>
+          <!-- content -->
+          <div class="content-body">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="card">
+                  <div class="table-responsive">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th class="text-capitalize">s no</th>
+                          <th class="text-capitalize">student name</th>
+                          <th class="text-capitalize">passedout date</th>
+                          <th class="text-capitalize">job role</th>
+                          <th class="text-capitalize">skills</th>
+                          <th class="text-capitalize">cv</th>
+                          <th class="text-center">previous interviews</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td class="text-capitalize">lorem ipusm</td>
+                          <td>10-03-2019</td>
+                          <td>web designing</td>
+                          <td class="text-uppercase skils-column">
+                            <span class="badge">html</span>
+                            <span class="badge">css</span>
+                            <span class="badge">javascript  </span>
+                          </td>
+                          <td>
+                            <button class="btn btn-link p-0" type="button">
+                              <i class="fa fa-file-text-o" area-hidden='true'></i>
+                            </button>
+                          </td>
+                          <td class="text-center">
+                            <button class="btn btn-link" type="button" data-toggle="modal" data-target="#pastInterviewsModal"><span class="badge">5</span>&nbsp;view</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td class="text-capitalize">lorem ipusm</td>
+                          <td>10-03-2019</td>
+                          <td>web designing</td>
+                          <td class="text-uppercase skils-column">
+                            <span class="badge">html</span>
+                            <span class="badge">css</span>
+                            <span class="badge">javascript  </span>
+                          </td>
+                          <td>
+                            <button class="btn btn-link p-0" type="button">
+                              <i class="fa fa-file-text-o" area-hidden='true'></i>
+                            </button>
+                          </td>
+                          <td class="text-center">
+                            <button class="btn btn-link" type="button" data-toggle="modal" data-target="#pastInterviewsModal"><span class="badge">5</span>&nbsp;view</button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- modals -->
+    <!-- pastInterviewsModal -->
+    <div id="pastInterviewsModal" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-lg">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Previous Interviews</h4>
+          </div>
+          <div class="modal-body">
+            <div class="table-responsive">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th class="text-capitalize">s no</th>
+                    <th class="text-capitalize">date</th>
+                    <th class="text-capitalize">comapany</th>
+                    <th class="text-capitalize">Attended</th>
+                    <th class="text-capitalize">Status</th>
+                    <th class="text-capitalize">Reason</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>10-03-2019</td>
+                    <td class="text-capitalize">Infasta soft solutions</td>
+                    <td class="text-capitalize text-success">yes</td>
+                    <td class="text-capitalize">rejected</td>
+                    <td>working already</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>10-03-2019</td>
+                    <td class="text-capitalize">ace dezines</td>
+                    <td class="text-capitalize text-danger">no</td>
+                    <td class="text-capitalize">not attended</td>
+                    <td>out of station</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+    <!-- interview schedule modal -->
+    <div id="scheduleInterviewModal" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-lg">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="header-elements">
+              <button type="button" class="btn btn-orange">schedule Interview</button>
+            </div>
+            <h4 class="modal-title text-capitalize">schedule Interview</h4>
+          </div>
+          <div class="modal-body">
+            <div class="table-responsive">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th class="text-capitalize">select</th>
+                    <th class="text-capitalize">comapany name</th>
+                    <th class="text-capitalize">job role</th>
+                    <th class="text-capitalize">location</th>
+                    <th class="text-capitalize">date</th>
+                    <th class="text-capitalize">time</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="customradio">
+                        <input type="radio" name="selectComapny">
+                        <span></span>
+                      </div>
+                    </td>
+                    <td class="text-capitalize">infasta soft solutions</td>
+                    <td class="text-capitalize">web designing</td>
+                    <td class="text-capitalize">madapur</td>
+                    <td>10-03-2019</td>
+                    <td class="text-uppercase">10 am</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="customradio">
+                        <input type="radio" name="selectComapny">
+                        <span></span>
+                      </div>
+                    </td>
+                    <td class="text-capitalize">infasta soft solutions</td>
+                    <td class="text-capitalize">web designing</td>
+                    <td class="text-capitalize">madapur</td>
+                    <td>10-03-2019</td>
+                    <td class="text-uppercase">10 am</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="customradio">
+                        <input type="radio" name="selectComapny">
+                        <span></span>
+                      </div>
+                    </td>
+                    <td class="text-capitalize">infasta soft solutions</td>
+                    <td class="text-capitalize">web designing</td>
+                    <td class="text-capitalize">madapur</td>
+                    <td>10-03-2019</td>
+                    <td class="text-uppercase">10 am</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+    <!-- shortListed Modal -->
+    <div id="shortListedModal" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-md">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title text-capitalize">Short Listed</h4>
+          </div>
+          <div class="modal-body text-center">
+            <div class="m-tb-10">
+              <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg"><g fill="#fe981b" fill-opacity=".8"><path d="M25 50C11.215 50 0 38.785 0 25S11.215 0 25 0s25 11.215 25 25-11.215 25-25 25zm0-47C12.869 3 3 12.869 3 25s9.869 22 22 22 22-9.869 22-22S37.131 3 25 3z"/><circle cx="18" cy="18" r="3"/><circle cx="33" cy="18" r="3"/><path d="M15.749 29a.725.725 0 0 0-.393.116.807.807 0 0 0-.244 1.08C17.252 33.83 20.963 36 25.036 36c4.014 0 7.695-2.123 9.847-5.676a.805.805 0 0 0-.23-1.082.729.729 0 0 0-1.034.242c-1.875 3.098-5.085 4.946-8.582 4.946-3.548 0-6.782-1.89-8.649-5.06a.746.746 0 0 0-.64-.37z" stroke-opacity=".8" stroke="#fe981b" stroke-width="1.5"/></g></svg>
+            </div>
+            <h4 class="m-0"><b>Hurray!</b>&nbsp;Student got Shortlisted !</b></h4>
+            <p class="m-tb-10">Specify appointment date by recruiter</p>
+            <div class="reason-form">
+              <form>
+                <div class="form-group">
+                  <input type="date" class="form-control">
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="modal-footer text-center">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-orange">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Rejected Modal -->
+    <div id="RejectedModal" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-md">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title text-capitalize">Rejected</h4>
+          </div>
+          <div class="modal-body text-center">
+            <div class="m-tb-10">
+              <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg"><g fill='#fe981b' fill-opacity=".8"><path d="M25 50C11.215 50 0 38.785 0 25S11.215 0 25 0s25 11.215 25 25-11.215 25-25 25zm0-47C12.869 3 3 12.869 3 25s9.869 22 22 22 22-9.869 22-22S37.131 3 25 3z"/><circle cx="17.73" cy="18.076" r="3.22"/><circle cx="33.071" cy="18.076" r="3.22"/><path d="M15.645 36.24a.758.758 0 0 1-.644-1.155 11.72 11.72 0 0 1 10.035-5.6c4.06 0 7.782 2.048 9.958 5.477a.757.757 0 0 1-1.279.81A10.226 10.226 0 0 0 25.038 31a10.214 10.214 0 0 0-8.746 4.882.762.762 0 0 1-.647.357z" stroke-opacity=".8" stroke="#fe981b" stroke-width="1.5"/></g></svg>
+            </div>
+            <h4 class="m-0"><b>Umm! Bad luck!</b>&nbsp;Student got Reject !</b></h4>
+            <p class="m-tb-10">To understand more, please specify the reason for rejection</p>
+            <div class="reason-form">
+              <form>
+                <div class="form-group">
+                  <label class="text-capitalize">reason</label>
+                  <textarea class="form-control"></textarea>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="modal-footer text-center">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-orange">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Postponed Modal -->
+    <div id="postPonedModal" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-md">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title text-capitalize">Postponed</h4>
+          </div>
+          <div class="modal-body text-center">
+            <div class="m-tb-10">
+              <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg"><g fill='#fe981b' fill-opacity=".8"><path d="M25 50C11.215 50 0 38.785 0 25S11.215 0 25 0s25 11.215 25 25-11.215 25-25 25zm0-47C12.869 3 3 12.869 3 25s9.869 22 22 22 22-9.869 22-22S37.131 3 25 3z"/><circle cx="17.73" cy="18.076" r="3.22"/><circle cx="33.071" cy="18.076" r="3.22"/><path d="M15.645 36.24a.758.758 0 0 1-.644-1.155 11.72 11.72 0 0 1 10.035-5.6c4.06 0 7.782 2.048 9.958 5.477a.757.757 0 0 1-1.279.81A10.226 10.226 0 0 0 25.038 31a10.214 10.214 0 0 0-8.746 4.882.762.762 0 0 1-.647.357z" stroke-opacity=".8" stroke="#fe981b" stroke-width="1.5"/></g></svg>
+            </div>
+            <h4 class="m-0">Got change in Interview Date !</h4>
+            <p class="m-tb-10">Please mentioned the revised date of interview</p>
+            <div class="reason-form">
+              <form>
+                <div class="form-group">
+                  <label class="text-capitalize">next date</label>
+                  <br>
+                  <input type="date">
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="modal-footer text-center">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-orange">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Not Attended -->
+    <div id="notAttendedModal" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-md">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title text-capitalize">Not Attended</h4>
+          </div>
+          <div class="modal-body text-center">
+            <div class="m-tb-10">
+              <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg"><g fill='#fe981b' fill-opacity=".8"><path d="M25 50C11.215 50 0 38.785 0 25S11.215 0 25 0s25 11.215 25 25-11.215 25-25 25zm0-47C12.869 3 3 12.869 3 25s9.869 22 22 22 22-9.869 22-22S37.131 3 25 3z"/><circle cx="17.73" cy="18.076" r="3.22"/><circle cx="33.071" cy="18.076" r="3.22"/><path d="M15.645 36.24a.758.758 0 0 1-.644-1.155 11.72 11.72 0 0 1 10.035-5.6c4.06 0 7.782 2.048 9.958 5.477a.757.757 0 0 1-1.279.81A10.226 10.226 0 0 0 25.038 31a10.214 10.214 0 0 0-8.746 4.882.762.762 0 0 1-.647.357z" stroke-opacity=".8" stroke="#fe981b" stroke-width="1.5"/></g></svg>
+            </div>
+            <h4 class="m-0"><b>Ah! Missed Opportunity!&nbsp;</b>Student failed to attend the Interview</h4>
+            <p class="m-tb-10">Please specify why could'nt he attend Interview</p>
+            <div class="reason-form">
+              <form>
+                <div class="form-group">
+                  <textarea class="form-control"></textarea>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="modal-footer text-center">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-orange">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- palced -->
+    <div id="placedModal" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-md">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title text-capitalize">Placed</h4>
+          </div>
+          <div class="modal-body text-center">
+            <div class="m-tb-10">
+              <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg"><g fill='#fe981b' fill-opacity=".8"><path d="M25 50C11.215 50 0 38.785 0 25S11.215 0 25 0s25 11.215 25 25-11.215 25-25 25zm0-47C12.869 3 3 12.869 3 25s9.869 22 22 22 22-9.869 22-22S37.131 3 25 3z"/><circle cx="17.73" cy="18.076" r="3.22"/><circle cx="33.071" cy="18.076" r="3.22"/><path d="M15.645 36.24a.758.758 0 0 1-.644-1.155 11.72 11.72 0 0 1 10.035-5.6c4.06 0 7.782 2.048 9.958 5.477a.757.757 0 0 1-1.279.81A10.226 10.226 0 0 0 25.038 31a10.214 10.214 0 0 0-8.746 4.882.762.762 0 0 1-.647.357z" stroke-opacity=".8" stroke="#fe981b" stroke-width="1.5"/></g></svg>
+            </div>
+            <h4 class="m-0"><b>Congratulation!</b>&nbsp;Student got placed!</h4>
+            <p class="m-tb-10">Please reconfirm by clicking button below</p>
+            <div class="reason-form">
+              <form>
+                <div class="form-group">
+                  <textarea class="form-control"></textarea>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="modal-footer text-center">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-orange">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- past interviews modal -->
+    <div id="pastInterviewsModal" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-lg">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Previous Interviews</h4>
+          </div>
+          <div class="modal-body">
+            <div class="table-responsive">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th class="text-capitalize">s no</th>
+                    <th class="text-capitalize">date</th>
+                    <th class="text-capitalize">comapany</th>
+                    <th class="text-capitalize">Attended</th>
+                    <th class="text-capitalize">Status</th>
+                    <th class="text-capitalize">Reason</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>10-03-2019</td>
+                    <td class="text-capitalize">Infasta soft solutions</td>
+                    <td class="text-capitalize text-success">yes</td>
+                    <td class="text-capitalize">rejected</td>
+                    <td>working already</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>10-03-2019</td>
+                    <td class="text-capitalize">ace dezines</td>
+                    <td class="text-capitalize text-danger">no</td>
+                    <td class="text-capitalize">not attended</td>
+                    <td>out of station</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- js includes -->
+    <!-- jquery library -->
+    <script src='js/jquery-3.3.1.min.js'></script>
+
+    <!-- Latest bootstrap compiled JavaScript -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    
+    <script>
+      $("tr").click(function (e) {
+          var cb = $(this).find(":radio")[0];
+          if (e.target != cb) cb.checked = !cb.checked;
+          $(this).toggleClass("selected", cb.checked);
+      });
+    </script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        // approve class modal
+        // $("#shortListedModal").modal('show');
+        // $("#RejectedModal").modal('show');
+        // $("#postPonedModal").modal('show');
+        // $("#notAttendedModal").modal('show');
+        // $("#placedModal").modal('show');
+      });
+
+      // // schedules status upadatess
+      // $(function() {
+      //   $('#colorselector').change(function(){
+      //     $('.colors').hide();
+      //     $('#' + $(this).val()).show();
+      //   });
+      // });
+
+    </script>
+  </body>
+</html>

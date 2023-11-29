@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Website Name</title>
+    <meta charset="utf-8"> 
+    <base href="../">
+    
+    <!-- CSS -->
+    <!-- favicon -->
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+    <!-- components css -->
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+    <!-- custom css stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <!-- responsive css stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+   
+  </head>
+  <body>
+    <div id="wrapper">
+        <div class="login-wrapper">
+          <!-- login -->
+          <div class="login">
+            <div class="login-logo">
+              <img src="images/logo.png" alt="">
+            </div>
+            <form>
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" placeholder="Enter email" name="email">
+              </div>
+              <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" class="form-control" placeholder="Enter password" name="password">
+              </div>
+              <div class="checkbox login-options">
+                <label><input type="checkbox"> Remember Me</label>
+                <button type="button" class="btn btn-link" data-toggle='modal' data-target='#forgotPassword'>Forgot Username/Password?</button>
+              </div>
+              <button type="button" class="btn btn-gradient" onclick="window.location.href='lab-faculty/lab-faculty-dashboard.html'";>Login</button>
+            </form>
+          </div>
+        </div>
+
+    </div>
+    <!-- Modal -->
+    <div id="forgotPassword" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Forgot Password?</h4>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="email" class="text-muted">Enter your Email adress to reset your password.</label>
+                <input type="email" class="form-control" placeholder="Enter email" name="email">
+                <button type="button" class="btn btn-primary btn-gradient" onclick="window.location.href='lab-faculty/password-verification.html'">Get otp</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- js includes -->
+    <!-- jquery library -->
+    <script src='js/jquery-3.3.1.min.js'></script>
+
+    <!-- Latest bootstrap compiled JavaScript -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

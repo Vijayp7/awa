@@ -1,0 +1,476 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Website Name</title>
+    <meta charset="utf-8"> 
+    <base href="../">
+
+    
+    <!-- CSS -->
+    <!-- favicon -->
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+    <!-- components css -->
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+    <!-- custom css stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <!-- responsive css stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+   
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <nav class="navbar">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar1">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar1">
+              <form class="navbar-form navbar-left" role="search">
+                <button type="submit" class="btn btn-link"><i class="glyphicon glyphicon-search"></i></button>
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Search">
+                </div>
+              </form>
+              <ul class="ht-right">
+                <!-- notifications -->
+                <li class="dropdown menu-parent">
+                  <a class="btn btn-link dropdown-toggle noti-alert" type="button" id="notifictions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <i class="fa fa-bell-o" aria-hidden="true"></i>
+                    <!-- alert -->
+                    <small></small>
+                  </a>
+                  <ul class="dropdown-menu custom-menu" aria-labelledby="notifictions">
+                    <!--menu header -->
+                    <li class="custom-menu-header">Notifications</li>
+                    <!--menu body -->
+                    <li class="scrollable-container">
+                      <!-- notification -->
+                      <a href="#" class="notification-content unread">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content unread">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <!--menu fooster -->
+                    <li class="custom-menu-footer">
+                      <a href="student/notifications.html">See all notifications</a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- messages -->
+                <li class="dropdown menu-parent">
+                  <a class="btn btn-link dropdown-toggle" type="button" id="messages" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <!-- alert -->
+                    <small></small>
+                  </a>
+                  <ul class="dropdown-menu custom-menu" aria-labelledby="notifictions">
+                    <!--menu header -->
+                    <li class="custom-menu-header">messages</li>
+                    <!--menu body -->
+                    <li class="scrollable-container">
+                      <!-- notification -->
+                      <a href="#" class="notification-content unread">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content unread">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <!--menu fooster -->
+                    <li class="custom-menu-footer">
+                      <a href="student/inbox.html">See all messages</a>
+                    </li>
+                  </ul>
+                </li>
+                
+                <!-- profile -->
+                <li class="dropdown menu-parent">
+                  <a class="btn btn-link dropdown-toggle" type="button" id="profile-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <span class="avatar"><img src="images/avatar.png" alt=""></span>
+                  </a>
+                  <!-- dropdown menu -->
+                  <ul class="dropdown-menu profile-menu" aria-labelledby="profile-menu">
+                    <li>
+                      <a href="javascript:void(0)">
+                        <span class="avatar">
+                          <img src="images/avatar.png" alt="">
+                        </span>
+                        <span>Jhon Deo</span>
+                      </a>
+                    </li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="student/profile-view.html"><i class="fa fa-user" aria-hidden="true"></i>view profile</a></li>
+                    <li><a href="student/inbox.html"><i class="fa fa-envelope" aria-hidden="true"></i>My inbox</a></li>
+                    <li><a href="student/pracicles-list.html"><i class="fa fa-tasks" aria-hidden="true"></i>my tasks</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i>logout</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- navigation -->
+      <div class="header-nav">
+          <nav class="navbar bg-1" id="sticky-nav">
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav">
+                <li><a href="student/index.html">Dashboard</a></li>
+                <li>
+                  <a href="student/myTrainingTopics.html">My Training topics</a>
+                </li>
+                <li><a href="student/pracicles-list.html">My Practicals list</a></li>
+                <li><a href="student/myPerformence.html">my cource / performence</a></li>
+                <li class="dropdown menu-parent">
+                  <a href="student/news-events.html">News / events</a>
+                </li>
+                <li><a href="student/apply-job.html">Apply for job</a></li>
+                <li><a href="student/terms-conditions.html">terms and conditions</a></li>
+              </ul>
+            </div>
+          </nav>
+      </div>
+      
+      <!-- main content -->
+      <main>
+        <div class="content-wrapper">
+          <div class="content-wrapper-before bg-1"></div>
+          <!-- header -->
+          <div class="content-header">
+            <h2>Notifications</h2>
+          </div>
+          <div class="content-body">
+            <div class="card">
+              <div class="card-header">
+                <h3>lorem ipsum</h3>
+              </div>
+              <div class="card-content">
+                <table class="table table-striped custom-table">
+                  <tbody class="notfictions-list">
+                    <tr class="unread-notification">
+                      <td>
+                        <img class="notification-icon" src="images/notification-flat.png" alt="">
+                      </td>
+                      <td>name</td>
+                      <td>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</td>
+                      <td>12-2-2019</td>
+                    </tr>
+                    <tr>
+                      <td><img class="notification-icon" src="images/notification-flat.png" alt=""></td>
+                      <td>name</td>
+                      <td>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</td>
+                      <td>12-2-2019</td>
+                    </tr>
+                    <tr>
+                      <td><img class="notification-icon" src="images/notification-flat.png" alt=""></td>
+                      <td>name</td>
+                      <td>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</td>
+                      <td>12-2-2019</td>
+                    </tr>
+                    <tr class="unread-notification">
+                      <td><img class="notification-icon" src="images/notification-flat.png" alt=""></td>
+                      <td>name</td>
+                      <td>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</td>
+                      <td>12-2-2019</td>
+                    </tr>
+                    <tr>
+                      <td><img class="notification-icon" src="images/notification-flat.png" alt=""></td>
+                      <td>name</td>
+                      <td>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</td>
+                      <td>12-2-2019</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <!-- wraper ends here -->
+
+    <!-- approve class modal -->
+    <div id="classApprove" class="modal fade modal-middle" role="dialog" data-backdrop="static">
+      <div class="modal-dialog modal-dialog-centered modal-sm">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Approve class</h4>
+          </div>
+          <div class="modal-body">
+            <h4 class="">Class name</h4>
+            <ul class="list-items">
+              <li class="text-muted">html</li>
+              <li class="text-muted">css</li>
+              <li class="text-muted">bootstrap</li>
+              <li class="text-muted">javascript</li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <div class="clearfix">
+              <button class="btn btn-success pull-left" data-toggle="modal" data-target="#classRate" data-dismiss="modal">Approve</button>            
+              <button id="rejectClass" class="btn btn-danger" data-toggle="modal" data-target="#classReject" data-dismiss="modal">Reject</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- Rejecet class Reason popups -->
+    <div id="classRate" class="modal fade modal-middle" role="dialog">
+      <div class="modal-dialog modal-dialog-centered modal-sm">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Rating</h4>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-12">
+                <label>Rate this class</label>
+                <div class="star-rating">
+                  <span class="fa fa-star-o" data-rating="1"></span>
+                  <span class="fa fa-star-o" data-rating="2"></span>
+                  <span class="fa fa-star-o" data-rating="3"></span>
+                  <span class="fa fa-star-o" data-rating="4"></span>
+                  <span class="fa fa-star-o" data-rating="5"></span>
+                  <input type="hidden" name="whatever1" class="rating-value" value="0">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="clearfix">
+              <button class="btn btn-default pull-left" data-toggle="modal" data-target="#classApprove" data-dismiss="modal">Cancel</button>            
+              <button class="btn btn-success" data-dismiss="modal">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Rejecet class Reason popups -->
+    <div id="classReject" class="modal fade modal-middle" role="dialog">
+      <div class="modal-dialog modal-dialog-centered modal-sm">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Reject class</h4>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div>
+                <label>select a reason</label>
+                <select class="form-control">
+                  <option>reason 1</option>
+                  <option>reason 2</option>
+                  <option>reason 3</option>
+                  <option>reason 4</option>
+                </select>
+                <div class="othr-reason">
+                  <label>others</label>
+                  <textarea class="form-control"></textarea>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <div class="clearfix">
+              <button class="btn btn-default pull-left" data-toggle="modal" data-target="#classApprove" data-dismiss="modal">Cancel</button>            
+              <button class="btn btn-success" data-dismiss="modal">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- js includes -->
+    <!-- jquery library -->
+    <script src='js/jquery-3.3.1.min.js'></script>
+
+    <!-- Latest bootstrap compiled JavaScript -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- custom js  -->
+    <script src='js/main.js'></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        // approve class modal
+        // $("#classApprove").modal('show');
+      });
+    </script>
+  </body>
+</html>

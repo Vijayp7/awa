@@ -1,0 +1,1265 @@
+import React, { Component } from 'react'
+import Services from '../Services/Services';
+import { Link } from 'react-router-dom';
+import QScanner from './QScanner';
+import Popup from './Popup';
+import SuccessPopup from './SuccessPopup';
+import LoadingOverlay from "react-loading-overlay";
+import DarkBackground from './DarkBackground';
+import Header from './Header';
+import Menu from './Menu';
+import Footer from './Footer';
+import QuantityPopup from './QuantityPopup';
+import OtherLocation from './OtherLocation';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+
+
+let token = localStorage.getItem(`earbor-token`);
+let refreshToken = localStorage.getItem(`earbor-refreshToken`);
+let user = JSON.parse(localStorage.getItem(`earbor-userdata`));
+let cartId = localStorage.getItem("ear-cartId");
+let type = localStorage.getItem("ear-type");
+
+
+export class ScanOrders extends Component {
+    constructor(props){
+        super(props);
+    }
+    state = {
+        order_data : {},
+        orderPickedUpLocations : [],
+        scanLocation : null,
+        scanSKU : null,
+        scanQuantity : null,
+        scanTote : null,
+        scanLocation_error : "",
+        scanSKU_error : "",
+        scanQuantity_error : "",
+        scanTote_error : "",
+        open_popup : false,
+        open_success_popup : false,
+        loading : false,
+        open_menu : false,
+        open_quantity_popup : false,
+        serialNumbers : [],
+        current_serialNumber : "",
+        current_itemData : {},
+        qty_index : 0,
+        openLocation : false,
+        sku_id : "",
+        new_selected_location : "",
+        new_location_id : "",
+        new_inventId : "",
+        new_exp_date : "",
+        change_location : false,
+        backbutton : "true",
+        error_sub_msg : "",
+        f_qty : "Enter Quantity",
+        foot_display : "block",
+    }
+
+
+    handleChange = (e) =>{
+        e.preventDefault();
+        const { name, value } = e.target;
+        this.setState({ [name]: value }, () => {
+            console.log(this.state);
+        });
+    }
+
+    componentDidMount = () =>{
+      window.addEventListener('scroll', (e)=>this.handleScroll(e), { passive: true });
+      if(navigator.onLine){
+        this.setState({
+          loading : true
+        })
+          Services.getInstance().pickOrders(token).then((result)=>{
+              console.log(result);
+              if(result){
+                this.setState({
+                  order_data : result.data,
+                  orderPickedUpLocations : result.data.orderPickedUpLocations,
+                  loading : false
+              },()=>{
+                if(result.data.orderPickedUpLocations.length < 1){
+                  localStorage.removeItem("ear-cartId");
+                  localStorage.removeItem("ear-type");
+                  window.open("select-cart","_self");
+                  // document.getElementById("scs").style.display = "block";
+                  // this.setState({
+                  //   backbutton : "false"
+                  // })
+                }
+              })
+              }
+              else{
+                this.setState({
+                  loading : false
+                })
+                localStorage.removeItem("ear-cartId");
+                localStorage.removeItem("ear-type");
+                window.open("select-cart","_self");
+                // document.getElementById("scs").style.display = "block";
+                // this.setState({
+                //   backbutton : "false"
+                // })
+              }
+          })
+      }
+      else{
+        toast("Please check your internet connection");
+      }
+
+      
+    }
+
+    RunningItem = (item, type) =>{
+      console.log(item)
+      console.log(this.state);
+      this.setState({
+        current_itemData : item
+      })
+      
+      if(this.state.scanLocation == ""){
+        this.setState({
+          scanLocation_error : "not matched"
+        })
+        document.getElementById("l-r").style.display = "block";
+        document.getElementById("l-r").innerHTML = "Enter Location";
+      }
+        else if((this.state.scanLocation == item.location) || (this.state.scanLocation == this.state.new_selected_location)){
+          this.setState({
+            scanLocation_error : "matched"
+          },()=>{
+            document.getElementById("in1").autofocus = false;
+            document.activeElement.blur();
+            document.getElementById("in2").focus();
+            document.getElementById("in2").setAttribute.inputMode = "none"
+            document.getElementById("scan1").style.display = "none";
+            document.getElementById("scan2").style.display = "block";
+            document.getElementById("l-r").style.display = "none";
+          })
+
+        }
+        else if(this.state.scanLocation == null){
+          this.setState({
+            scanLocation_error : "not matched"
+          })
+          document.getElementById("l-r").style.display = "block";
+          document.getElementById("l-r").innerHTML = "Enter Location";
+        }
+
+        else{
+          this.setState({
+            scanLocation_error : "not matched"
+          },()=>{
+            document.getElementById("loc-snr").style.display = "none"
+            document.getElementById("loc-err").style.display = "none"
+            document.getElementById("l-r").style.display = "block";
+            document.getElementById("l-r").innerHTML = "Incorrect Location";
+          })
+        }
+
+        if(this.state.scanSKU != null){
+          if(this.state.scanSKU == "" ){
+            this.setState({
+              scanSKU_error : "not matched"
+            },()=>{
+              document.getElementById("sku-snr").style.display = "none"
+              document.getElementById("sku-err").style.display = "none"
+              document.getElementById("l-r1").style.display = "block";
+            })
+          }
+  
+          else if(this.state.scanSKU == item.sku || this.state.scanSKU == item.skuDescription){
+            this.setState({
+              scanSKU_error : "matched"
+            },()=>{
+              document.getElementById("in2").autofocus = false;
+              document.activeElement.blur();
+              document.getElementById("in3").focus();
+              document.getElementById("in3").setAttribute.inputMode = "none"
+              document.getElementById("scan2").style.display = "none";
+              document.getElementById("scan3").style.display = "block";
+              document.getElementById("l-r1").style.display = "none";
+            })
+          }
+          else if(this.state.scanSKU !== item.sku && this.state.scanSKU !== item.skuDescription){
+            if(item.barcode.length < 1){
+              document.getElementById("sku-snr").style.display = "none"
+              document.getElementById("sku-err").style.display = "none"
+              document.getElementById("l-r1").style.display = "block";
+            }
+            else{
+              for(let i=0; i<item.barcode.length; i++){
+                item.barcode.map(str => {
+                  if(this.state.scanSKU == str){
+                    this.setState({
+                      scanSKU_error : "matched"
+                    },()=>{
+                      document.getElementById("in2").autofocus = false;
+                      document.activeElement.blur();
+                      document.getElementById("in3").focus();
+                      document.getElementById("in3").setAttribute.inputMode = "none"
+                      document.getElementById("scan2").style.display = "none";
+                      document.getElementById("scan3").style.display = "block";
+                      document.getElementById("l-r1").style.display = "none";
+                    })
+                  }
+                  else{
+                    this.setState({
+                      scanSKU_error : "not matched"
+                    },()=>{
+                      document.getElementById("sku-snr").style.display = "none"
+                      document.getElementById("sku-err").style.display = "none"
+                      document.getElementById("l-r1").style.display = "block";
+                    })
+                  }
+                })  
+            }
+            }
+
+          }
+
+          else{
+            this.setState({
+              scanSKU_error : "not matched"
+            },()=>{
+              document.getElementById("sku-snr").style.display = "none"
+              document.getElementById("sku-err").style.display = "none"
+              document.getElementById("l-r1").style.display = "block";
+            })
+          }
+        }
+
+        else if(this.state.scanSKU == ""){
+            this.setState({
+              scanSKU_error : "not matched"
+            })
+            document.getElementById("l-r1").style.display = "block";
+            document.getElementById("l-r1").innerHTML = "Enter SKU";
+          }
+        else if(this.state.scanSKU == null){
+          this.setState({
+            scanSKU_error : "not matched"
+          })
+          document.getElementById("l-r1").style.display = "block";
+        }
+        else{
+            this.setState({
+              scanSKU_error : "not matched"
+            },()=>{
+              document.getElementById("sku-snr").style.display = "none"
+              document.getElementById("sku-err").style.display = "none";
+              document.getElementById("l-r1").style.display = "block";
+            })
+          }
+
+
+
+        if(this.state.scanQuantity == item.quantity){
+          this.setState({
+            scanQuantity_error : "matched"
+          },()=>{
+            document.getElementById("in3").autofocus = false;
+            // document.activeElement.blur();
+            document.getElementById("in4").focus();
+            document.getElementById("in4").setAttribute.inputMode = "none"
+            document.getElementById("scan3").style.display = "none";
+            document.getElementById("scan4").style.display = "block";
+            document.getElementById("l-r2").style.display = "none";
+          })
+        }
+        else if(this.state.scanQuantity == "") {
+          this.setState({
+            scanQuantity_error : "not matched"
+          })
+          document.getElementById("l-r2").style.display = "block";
+          document.getElementById("l-r2").innerHTML = "Enter Quantity";
+
+        }
+        else if(this.state.scanQuantity == null){
+          this.setState({
+            scanQuantity_error : "not matched"
+          })
+        }
+        else{
+          this.setState({
+            scanQuantity_error : "not matched"
+          },()=>{
+            document.getElementById("qty-snr").style.display = "none"
+            document.getElementById("qty-err").style.display = "none"
+            document.getElementById("l-r2").style.display = "block";
+          })
+        }
+
+        if(this.state.scanLocation_error == 'matched' && this.state.scanSKU_error == 'matched' && this.state.scanQuantity_error == 'not matched'){
+          if(this.state.scanQuantity != null || this.state.scanQuantity != ""){
+            if(item.isSerialNo == true && item.quantity > 0){
+              this.setState({
+                open_quantity_popup : true,
+              },()=>{
+                setTimeout(function(){
+                  var getValue= document.getElementById("qtyyy");
+                  getValue.focus();
+                }, 200);
+
+              })
+  
+            }
+            else{
+                this.setState({
+                  open_quantity_popup : false,
+                })
+            }
+          }
+        }
+
+        // if(type == "scan3"){
+        //   if(item.isSerialNo == false && item.quantity > 0){
+        //     this.setState({
+        //       open_quantity_popup : true,
+        //     },()=>{
+        //       var getValue= document.getElementById("qtyyy");
+        //       getValue.focus();
+        //     })
+
+        //   }
+        //   else{
+        //       this.setState({
+        //         open_quantity_popup : false,
+        //       })
+        //   }
+        // }
+
+
+        if(this.state.scanTote == item.tote){
+          this.setState({
+            scanTote_error : "matched"
+          },()=>{
+            document.getElementById("l-r3").style.display = "none";
+            this.Verify_All_ScannedData(item);
+          })
+        }
+        else if(this.state.scanTote == ""){
+          this.setState({
+            scanTote_error : "not matched"
+          })
+          document.getElementById("l-r3").style.display = "block";
+        }
+        else if(this.state.scanTote == null){
+          this.setState({
+            scanTote_error : "not matched"
+          })
+        }
+        else{
+          this.setState({
+            scanTote_error : "not matched"
+          },()=>{
+            document.getElementById("tote-snr").style.display = "none"
+            document.getElementById("tote-err").style.display = "none";
+            document.getElementById("l-r3").style.display = "block";
+          })
+        }
+
+    }
+
+
+    Verify_All_ScannedData = (item) =>{
+        if((this.state.scanLocation == item.location) || (this.state.scanLocation == this.state.new_selected_location)){
+          if(this.state.scanSKU == item.sku || this.state.scanSKU == item.skuDescription){
+            if(this.state.scanQuantity == item.quantity){
+              if(this.state.scanTote == item.tote){
+                this.setState({
+                  scanLocation_error : "matched",
+                  scanSKU_error : "matched",
+                  scanQuantity_error : "matched",
+                  scanTote_error : "matched",
+                  loading : true
+                })
+                if(item.isSerialNo == true){
+                  if(this.state.change_location == true){
+                    const obj ={
+                      orderItemHistoryId: item.orderItemHistoryId,
+                      jobId : item.jobId,
+                      locationId : this.state.new_location_id,
+                      locaionId : this.state.new_location_id,
+                      location : this.state.scanLocation,
+                      orderId : item.orderId,
+                      manifestId : item.manifestId,
+                      quantity : this.state.scanQuantity,
+                      sku : this.state.scanSKU,
+                      skuDescription: item.skuDescription,
+                      skuId: item.skuId,
+                      isSerialNo: item.isSerialNo,
+                      tote: this.state.scanTote,
+                      cartId: item.cartId,
+                      cartName: item.cartName,
+                      orderItemId: item.orderItemId,
+                      lotCode: item.lotCode,
+                      lotExpDate: this.state.new_exp_date,
+                      recQty: item.recQty,
+                      clientName: item.clientName,
+                      barcode: item.barcode,
+                      skuinventorylocationId: this.state.new_inventId,
+                      locationchange: this.state.change_location,
+                      orderJobId: item.orderJobId,
+                      serialNumbers: this.state.serialNumbers
+                  }
+                  console.log(obj)
+                  Services.getInstance().savePickOrders(token, obj).then((result)=>{
+                    console.log(result);
+                    if(result.data == true){
+                    this.setState({
+                      open_success_popup : true,
+                      loading : false
+                    })            
+                    }
+                    else{
+                      // alert("Unable to submit the data due to server issue");
+                      this.setState({
+                        loading : false,
+                        // error_sub_msg : "Unable to submit the data due to server issue. Please try again"
+                      })
+                    }
+                  })
+
+                  }
+                  else{
+                      const obj ={
+                        orderItemHistoryId: item.orderItemHistoryId,
+                        jobId : item.jobId,
+                        locationId : item.locationId,
+                        locaionId : item.locaionId,
+                        location : this.state.scanLocation,
+                        orderId : item.orderId,
+                        manifestId : item.manifestId,
+                        quantity : this.state.scanQuantity,
+                        sku : this.state.scanSKU,
+                        skuDescription: item.skuDescription,
+                        skuId: item.skuId,
+                        isSerialNo: item.isSerialNo,
+                        tote: this.state.scanTote,
+                        cartId: item.cartId,
+                        cartName: item.cartName,
+                        orderItemId: item.orderItemId,
+                        lotCode: item.lotCode,
+                        lotExpDate: item.lotExpDate,
+                        recQty: item.recQty,
+                        clientName: item.clientName,
+                        barcode: item.barcode,
+                        skuinventorylocationId: item.skuinventorylocationId,
+                        locationchange: this.state.change_location,
+                        orderJobId: item.orderJobId,
+                        serialNumbers: this.state.serialNumbers
+                    }
+                    console.log(obj)
+                    Services.getInstance().savePickOrders(token, obj).then((result)=>{
+                      console.log(result);
+                      if(result.data == true){
+                      this.setState({
+                        open_success_popup : true,
+                        loading : false
+                      })
+              
+                      }
+                      else{
+                        // alert("Unable to submit the data due to server issue");
+                        this.setState({
+                          loading : false,
+                          // error_sub_msg : "Unable to submit the data due to server issue. Please try again"
+                        })
+                      }
+                    })
+                  }
+
+                }
+                else{
+                  if(this.state.change_location == true){
+                    const obj ={
+                      orderItemHistoryId: item.orderItemHistoryId,
+                      jobId : item.jobId,
+                      locationId : this.state.new_location_id,
+                      locaionId : this.state.new_location_id,
+                      location : this.state.scanLocation,
+                      orderId : item.orderId,
+                      manifestId : item.manifestId,
+                      quantity : this.state.scanQuantity,
+                      sku : this.state.scanSKU,
+                      skuDescription: item.skuDescription,
+                      skuId: item.skuId,
+                      isSerialNo: item.isSerialNo,
+                      tote: this.state.scanTote,
+                      cartId: item.cartId,
+                      cartName: item.cartName,
+                      orderItemId: item.orderItemId,
+                      lotCode: item.lotCode,
+                      lotExpDate: this.state.new_exp_date,
+                      recQty: item.recQty,
+                      clientName: item.clientName,
+                      barcode: item.barcode,
+                      skuinventorylocationId: this.state.new_inventId,
+                      locationchange: this.state.change_location,
+                      orderJobId: item.orderJobId,
+                      serialNumbers: item.serialNumbers
+                  }
+                  console.log(obj);
+                  Services.getInstance().savePickOrders(token, obj).then((result)=>{
+                    console.log(result);
+                    if(result.data == true){
+                    this.setState({
+                      open_success_popup : true,
+                      loading : false
+                    })
+                    }
+                    else{
+                      // alert("Unable to submit the data due to server issue");
+                      this.setState({
+                        loading : false,
+                        // error_sub_msg : "Unable to submit the data due to server issue. Please try again"
+                      })
+                    }
+                  })
+
+                  }
+                  else{
+                    const obj ={
+                        orderItemHistoryId: item.orderItemHistoryId,
+                        jobId : item.jobId,
+                        locationId : item.locationId,
+                        locaionId : item.locaionId,
+                        location : this.state.scanLocation,
+                        orderId : item.orderId,
+                        manifestId : item.manifestId,
+                        quantity : this.state.scanQuantity,
+                        sku : this.state.scanSKU,
+                        skuDescription: item.skuDescription,
+                        skuId: item.skuId,
+                        isSerialNo: item.isSerialNo,
+                        tote: this.state.scanTote,
+                        cartId: item.cartId,
+                        cartName: item.cartName,
+                        orderItemId: item.orderItemId,
+                        lotCode: item.lotCode,
+                        lotExpDate: item.lotExpDate,
+                        recQty: item.recQty,
+                        clientName: item.clientName,
+                        barcode: item.barcode,
+                        skuinventorylocationId: item.skuinventorylocationId,
+                        locationchange: this.state.change_location,
+                        orderJobId: item.orderJobId,
+                        serialNumbers: item.serialNumbers
+                    }
+                    console.log(obj)
+                    Services.getInstance().savePickOrders(token, obj).then((result)=>{
+                      console.log(result);
+                      if(result.data == true){
+                      this.setState({
+                        open_success_popup : true,
+                        loading : false
+                      })
+              
+                      }
+                      else{
+                        // alert("Unable to submit the data due to server issue");
+                        this.setState({
+                          loading : false,
+                          // error_sub_msg : "Unable to submit the data due to server issue. Please try again"
+                        })
+                      }
+                    })
+                  }
+                  }
+              }
+              else{
+                console.log("Tote is missing");
+              }
+            }
+            else{
+              console.log("Quantity is missing");
+            }
+          }
+          else if(this.state.scanSKU !== item.sku && this.state.scanSKU !== item.skuDescription){
+                item.barcode.map(str => {
+                  if(this.state.scanSKU == str){
+                    if(this.state.scanQuantity == item.quantity){
+                      if(this.state.scanTote == item.tote){
+                        console.log("All Matched");
+                        this.setState({
+                          scanLocation_error : "matched",
+                          scanSKU_error : "matched",
+                          scanQuantity_error : "matched",
+                          scanTote_error : "matched",
+                          loading : true
+                        })
+
+
+                        if(item.isSerialNo == true){
+                          if(this.state.change_location == true){
+                            const obj ={
+                              orderItemHistoryId: item.orderItemHistoryId,
+                              jobId : item.jobId,
+                              locationId : this.state.new_location_id,
+                              locaionId : this.state.new_location_id,
+                              location : this.state.scanLocation,
+                              orderId : item.orderId,
+                              manifestId : item.manifestId,
+                              quantity : this.state.scanQuantity,
+                              sku : this.state.scanSKU,
+                              skuDescription: item.skuDescription,
+                              skuId: item.skuId,
+                              isSerialNo: item.isSerialNo,
+                              tote: this.state.scanTote,
+                              cartId: item.cartId,
+                              cartName: item.cartName,
+                              orderItemId: item.orderItemId,
+                              lotCode: item.lotCode,
+                              lotExpDate: this.state.new_exp_date,
+                              recQty: item.recQty,
+                              clientName: item.clientName,
+                              barcode: item.barcode,
+                              skuinventorylocationId: this.state.new_inventId,
+                              locationchange: this.state.change_location,
+                              orderJobId: item.orderJobId,
+                              serialNumbers: this.state.serialNumbers
+                          }
+                          console.log(obj)
+                          Services.getInstance().savePickOrders(token, obj).then((result)=>{
+                            console.log(result);
+                            if(result.data == true){
+                            this.setState({
+                              open_success_popup : true,
+                              loading : false
+                            })            
+                            }
+                            else{
+                              // alert("Unable to submit the data due to server issue");
+                              this.setState({
+                                loading : false,
+                                // error_sub_msg : "Unable to submit the data due to server issue. Please try again"
+                              })
+                            }
+                          })
+        
+                          }
+                          else{
+                              const obj ={
+                                orderItemHistoryId: item.orderItemHistoryId,
+                                jobId : item.jobId,
+                                locationId : item.locationId,
+                                locaionId : item.locaionId,
+                                location : this.state.scanLocation,
+                                orderId : item.orderId,
+                                manifestId : item.manifestId,
+                                quantity : this.state.scanQuantity,
+                                sku : this.state.scanSKU,
+                                skuDescription: item.skuDescription,
+                                skuId: item.skuId,
+                                isSerialNo: item.isSerialNo,
+                                tote: this.state.scanTote,
+                                cartId: item.cartId,
+                                cartName: item.cartName,
+                                orderItemId: item.orderItemId,
+                                lotCode: item.lotCode,
+                                lotExpDate: item.lotExpDate,
+                                recQty: item.recQty,
+                                clientName: item.clientName,
+                                barcode: item.barcode,
+                                skuinventorylocationId: item.skuinventorylocationId,
+                                locationchange: this.state.change_location,
+                                orderJobId: item.orderJobId,
+                                serialNumbers: this.state.serialNumbers
+                            }
+                            console.log(obj)
+                            Services.getInstance().savePickOrders(token, obj).then((result)=>{
+                              console.log(result);
+                              if(result.data == true){
+                              this.setState({
+                                open_success_popup : true,
+                                loading : false
+                              })
+                      
+                              }
+                              else{
+                                // alert("Unable to submit the data due to server issue");
+                                this.setState({
+                                  loading : false,
+                                  // error_sub_msg : "Unable to submit the data due to server issue. Please try again"
+                                })
+                              }
+                            })
+                          }
+        
+                        }
+                        else{
+                          if(this.state.change_location == true){
+                            const obj ={
+                              orderItemHistoryId: item.orderItemHistoryId,
+                              jobId : item.jobId,
+                              locationId : this.state.new_location_id,
+                              locaionId : this.state.new_location_id,
+                              location : this.state.scanLocation,
+                              orderId : item.orderId,
+                              manifestId : item.manifestId,
+                              quantity : this.state.scanQuantity,
+                              sku : this.state.scanSKU,
+                              skuDescription: item.skuDescription,
+                              skuId: item.skuId,
+                              isSerialNo: item.isSerialNo,
+                              tote: this.state.scanTote,
+                              cartId: item.cartId,
+                              cartName: item.cartName,
+                              orderItemId: item.orderItemId,
+                              lotCode: item.lotCode,
+                              lotExpDate: this.state.new_exp_date,
+                              recQty: item.recQty,
+                              clientName: item.clientName,
+                              barcode: item.barcode,
+                              skuinventorylocationId: this.state.new_inventId,
+                              locationchange: this.state.change_location,
+                              orderJobId: item.orderJobId,
+                              serialNumbers: item.serialNumbers
+                          }
+                          console.log(obj);
+                          Services.getInstance().savePickOrders(token, obj).then((result)=>{
+                            console.log(result);
+                            if(result.data == true){
+                            this.setState({
+                              open_success_popup : true,
+                              loading : false
+                            })
+                    
+                            }
+                            else{
+                              // alert("Unable to submit the data due to server issue");
+                              this.setState({
+                                loading : false,
+                                // error_sub_msg : "Unable to submit the data due to server issue. Please try again"
+                              })
+                            }
+                          })
+        
+                          }
+                          else{
+                            const obj ={
+                                orderItemHistoryId: item.orderItemHistoryId,
+                                jobId : item.jobId,
+                                locationId : item.locationId,
+                                locaionId : item.locaionId,
+                                location : this.state.scanLocation,
+                                orderId : item.orderId,
+                                manifestId : item.manifestId,
+                                quantity : this.state.scanQuantity,
+                                sku : this.state.scanSKU,
+                                skuDescription: item.skuDescription,
+                                skuId: item.skuId,
+                                isSerialNo: item.isSerialNo,
+                                tote: this.state.scanTote,
+                                cartId: item.cartId,
+                                cartName: item.cartName,
+                                orderItemId: item.orderItemId,
+                                lotCode: item.lotCode,
+                                lotExpDate: item.lotExpDate,
+                                recQty: item.recQty,
+                                clientName: item.clientName,
+                                barcode: item.barcode,
+                                skuinventorylocationId: item.skuinventorylocationId,
+                                locationchange: this.state.change_location,
+                                orderJobId: item.orderJobId,
+                                serialNumbers: item.serialNumbers
+                            }
+                            console.log(obj)
+                            Services.getInstance().savePickOrders(token, obj).then((result)=>{
+                              console.log(result);
+                              if(result.data == true){
+                              this.setState({
+                                open_success_popup : true,
+                                loading : false
+                              })
+                      
+                              }
+                              else{
+                                // alert("Unable to submit the data due to server issue");
+                                this.setState({
+                                  loading : false,
+                                  // error_sub_msg : "Unable to submit the data due to server issue. Please try again"
+                                })
+                              }
+                            })
+                          }
+                          }
+
+                        
+
+                        // const obj ={
+                        //     orderItemHistoryId: item.orderItemHistoryId,
+                        //     jobId : item.jobId,
+                        //     locationId : item.locationId,
+                        //     locaionId : item.locaionId,
+                        //     location : this.state.scanLocation,
+                        //     orderId : item.orderId,
+                        //     manifestId : item.manifestId,
+                        //     quantity : this.state.scanQuantity,
+                        //     sku : this.state.scanSKU,
+                        //     skuDescription: item.skuDescription,
+                        //     skuId: item.skuId,
+                        //     isSerialNo: item.isSerialNo,
+                        //     tote: this.state.scanTote,
+                        //     cartId: item.cartId,
+                        //     cartName: item.cartName,
+                        //     orderItemId: item.orderItemId,
+                        //     lotCode: item.lotCode,
+                        //     lotExpDate: item.lotExpDate,
+                        //     recQty: item.recQty,
+                        //     clientName: item.clientName,
+                        //     barcode: item.barcode,
+                        //     skuinventorylocationId: item.skuinventorylocationId,
+                        //     locationchange: this.state.change_location,
+                        //     orderJobId: item.orderJobId,
+                        //     serialNumbers: item.serialNumbers
+
+                            
+                        // }
+                        // console.log(obj)
+                        // Services.getInstance().savePickOrders(token, obj).then((result)=>{
+                        //   console.log(result);
+                        //   if(result.data == true){
+                        //     this.setState({
+                        //       open_success_popup : true,
+                        //       loading : false
+                        //     })
+                  
+                        //   }
+                        //   else{
+                        //     this.setState({
+                        //       loading : false
+                        //     })
+                        //   }
+                        // })
+                      }
+                      else{
+                        console.log("Tote is missing");
+                      }
+                    }
+                    else{
+                      console.log("Quantity is missing");
+                    }
+                  }
+                  else{
+                    console.log("SKU is missing");
+                  }
+    
+                })  
+            
+          }
+        }
+        else{
+          console.log("Location is missing");
+        }
+    }
+
+
+
+
+    BypassOrder = (item) =>{
+      console.log(item);
+      this.setState({
+        loading : true
+      })
+      Services.getInstance().savePickOrders(token, item).then((result)=>{
+        console.log(result);
+        if(result.data == true){
+          this.setState({
+            open_success_popup : true,
+            loading : false
+          })
+
+        }
+      })
+    }
+
+
+    openPopup =() =>{
+      this.setState({
+        open_popup : true
+      })
+    }
+
+
+    closePopup = () =>{
+      this.setState({
+        open_popup : false,
+        open_success_popup : false
+      })
+    }
+
+
+    popupOK = () =>{
+      window.location.reload();
+    }
+
+    popupOK2 = () =>{
+      window.location.reload();
+    }
+
+    openMenu = () =>{
+      this.setState({
+          open_menu : true,
+      })
+    }
+
+    closeMenu = () =>{
+        this.setState({
+            open_menu : false,
+        })
+    }
+
+    goBack = () =>{
+      window.open("/home", "_self");
+      // this.props.history.push({
+      //   pathname : "/home",
+      //   selected_cart_type : cartId,
+      //   type : type
+
+      // })
+    }
+
+    onRefresh = () =>{
+      window.location.reload();
+      // this.setState({
+      //   loading : true
+      // })
+      //   Services.getInstance().pickOrders(token).then((result)=>{
+      //       console.log(result);
+      //       this.setState({
+      //           order_data : result.data,
+      //           orderPickedUpLocations : result.data.orderPickedUpLocations,
+      //           loading : false
+      //       })
+      //   })
+    }
+
+
+    closeQuantityPopup = () =>{
+      setTimeout(function(){
+        var getValue= document.getElementById("in3");
+        getValue.focus();
+      }, 200);
+      this.setState({
+        open_quantity_popup : false
+      })
+    }
+
+    QuantitySerialNumbers = () =>{
+      if(this.state.serialNumbers.length < this.state.current_itemData.quantity){
+        this.setState({
+          qty_index : this.state.qty_index + 1,
+          current_serialNumber : "",
+          scanQuantity_error : "not matched",
+        })
+        this.state.serialNumbers.push(this.state.current_serialNumber); 
+      }
+      else{
+        if(this.state.serialNumbers.length == this.state.current_itemData.quantity){
+            this.setState({
+              open_quantity_popup : false,
+              scanQuantity_error : "matched",
+              scanQuantity : this.state.serialNumbers.length,
+              f_qty : this.state.serialNumbers.length,
+            },()=>{
+              // document.activeElement.blur();
+              document.getElementById("in4").focus();
+              document.getElementById("scan3").style.display = "none";
+              document.getElementById("scan4").style.display = "block";
+            })
+          
+        }
+        else if(this.state.serialNumbers.length > this.state.current_itemData.quantity){
+            this.setState({
+              open_quantity_popup : false,
+              scanQuantity_error : "matched",
+              scanQuantity : this.state.serialNumbers.length
+            },()=>{
+              // document.activeElement.blur();
+              document.getElementById("in4").focus();
+              document.getElementById("scan3").style.display = "none";
+              document.getElementById("scan4").style.display = "block";
+            })
+          
+        }
+      }
+      console.log(this.state.serialNumbers)
+    }
+
+
+
+    openLocation = (x) =>{
+      this.setState({
+        openLocation : true,
+        sku_id : x,
+      })
+    }
+
+    closeOtherLocation = () =>{
+      this.setState({
+        openLocation : false,
+      })
+    }
+
+
+    Selected_location = (location, id, inventId, expdate) =>{
+      this.setState({
+        new_selected_location : location,
+        new_location_id : id,
+        new_inventId : inventId,
+        new_exp_date : expdate,
+        openLocation : false,
+        change_location : true,
+      })
+    }
+
+
+    openSelectService = () =>{
+      this.props.history.push({
+        pathname : "/select-service"
+      })
+    }
+    openOrderPicking = () =>{
+      window.open("/select-cart", "_self");
+    }
+
+
+    moveToCart = () =>{
+      localStorage.removeItem("ear-cartId");
+      localStorage.removeItem("ear-type");
+      this.props.history.push({
+        pathname : "/select-cart"
+      })
+    }
+
+
+
+    Logout = () =>{
+      localStorage.removeItem("earbor-userdata");
+      localStorage.removeItem("earbor-token");
+      localStorage.removeItem("earbor-refreshToken");
+      this.props.history.push({
+        pathname : "/login"
+      })
+    }
+
+
+    handleScroll = (event) =>{
+      this.setState({
+          pageOffSet_current : this.state.pageOffSet,
+      },()=>{
+          this.setState({
+              pageOffSet : window.pageYOffset
+          },()=>{
+              if(this.state.pageOffSet - this.state.pageOffSet_current > 0){
+                  document.getElementById("footer").style.display = "none"
+                  // setTimeout(function() {
+                  //   document.getElementById("footer").style.display = "block"
+                  // }, 1000);
+              }
+              else{
+                  document.getElementById("footer").style.display = "block"
+              }
+          })
+          
+      })
+    }
+
+
+
+
+  render() {
+    return (
+        <div id="wrapper" onScroll={this.onScroll}>
+          <div className='f-m'>
+        <div class="main-page">
+
+        <Header
+          openMenu = {this.openMenu}
+          backbutton = {this.state.backbutton}
+          onRefresh = {this.onRefresh}
+          goBack = {this.goBack}
+        />
+
+
+         {/* <div class="assigned-hd">
+           <div class="assigned-hd-list">
+           <Link to="/select-cart">
+             <div class="assigned-hd-item">
+               <i class="fa-solid fa-chevron-left"></i>
+             </div>
+             </Link>
+             <div class="assigned-hd-item">
+                 <h4>Assigned Job</h4>
+             </div>
+             <div class="assigned-hd-item" onClick={()=>{window.location.reload()}}>
+               <i class="fa-solid fa-arrow-rotate-left"></i>
+             </div>
+           </div>  
+           <div class="steps-list">
+             <div class="steps-item active">
+             </div>
+             <div class="steps-item active">
+             </div>
+           </div>      
+         </div> */}
+         <div class="order-main">
+           {/* <h4>Enter Your Order Details</h4> */}
+           <div>
+           {/* <video id="video" style={{ width: '100%', height: '220px'}} poster="images/scanner-icon.png"/> */}
+           </div>
+            
+            <DarkBackground disappear={this.state.loading}>
+              <LoadingOverlay
+                active={true}
+                spinner={true}
+                text="Please Wait..."
+              >
+              </LoadingOverlay>
+            </DarkBackground>
+
+
+
+            <QScanner 
+                 slices = {this.state.orderPickedUpLocations}
+                 handleChange = {this.handleChange}
+                 Verify_All_ScannedData = {this.Verify_All_ScannedData}
+                 RunningItem = {this.RunningItem}
+                 scanLocation_error = {this.state.scanLocation_error}
+                 scanSKU_error = {this.state.scanSKU_error}
+                 scanQuantity_error = {this.state.scanQuantity_error}
+                 scanTote_error = {this.state.scanTote_error}
+                 BypassOrder = {this.BypassOrder}
+                 openPopup = {this.openPopup}
+                 closePopup = {this.closePopup}
+                 openLocation = {this.openLocation}
+                 Selected_location = {this.state.new_selected_location}
+                 error_sub_msg = {this.state.error_sub_msg}
+            />
+
+
+
+
+
+
+
+
+
+
+           {/* <div style={{display : "none"}}>
+            <h4>Thank you</h4>
+            <p>You Have No Pending Orders Yet.</p>
+            <button class="pick-btn" onClick={this.moveToCart}>OK</button>
+             
+           </div> */}
+
+           <div class="assign-main" id="scs" style={{display: "none"}}>
+              <h4>Thank you</h4>
+              <p style={{margin : "0 auto", textAlign : "center"}}>You Have Completed All the SKU's For This Order.</p>
+              <div class="cntnue-btn" onClick={this.moveToCart}>
+                <a >Ok</a>
+              </div>
+              <div class="cart-box">
+                <img src="images/cart-bag2.png" />
+              </div>
+           </div>
+
+
+            {this.state.open_popup ? 
+              <Popup 
+                closePopup = {this.closePopup}
+                popupOK = {this.popupOK}
+              />
+              :
+              ""
+            }
+
+           
+            {this.state.open_success_popup ? 
+              <SuccessPopup
+                closePopup = {this.closePopup}
+                popupOK2 = {this.popupOK2}
+              />
+              :
+              ""
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         </div>
+         {/* <div class="assign-cntnue">
+           <div class="cntnue-btn order-pg" onClick={this.openOtherLocation}>
+             <a>Other Location</a>
+           </div>
+           <div class="cntnue-btn ordr" >
+             <a>Continue Job</a>
+           </div>
+         </div> */}
+        </div>
+    
+
+        
+        </div>
+        <div id='footer' style={{display : "block"}}>
+          <Footer 
+            service = "scan-orders"
+          />
+        </div>
+
+        {this.state.open_menu ? 
+            <Menu 
+                closeMenu = {this.closeMenu}
+                openSelectService = {this.openSelectService}
+                openOrderPicking = {this.openOrderPicking}
+                Logout = {this.Logout}
+            />
+            :
+            ""}
+
+
+            {this.state.open_quantity_popup ?
+              <QuantityPopup 
+                closeQuantityPopup = {this.closeQuantityPopup}
+                QuantitySerialNumbers = {this.QuantitySerialNumbers}
+                handleChange = {this.handleChange}
+                current_itemData = {this.state.current_itemData}
+                qty_index = {this.state.qty_index}
+              /> 
+             : ""}
+
+
+
+{this.state.openLocation ? 
+            <OtherLocation
+                closeOtherLocation = {this.closeOtherLocation}
+                sku_id = {this.state.sku_id}
+                Selected_location = {this.Selected_location}
+                
+            /> 
+        : ""}
+           <ToastContainer />
+
+       </div>
+    )
+  }
+}
+
+export default ScanOrders

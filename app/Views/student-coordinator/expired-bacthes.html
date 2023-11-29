@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Website Name</title>
+    <meta charset="utf-8"> 
+    <base href="../">
+   
+    <!-- CSS -->
+    <!-- favicon -->
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+    <!-- components css -->
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+    <!-- custom css stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <!-- responsive css stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+   
+  </head>
+  <body>
+    <div id="wrapper">
+      <!-- header -->
+      <header>
+        <nav class="navbar">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar1">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar1">
+              <form class="navbar-form navbar-left" role="search">
+                <button type="submit" class="btn btn-link"><i class="glyphicon glyphicon-search"></i></button>
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Search">
+                </div>
+              </form>
+              <ul class="ht-right">
+                <!-- notifications -->
+                <li class="dropdown menu-parent">
+                  <a class="btn btn-link dropdown-toggle noti-alert" type="button" id="notifictions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <i class="fa fa-bell-o" aria-hidden="true"></i>
+                    <!-- alert -->
+                    <small></small>
+                  </a>
+                  <ul class="dropdown-menu custom-menu" aria-labelledby="notifictions">
+                    <!--menu header -->
+                    <li class="custom-menu-header">Notifications</li>
+                    <!--menu body -->
+                    <li class="scrollable-container">
+                      <!-- notification -->
+                      <a href="#" class="notification-content unread">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content unread">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <!--menu fooster -->
+                    <li class="custom-menu-footer">
+                      <a href="notifications.html">See all notifications</a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- messages -->
+                <li class="dropdown menu-parent">
+                  <a class="btn btn-link dropdown-toggle" type="button" id="messages" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <!-- alert -->
+                    <small></small>
+                  </a>
+                  <ul class="dropdown-menu custom-menu" aria-labelledby="notifictions">
+                    <!--menu header -->
+                    <li class="custom-menu-header">messages</li>
+                    <!--menu body -->
+                    <li class="scrollable-container">
+                      <!-- notification -->
+                      <a href="#" class="notification-content unread">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content unread">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <!--menu fooster -->
+                    <li class="custom-menu-footer">
+                      <a href="inbox.html">See all messages</a>
+                    </li>
+                  </ul>
+                </li>
+                
+                <!-- profile -->
+                <li class="dropdown menu-parent">
+                  <a href="javascript:void(0)" class="btn btn-link dropdown-toggle" type="button" id="profile-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <span class="avatar"><img src="images/avatar.png" alt=""></span>
+                  </a>
+                  <!-- dropdown menu -->
+                  <ul class="dropdown-menu profile-menu" aria-labelledby="profile-menu">
+                    <li>
+                      <a href="javascript:void(0)">
+                        <span class="avatar">
+                          <img src="images/avatar.png" alt="">
+                        </span>
+                        <span>Jhon Deo</span>
+                      </a>
+                    </li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="profile-view.html"><i class="fa fa-user" aria-hidden="true"></i>view profile</a></li>
+                    <li><a href="inbox.html"><i class="fa fa-envelope" aria-hidden="true"></i>My inbox</a></li>
+                    <li><a href="pracicles-list.html"><i class="fa fa-tasks" aria-hidden="true"></i>my tasks</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i>logout</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- main navigation starts-->
+      <div class="header-nav">
+        <nav class="navbar bg-6" id="sticky-nav">
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li>
+                <a href="student-coordinator/tasks.html">my tasks</a>
+              </li>
+              <li class="dropdown menu-parent">
+                <a href="javascript:void(0)">unassigned students</a>
+                <ul class="dropdown-menu dropdown-menu-right custom-menu">
+                  <li>
+                    <a href="student-coordinator/new-students.html" class="text-capitalize notification-content">new students</a>
+                  </li>
+                  <li>
+                  <a href="student-coordinator/old-students.html" class="text-capitalize notification-content">old studnets</a>
+                </li>
+                </ul>
+              </li>
+              <li class="active dropdown menu-parent">
+                <a href="javascript:void(0)">Batches</a>
+                <ul class="dropdown-menu dropdown-menu-right custom-menu">
+                  <li>
+                    <a href="student-coordinator/batch-list.html" class="text-capitalize notification-content">ongoing bacthes</a>
+                  </li>
+                  <li>
+                    <a href="student-coordinator/unassigned-bacthes.html" class="text-capitalize notification-content">unassigned bacthes</a>
+                  </li>
+                  <li>
+                    <a href="student-coordinator/expired-bacthes.html" class="text-capitalize notification-content">expired bacthes</a>
+                  </li>
+                </li>
+                </ul>
+              </li>
+              <li>
+                <a href="student-coordinator/sc-students-list.html">students</a>
+              </li>
+              <li>
+                <a href="student-coordinator/student-reviews.html">Student reviews</a>
+              </li>
+              <li>
+                <a href="student-coordinator/sc-faculty-list.html">faculties</a>
+              </li>
+              <li>
+                <a href="student-coordinator/weekly-sessions.html">weekly sessions</a>
+              </li>
+              <li>
+                <a href="student-coordinator/pending-topics.html">pending topics</a>
+              </li>
+              <li>
+                <a href="student-coordinator/add-event.html">News / Events</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <!-- main navigation ends here-->
+      <main>
+        <div class="content-wrapper">
+          <div class="content-wrapper-before bg-6"></div>
+          <div class="content-header">
+            <h2 class="text-capitalize">expired bacthes</h2>
+            <div class="header-elements">
+              <a href="student-coordinator/create-batch.html" class="btn btn-default text-capitalize"><i class="glyphicon glyphicon-plus"></i>&nbsp;add new batch</a>
+            </div>
+          </div>
+          <div class="content-body">
+            <!-- filetrs -->
+            <div class="card p-10">
+              <div class="row">
+                <!-- batch search code -->
+                <div class="col-md-2 form-group m-0">
+                  <label class="text-capitalize">search</label>
+                  <input type="search" class="form-control text-capitalize" placeholder="Search by batch name">
+                </div>
+                <!-- sort by category -->
+                <div class="col-md-2 form-group m-0">
+                  <label class="text-capitalize">sort by course</label><br>
+                  <select class="form-control text-capitalize">
+                    <option disabled="" selected="" class="text-capitalize">all</option>
+                    <option class="text-capitalize">web designing</option>
+                    <option class="text-capitalize">web devolpement</option>
+                    <option class="text-capitalize">full stack</option>
+                    <option class="text-capitalize">android</option>
+                  </select>
+                </div>
+
+                <!-- sort by status -->
+                <div class="col-md-2 form-group m-0">
+                  <label class="text-capitalize">sort by status</label><br>
+                  <select class="form-control text-capitalize">
+                    <option class="text-capitalize">ongoing</option>
+                    <option class="text-capitalize">terminated</option>
+                    <option class="text-capitalize">completed</option>
+                    <option class="text-capitalize">paused</option>
+                  </select>
+                </div>
+                
+                <!-- sort by faculty -->
+                <div class="col-md-2 form-group m-0">
+                  <label class="text-capitalize">sort by faculty</label><br>
+                  <select class="form-control text-capitalize">
+                    <option disabled="" selected="" class="text-capitalize">all</option>
+                    <option class="text-capitalize">faculty 1</option>
+                    <option class="text-capitalize">faculty 2</option>
+                    <option class="text-capitalize">faculty 3</option>
+                  </select>
+                </div>
+                <!-- sort by batch type  -->
+                <div class="col-md-2 form-group m-0">
+                  <label class="text-capitalize">sort by batch type</label><br>
+                  <select class="form-control text-capitalize">
+                    <option disabled selected class="text-capitalize">all</option>
+                    <option>Regular</option>
+                    <option>Weekly</option>
+                    <option>Fast track</option>
+                  </select>
+                </div>
+                <!-- sort by batch Time -->
+                <div class="col-md-2 form-group m-0">
+                  <label class="text-capitalize">sort by batch Time </label><br>
+                  <select class="form-control text-capitalize">
+                    <option disabled selected class="text-capitalize">all</option>
+                    <option>10am-11am</option>
+                    <option>11am-12pm</option>
+                    <option>2pm-3pm</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            
+            <!-- main content -->
+            <div>
+              <!-- batch card -->
+              <div class="card  top-bar-green">
+                <div class="card-content stuSummary p-0">
+                  <div class="topbar p-10">
+                    <div class="summary-heading">
+                      <h3 class="text-capitalize">batch name</h3>
+                    </div>
+                    <ul class="studActvStats1" style="width: 100%">
+                      <li>
+                        <b class="text-capitalize">course name</b>
+                        <span class="text-capitalize">web designing</span>
+                      </li>
+                      <li>
+                        <b class="text-capitalize">start date</b>
+                        <span>--</span>
+                      </li>
+                      <li>
+                        <b class="text-capitalize">end date</b>
+                        <span>--</span>
+                      </li>
+                      <li>
+                        <b class="text-capitalize">faculty name</b>
+                        <span class="text-capitalize">--</span>
+                      </li>
+                      <li>
+                        <b class="text-capitalize">no of students</b>
+                        <span>--</span>
+                      </li>
+                      <li>
+                        <b class="text-capitalize">actions</b>
+                        <span class="batch_actions">
+                          <a href="student-coordinator/create-batch.html" class="btn btn-primary">edit</a>
+                          <a href="#" class="btn btn-danger" data-toggle='modal' data-target='#deleteBatchModal'>delete</a>
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- batch card -->
+              <div class="card top-bar-warning">
+                <div class="card-content stuSummary p-0">
+                  <div class="topbar p-10">
+                    <div class="summary-heading">
+                      <h3 class="text-capitalize">batch name</h3>
+                    </div>
+                    <ul class="studActvStats1" style="width: 100%">
+                      <li>
+                        <b class="text-capitalize">course name</b>
+                        <span class="text-capitalize">web development</span>
+                      </li>
+                      <li>
+                        <b class="text-capitalize">start date</b>
+                        <span>--</span>
+                      </li>
+                      <li>
+                        <b class="text-capitalize">end date</b>
+                        <span>--</span>
+                      </li>
+                      <li>
+                        <b class="text-capitalize">faculty name</b>
+                        <span class="text-capitalize">--</span>
+                      </li>
+                      <li>
+                        <b class="text-capitalize">no of students</b>
+                        <span>--</span>
+                      </li>
+                      <li>
+                        <b class="text-capitalize">actions</b>
+                        <span class="batch_actions">
+                          <a href="student-coordinator/create-batch.html" class="btn btn-primary">edit</a>
+                          <a href="#" class="btn btn-danger" data-toggle='modal' data-target='#deleteBatchModal'>delete</a>
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- modal -->
+    <!-- confirmation modal -->
+    <div id="deleteBatchModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-body">
+              <h3 class="text-center text-info">Are you sure to delete the batch</h3>
+          </div>
+          <div class="modal-footer text-center">
+            <button type="submit" class="btn btn-default text-capitalize text-capitalize" data-dismiss="modal">cancel</button>
+            <button type="submit" class="btn btn-danger text-capitalize text-capitalize btn-primary">delete</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- js includes -->
+    <!-- jquery library -->
+    <script src='js/jquery-3.3.1.min.js'></script>
+
+    <!-- Latest bootstrap compiled JavaScript -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

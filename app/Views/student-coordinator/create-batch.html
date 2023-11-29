@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Website Name</title>
+    <meta charset="utf-8"> 
+    <base href="../">
+   
+    <!-- CSS -->
+    <!-- favicon -->
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+    <!-- components css -->
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+    <!-- custom css stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <!-- responsive css stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    
+    <style>
+      .added_modules .customradio{
+        background: transparent;
+      }
+      .skils-column .customradio span{
+        font-size: 15px;
+        color:#6b6f80 !important;
+        text-transform: capitalize;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <!-- header -->
+      <header>
+        <nav class="navbar">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar1">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar1">
+              <form class="navbar-form navbar-left" role="search">
+                <button type="submit" class="btn btn-link"><i class="glyphicon glyphicon-search"></i></button>
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Search">
+                </div>
+              </form>
+              <ul class="ht-right">
+                <!-- notifications -->
+                <li class="dropdown menu-parent">
+                  <a class="btn btn-link dropdown-toggle noti-alert" type="button" id="notifictions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <i class="fa fa-bell-o" aria-hidden="true"></i>
+                    <!-- alert -->
+                    <small></small>
+                  </a>
+                  <ul class="dropdown-menu custom-menu" aria-labelledby="notifictions">
+                    <!--menu header -->
+                    <li class="custom-menu-header">Notifications</li>
+                    <!--menu body -->
+                    <li class="scrollable-container">
+                      <!-- notification -->
+                      <a href="#" class="notification-content unread">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content unread">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <!--menu fooster -->
+                    <li class="custom-menu-footer">
+                      <a href="notifications.html">See all notifications</a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- messages -->
+                <li class="dropdown menu-parent">
+                  <a class="btn btn-link dropdown-toggle" type="button" id="messages" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <!-- alert -->
+                    <small></small>
+                  </a>
+                  <ul class="dropdown-menu custom-menu" aria-labelledby="notifictions">
+                    <!--menu header -->
+                    <li class="custom-menu-header">messages</li>
+                    <!--menu body -->
+                    <li class="scrollable-container">
+                      <!-- notification -->
+                      <a href="#" class="notification-content unread">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content unread">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <!--menu fooster -->
+                    <li class="custom-menu-footer">
+                      <a href="inbox.html">See all messages</a>
+                    </li>
+                  </ul>
+                </li>
+                
+                <!-- profile -->
+                <li class="dropdown menu-parent">
+                  <a href="javascript:void(0)" class="btn btn-link dropdown-toggle" type="button" id="profile-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <span class="avatar"><img src="images/avatar.png" alt=""></span>
+                  </a>
+                  <!-- dropdown menu -->
+                  <ul class="dropdown-menu profile-menu" aria-labelledby="profile-menu">
+                    <li>
+                      <a href="javascript:void(0)">
+                        <span class="avatar">
+                          <img src="images/avatar.png" alt="">
+                        </span>
+                        <span>Jhon Deo</span>
+                      </a>
+                    </li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="profile-view.html"><i class="fa fa-user" aria-hidden="true"></i>view profile</a></li>
+                    <li><a href="inbox.html"><i class="fa fa-envelope" aria-hidden="true"></i>My inbox</a></li>
+                    <li><a href="pracicles-list.html"><i class="fa fa-tasks" aria-hidden="true"></i>my tasks</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i>logout</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- main navigation starts-->
+      <div class="header-nav">
+        <nav class="navbar bg-6" id="sticky-nav">
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li>
+                <a href="student-coordinator/tasks.html">my tasks</a>
+              </li>
+              <li class="dropdown menu-parent">
+                <a href="javascript:void(0)">unassigned students</a>
+                <ul class="dropdown-menu dropdown-menu-right custom-menu">
+                  <li>
+                    <a href="student-coordinator/new-students.html" class="text-capitalize notification-content">new students</a>
+                  </li>
+                  <li>
+                  <a href="student-coordinator/old-students.html" class="text-capitalize notification-content">old studnets</a>
+                </li>
+                </ul>
+              </li>
+              <li class="dropdown menu-parent">
+                <a href="javascript:void(0)">Batches</a>
+                <ul class="dropdown-menu dropdown-menu-right custom-menu">
+                  <li>
+                    <a href="student-coordinator/batch-list.html" class="text-capitalize notification-content">ongoing bacthes</a>
+                  </li>
+                  <li>
+                    <a href="student-coordinator/unassigned-bacthes.html" class="text-capitalize notification-content">unassigned bacthes</a>
+                  </li>
+                  <li>
+                    <a href="student-coordinator/expired-bacthes.html" class="text-capitalize notification-content">expired bacthes</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="student-coordinator/sc-students-list.html">students</a>
+              </li>
+              <li>
+                <a href="student-coordinator/student-reviews.html">Student reviews</a>
+              </li>
+              <li>
+                <a href="student-coordinator/sc-faculty-list.html">faculties</a>
+              </li>
+              <li>
+                <a href="student-coordinator/weekly-sessions.html">weekly sessions</a>
+              </li>
+              <li>
+                <a href="student-coordinator/pending-topics.html">pending topics</a>
+              </li>
+              <li>
+                <a href="student-coordinator/add-event.html">News / Events</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <!-- main navigation ends here-->
+      <main>
+        <div class="content-wrapper">
+          <div class="content-wrapper-before bg-6"></div>
+          <div class="content-header">
+            <h2 class="text-capitalize text-center">Add batch</h2>
+          </div>
+          <div class="content-body">
+              <div class="card create-batch">
+                <div class="form">
+                  <div class="row">
+                    <div class="col-md-12 form-group">
+                      <label class="text-capitalize">select cource</label>
+                      <select class="form-control text-capitalize">
+                        <option class="text-capitalize" disabled selected>select cource</option>
+                        <option class="text-capitalize">web design</option>
+                        <option class="text-capitalize">web development</option>
+                        <option class="text-capitalize">full stack development</option>
+                        <option class="text-capitalize">andriod</option>
+                      </select>
+                    </div>
+                    <div class="col-md-12 form-group">
+                      <label class="text-capitalize">batch starts</label>
+                      <div class="input-group">
+                        <span class="input-group-addon text-capitalize">from</span>
+                        <input type="date" class="form-control">
+                        <span class="input-group-addon text-capitalize">to</span>
+                        <input type="text" class="form-control" readonly placeholder="--">
+                      </div>
+                    </div>
+                    <div class="col-md-12 form-group">
+                      <label class="text-capitalize">batch time</label>
+                      <div class="input-group">
+                        <span class="input-group-addon text-capitalize">from</span>
+                        <input type="time" class="form-control">
+                        <span class="input-group-addon text-capitalize">to</span>
+                        <input type="time" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-md-12 form-group">
+                      <label class="text-capitalize">batch type</label>
+                      <select class="form-control text-capitalize">
+                        <option class="text-capitalize" disabled="" selected="">select batch type</option>
+                        <option class="text-capitalize">Regular</option>
+                        <option class="text-capitalize">only saturday</option>
+                        <option class="text-capitalize">only sunday</option>
+                        <option class="text-capitalize">saturdays & sundays</option>
+                      </select>
+                    </div>
+                    <div class="col-md-12 form-group">
+                      <label class="text-capitalize">modules</label>
+                      <input type="text" class="form-control" list="modulesList" name="modulesLists" placeholder="Enter module name">
+                      <datalist id="modulesList">
+                        <option value="module 1">
+                        <option value="module 2">
+                        <option value="module 3">
+                        <option value="module 4">
+                      </datalist>
+                      <div class="added_modules skils-column" style="margin-top: 15px;">
+                        <div class="table-responsive">
+                          <table class="table">
+                            <thead>
+                              <tr>
+                                <th>
+                                  <div class="customradio">
+                                    <input type="checkbox" name="selectComapny">
+                                    <span class="text-uppercase">All modules</span>
+                                  </div>
+                                </th>
+                                <th>Faculty</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <div class="customradio">
+                                    <input type="checkbox" name="selectComapny">
+                                    <span class="text-uppercase">module 1</span>
+                                  </div>
+                                </td>
+                                <td>---</td>
+                                <td class="text-right">
+                                  <button class="btn btn-sm btn-danger">Remove</button>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <div class="customradio">
+                                    <input type="checkbox" name="selectComapny">
+                                    <span class="text-uppercase">module 2</span>
+                                  </div>
+                                </td>
+                                <td>Pradeep&nbsp;<b class="text-danger" style="cursor: pointer;"><i class="fa fa-close"></i></b></td>
+                                <td class="text-right">
+                                  <button class="btn btn-sm btn-danger">Remove</button>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <div class="customradio">
+                                    <input type="checkbox" name="selectComapny">
+                                    <span class="text-uppercase">module 3</span>
+                                  </div>
+                                </td>
+                                <td>---</td>
+                                <td class="text-right">
+                                  <button class="btn btn-sm btn-danger">Remove</button>
+                                </td>
+                              </tr>
+                            </tbody>
+                            <tfoot>
+                              <tr>
+                                <td colspan="3" class="text-right">
+                                  <button class="btn btn-primary" type="button" data-toggle='modal' data-target='#assign_Faculty'>Assign faculty</button>
+                                </td>
+                              </tr>
+                            </tfoot>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="content-body">
+              <div class="card create-batch">
+                <div class="form">
+                  <div class="row">
+                    <div class="col-md-12 form-group">
+                      <label class="text-capitalize">batch catagory</label>
+                      <select class="form-control text-capitalize">
+                        <option class="text-capitalize" disabled selected>select catagory</option>
+                        <option class="text-capitalize">catagory 1</option>
+                        <option class="text-capitalize">catagory 2</option>
+                        <option class="text-capitalize">catagory 3</option>
+                      </select>
+                    </div>
+          
+                    <div class="col-md-12 form-group">
+                      <label class="text-capitalize">add batch skills</label>
+                      <div class="form-control" style="height: auto;">
+                        <div class="text-uppercase skils-column">
+                          <div class="customradio">
+                            <input type="checkbox" name="selectComapny">
+                            <span class="text-uppercase">html</span>
+                          </div>
+                          <div class="customradio">
+                            <input type="checkbox" name="selectComapny">
+                            <span class="text-uppercase">css</span>
+                          </div>
+                          <div class="customradio disable">
+                            <input type="checkbox" name="selectComapny">
+                            <span class="text-uppercase">javascript</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-12 p-0 faculty-lists-wrapper">
+                      <div class="faculty-lists">
+                        <div class="faculty-added">
+                          <span class="remove-field">remove</span>
+                          <div class="col-md-12 form-group">
+                            <label class="text-capitalize">select faculty</label>
+                            <select class="form-control text-capitalize">
+                              <option class="text-capitalize" disabled selected>select faculty</option>
+                              <option class="text-capitalize">faculty name</option>
+                              <option class="text-capitalize">faculty name</option>
+                              <option class="text-capitalize">faculty name</option>
+                            </select>
+                          </div>
+                          <div class="col-md-12 form-group">
+                            <div class="form-control" style="height: auto;">
+                              <div class="text-uppercase skils-column">
+                                <div class="customradio">
+                                  <input type="checkbox" name="selectComapny">
+                                  <span class="text-uppercase">html</span>
+                                </div>
+                                <div class="customradio">
+                                  <input type="checkbox" name="selectComapny">
+                                  <span class="text-uppercase">css</span>
+                                </div>
+                                <div class="customradio disable">
+                                  <input type="checkbox" name="selectComapny">
+                                  <span class="text-uppercase">javascript</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <button type="button" class="add-field btn btn-primary"><i class="glyphicon glyphicon-plus"></i>Add faculty</button>
+                      </div>
+                    </div>
+                    <div class="col-md-12 form-group">
+                      <label class="text-capitalize">batch starts</label>
+                      <div class="input-group">
+                        <span class="input-group-addon text-capitalize">from</span>
+                        <input type="date" class="form-control">
+                        <span class="input-group-addon text-capitalize">to</i></span>
+                        <input type="date" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-md-12 form-group">
+                      <label class="text-capitalize">batch time</label>
+                      <div class="input-group">
+                        <span class="input-group-addon text-capitalize">from</span>
+                        <input type="time" class="form-control">
+                        <span class="input-group-addon text-capitalize">to</i></span>
+                        <input type="time" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-md-12 form-group">
+                      <label class="text-capitalize">batch type</label>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <select class="form-control text-capitalize">
+                            <option class="text-capitalize" disabled selected>select days</option>
+                            <option class="text-capitalize">saturday</option>
+                            <option class="text-capitalize">sunday</option>
+                          </select>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-control" style="height: auto;">
+                              <div class="text-uppercase skils-column">
+                                <div class="customradio">
+                                  <input type="checkbox" name="selectComapny" checked>
+                                  <span class="text-uppercase">Saturday</span>
+                                </div>
+                                <div class="customradio">
+                                  <input type="checkbox" name="selectComapny">
+                                  <span class="text-uppercase">Sunday</span>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-12 flex-container m-0 p-10">
+                      <button type="button" class="btn btn-default text-capitalize">cancel</button>
+                      <button type="button" class="btn btn-primary text-capitalize">Submit</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+          <!-- side widget -->
+        </div>
+      </main>
+    </div>
+
+     <div id="assign_Faculty" class="modal fade modal-middle" role="dialog">
+      <div class="modal-dialog modal-dialog-centered modal-sm">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">×</button>
+            <h4 class="modal-title">Select faculty</h4>
+          </div>
+          <div class="modal-body">
+            <label for="">Selected modules</label>
+            <ul class="list-items">
+              <li class="text-muted">module 1</li>
+              <li class="text-muted">module 2</li>
+            </ul>
+            <div>
+              <form>
+                <div class="form-group">
+                  <label for="">select faculty</label>
+                  <select class="form-control">
+                    <option disabled selected>Select faculty</option>
+                    <option value="" class="text-capitalize">Pradeep</option>
+                    <option value="" class="text-capitalize">Abhinay</option>
+                    <option value="" class="text-capitalize">vimal</option>
+                  </select>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="clearfix">
+              <button id="rejectClass" class="btn btn-danger pull-left" data-toggle="modal" data-target="#classReject" data-dismiss="modal">Reject</button>
+              <button class="btn btn-success" data-toggle="modal" data-target="#classRate">Approve</button>            
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- js includes -->
+    <!-- jquery library -->
+    <script src='js/jquery-3.3.1.min.js'></script>
+
+    <!-- Latest bootstrap compiled JavaScript -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script>
+      $('.faculty-lists-wrapper').each(function() {
+        var $wrapper = $('.faculty-lists', this);
+        $(".add-field", $(this)).click(function(e) {
+            $('.faculty-added:first-child', $wrapper).clone(true).appendTo($wrapper);
+        });
+        $('.faculty-added .remove-field', $wrapper).click(function() {
+            if ($('.faculty-added', $wrapper).length > 1)
+                $(this).parent('.faculty-added').remove();
+        });
+      });
+    </script>
+  </body>
+</html>

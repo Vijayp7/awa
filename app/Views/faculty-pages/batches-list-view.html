@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Website Name</title>
+    <meta charset="utf-8"> 
+    <base href="../">
+    
+    <!-- CSS -->
+    <!-- favicon -->
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+    <!-- components css -->
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+    <!-- slick slider -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <!-- custom css stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <!-- responsive css stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+   
+  </head>
+  <body>
+    <div id="wrapper">
+      <!-- header -->
+      <header>
+        <nav class="navbar">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar1">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar1">
+              <form class="navbar-form navbar-left" role="search">
+                <button type="submit" class="btn btn-link"><i class="glyphicon glyphicon-search"></i></button>
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Search">
+                </div>
+              </form>
+              <ul class="ht-right">
+                <!-- notifications -->
+                <li class="dropdown menu-parent">
+                  <a class="btn btn-link dropdown-toggle noti-alert" type="button" id="notifictions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <i class="fa fa-bell-o" aria-hidden="true"></i>
+                    <!-- alert -->
+                    <small></small>
+                  </a>
+                  <ul class="dropdown-menu custom-menu" aria-labelledby="notifictions">
+                    <!--menu header -->
+                    <li class="custom-menu-header">Notifications</li>
+                    <!--menu body -->
+                    <li class="scrollable-container">
+                      <!-- notification -->
+                      <a href="#" class="notification-content unread">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content unread">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <!--menu fooster -->
+                    <li class="custom-menu-footer">
+                      <a href="notifications.html">See all notifications</a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- messages -->
+                <li class="dropdown menu-parent">
+                  <a class="btn btn-link dropdown-toggle" type="button" id="messages" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <!-- alert -->
+                    <small></small>
+                  </a>
+                  <ul class="dropdown-menu custom-menu" aria-labelledby="notifictions">
+                    <!--menu header -->
+                    <li class="custom-menu-header">messages</li>
+                    <!--menu body -->
+                    <li class="scrollable-container">
+                      <!-- notification -->
+                      <a href="#" class="notification-content unread">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content unread">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <!--menu fooster -->
+                    <li class="custom-menu-footer">
+                      <a href="inbox.html">See all messages</a>
+                    </li>
+                  </ul>
+                </li>
+                
+                <!-- profile -->
+                <li class="dropdown menu-parent">
+                  <a href="javascript:void(0)" class="btn btn-link dropdown-toggle" type="button" id="profile-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <span class="avatar"><img src="images/avatar.png" alt=""></span>
+                  </a>
+                  <!-- dropdown menu -->
+                  <ul class="dropdown-menu profile-menu" aria-labelledby="profile-menu">
+                    <li>
+                      <a href="javascript:void(0)">
+                        <span class="avatar">
+                          <img src="images/avatar.png" alt="">
+                        </span>
+                        <span>Jhon Deo</span>
+                      </a>
+                    </li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="profile-view.html"><i class="fa fa-user" aria-hidden="true"></i>view profile</a></li>
+                    <li><a href="inbox.html"><i class="fa fa-envelope" aria-hidden="true"></i>My inbox</a></li>
+                    <li><a href="pracicles-list.html"><i class="fa fa-tasks" aria-hidden="true"></i>my tasks</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i>logout</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- main navigation starts-->
+      <div class="header-nav">
+        <nav class="navbar bg-2" id="sticky-nav">
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li><a href="faculty-pages/dashboard.html">Dashboard</a></li>
+              <li><a href="faculty-pages/students-list.html">My Students</a></li>
+              <li><a href="faculty-pages/faculty-batch-list.html">My Batches</a></li>
+              <li><a href="faculty-pages/practicles-approve.html">Practicals to Rate</a></li>
+              <li><a href="faculty-pages/pending-topics.html">Pending topics</a></li>
+              <li><a href="faculty-pages/my-rating.html">My Rating</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <!-- main navigation ends here-->
+      <main>
+        <div class="content-wrapper">
+          <div class="content-wrapper-before bg-2"></div>
+          <!-- page title -->
+          <div class="content-header">
+            <h2>batch list view</h2>
+          </div>
+          <!-- content -->
+          <div class="content-body">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card topics-tab-menu blv-block">
+                  <ul class="nav nav-pills">
+                    <li class="active"><a data-toggle="tab" href="#runningTopics">running topics</a></li>
+                    <li><a data-toggle="tab" href="#compltdTopics">completed topics</a></li>
+                  </ul>
+                  <div class="tab-content">
+                    <!-- runningTopics -->
+                    <div id="runningTopics" class="tab-pane fade in active">
+                      
+                      <!-- waiting for approval -->
+                      <div class="blv-lists">
+                        <div class="card-header">
+                          <h3 class="text-capitalize">topics waiting for approval</h3>
+                        </div>
+                        <div class="card-body">
+                          <div class="panel-group custom-acordin" id="tpcsWaitProval">
+                            <div class="panel panel-default">
+                              <div class="panel-heading accordion-toggle" data-toggle="collapse" data-parent="#tpcsWaitProval" href="#module4">
+                                <h4 class="panel-title text-capitalize">class-4
+                                </h4>
+                              </div>
+                              <div id="module4" class="panel-collapse collapse">
+                                <ul class="nav nav-pills">
+                                  <li class="active"><a data-toggle="tab" href="#stuAct">students to act</a></li><li><a data-toggle="tab" href="#mduleTpcs">module topics</a></li>
+                                </ul>
+                                <div class="tab-content">
+                                  <div id="mduleTpcs" class="tab-pane fade in p-10">
+                                    <h4 class="title">Module topics</h4>
+                                    <ul class="list-items">
+                                      <li>lorem ipsum</li>
+                                      <li>lorem ipsum</li>
+                                      <li>lorem ipsum</li>
+                                      <li>lorem ipsum</li>
+                                      <li>lorem ipsum</li>
+                                    </ul>
+                                  </div>
+                                  <div id="stuAct" class="tab-pane fade in p-10 active">
+                                    <h4 class="title">students list</h4>
+                                    <ul class="list-items">
+                                      <li class="text-capitalize">pradeep</li>
+                                      <li class="text-capitalize">abhinay</li>
+                                      <li class="text-capitalize">harish</li>
+                                      <li class="text-capitalize">vinay</li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="panel panel-default">
+                              <div class="panel-heading accordion-toggle" data-toggle="collapse" data-parent="#tpcsWaitProval" href="#module5">
+                                <h4 class="panel-title text-capitalize">class-5
+                                </h4>
+                              </div>
+                              <div id="module5" class="panel-collapse collapse">
+                                <ul class="nav nav-pills">
+                                  <li class="active"><a data-toggle="tab" href="#stuAct2">students to act</a></li>
+                                  <li><a data-toggle="tab" href="#mduleTpcs2">module topics</a></li>
+                                </ul>
+                                <div class="tab-content">
+                                  <div id="mduleTpcs2" class="tab-pane fade in p-10">
+                                    <h4 class="title">Module topics</h4>
+                                    <ul class="list-items">
+                                      <li class="text-capitalize">pradeep</li>
+                                      <li class="text-capitalize">abhinay</li>
+                                      <li class="text-capitalize">harish</li>
+                                      <li class="text-capitalize">vinay</li>
+                                    </ul>
+                                  </div>
+                                  <div id="stuAct2" class="tab-pane fade in p-10 active">
+                                    <h4 class="title">students list</h4>
+                                    <ul class="list-items">
+                                      <li>lorem ipsum</li>
+                                      <li>lorem ipsum</li>
+                                      <li>lorem ipsum</li>
+                                      <li>lorem ipsum</li>
+                                      <li>lorem ipsum</li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <!-- Today topics -->
+                      <div class="blv-lists">
+                        <div class="card-header tdy_topics">
+                          <h3 class="text-capitalize">Today topics</h3>
+                          <div class="header-elements">
+                            <button type="button" type="button" class="btn btn-primary">Set as done</button>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <div class="panel-group custom-acordin">
+                            <div class="panel panel-default">
+                              <div class="panel-heading" data-toggle="collapse" data-parent="#tdyTpcsAcrdn" href="#module1">
+                                <h4 class="panel-title text-capitalize">class-1
+                                </h4>
+                              </div>
+                              <div id="module1" class="panel-collapse collapse in">
+                                <div class="card-content">
+                                  <h4 class="title">Module 1</h4>
+                                  <ul class="list-items">
+                                    <li>lorem ipsum</li>
+                                    <li>lorem ipsum</li>
+                                    <li>lorem ipsum</li>
+                                    <li>lorem ipsum</li>
+                                    <li>lorem ipsum</li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Upcoming topics -->
+                      <div class="blv-lists">
+                        <div class="card-header upcmng_topics">
+                          <h3 class="text-capitalize">upcoming topics</h3>
+                        </div>
+                        <div class="card-body">
+                          <div class="panel-group custom-acordin" id="upcmng_topics">
+                            <div class="panel panel-default">
+                              <div class="panel-heading accordion-toggle" data-toggle="collapse" data-parent="#upcmng_topics" href="#module6">
+                                <h4 class="panel-title text-capitalize">class-6
+                                </h4>
+                              </div>
+                              <div id="module6" class="panel-collapse collapse">
+                                <div class="card-content">
+                                  <h4 class="title">Module 6</h4>
+                                  <ul class="list-items">
+                                    <li>lorem ipsum</li>
+                                    <li>lorem ipsum</li>
+                                    <li>lorem ipsum</li>
+                                    <li>lorem ipsum</li>
+                                    <li>lorem ipsum</li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="panel panel-default">
+                              <div class="panel-heading accordion-toggle" data-toggle="collapse" data-parent="#upcmng_topics" href="#module7">
+                                <h4 class="panel-title text-capitalize">class-7
+                                </h4>
+                              </div>
+                              <div id="module7" class="panel-collapse collapse">
+                                <div class="card-content">
+                                  <h4 class="title">Module 7</h4>
+                                  <ul class="list-items">
+                                    <li>lorem ipsum</li>
+                                    <li>lorem ipsum</li>
+                                    <li>lorem ipsum</li>
+                                    <li>lorem ipsum</li>
+                                    <li>lorem ipsum</li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="panel panel-default">
+                              <div class="panel-heading accordion-toggle" data-toggle="collapse" data-parent="#upcmng_topics" href="#module8">
+                                <h4 class="panel-title text-capitalize">class-8
+                                </h4>
+                              </div>
+                              <div id="module8" class="panel-collapse collapse">
+                                <div class="card-content">
+                                  <h4 class="title">Module 8</h4>
+                                  <ul class="list-items">
+                                    <li>lorem ipsum</li>
+                                    <li>lorem ipsum</li>
+                                    <li>lorem ipsum</li>
+                                    <li>lorem ipsum</li>
+                                    <li>lorem ipsum</li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <!---------- compltdTopics---------->
+                    <div id="compltdTopics" class="tab-pane fade in">
+                      <!-- waiting for approval -->
+                      <div class="blv-lists">
+                        <div class="card-body">
+                          <div class="panel-group custom-acordin" id="clasAprvlActdn">
+                            <div class="panel panel-default">
+                              <div class="panel-heading accordion-toggle" data-toggle="collapse" data-parent="#clasAprvlActdn" href="#module9">
+                                <h4 class="panel-title text-capitalize">class-1&nbsp;(&nbsp;
+                                  <span class="star-rating custom-rating">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                  </span>
+                                  &nbsp;)
+                                </h4>
+                              </div>
+                              <div id="module9" class="panel-collapse collapse">
+                                <div class="card-content">
+                                  <h4 class="title">Module 1</h4>
+                                  <ul class="list-items">
+                                    <li>lorem ipsum</li>
+                                    <li>lorem ipsum</li>
+                                    <li>lorem ipsum</li>
+                                    <li>lorem ipsum</li>
+                                    <li>lorem ipsum</li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="panel panel-default">
+                              <div class="panel-heading accordion-toggle" data-toggle="collapse" data-parent="#clasAprvlActdn" href="#module10">
+                                <h4 class="panel-title text-capitalize">class-2&nbsp;(&nbsp;
+                                <span class="star-rating custom-rating">
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star"></span>
+                                </span>
+                                &nbsp;)
+                                </h4>
+                              </div>
+                              <div id="module10" class="panel-collapse collapse">
+                                <div class="card-content">
+                                  <h4 class="title">Module 2</h4>
+                                  <ul class="list-items">
+                                    <li>lorem ipsum</li>
+                                    <li>lorem ipsum</li>
+                                    <li>lorem ipsum</li>
+                                    <li>lorem ipsum</li>
+                                    <li>lorem ipsum</li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-8">
+                <div class="row">
+                  <!-- batch detailes -->
+                  <div class="col-md-12">
+                    <div class="card top-bar-warning">
+                      <div class="card-header">
+                        <h3 class="text-capitalize">batch deatiles</h3>
+                      </div>
+                      <div class="card-content blv-dtls">
+                        <div class="table-responsive">
+                          <table class="table">
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <div>
+                                    <h5 class="text-muted">Batch Name</h5>
+                                    <h4>web - 01</h4>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div>
+                                    <h5 class="text-muted">Course Name</h5>
+                                    <h4>web - 01</h4>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div>
+                                    <h5 class="text-muted">Batch Course Running</h5>
+                                    <h4>6 days Delay</h4>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div>
+                                    <h5 class="text-muted">Timing</h5>
+                                    <h4>11:00 am - 12:00 pm</h4>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div>
+                                    <h5 class="text-muted">no.of Students</h5>
+                                    <h4>10</h4>
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="row">
+                      <div class="col-md-8">
+                        <div class="card top-bar-green">
+                          <div class="card-header">
+                            <h3>Student Attendence</h3>
+                            <div class="header-elements">
+                              <h3 class="text-muted m-10">Date : 04-03-2019</h3>
+                            </div>
+                          </div>
+                          <div class="card-content flex-container">
+                            <div class="stuAtendslist">
+                              <ul>
+                                <li><img src="images/check.png" alt="">lorem ipsum</li>
+                                <li><img src="images/check.png" alt="">lorem ipsum</li>
+                                <li><img src="images/check.png" alt="">lorem ipsum</li>
+                                <li><img src="images/check.png" alt="">lorem ipsum</li>
+                              </ul>
+                            </div>
+                            <div class="loginQrCode">
+                              <img src="images/qr-code.jpg" alt="">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="card top-bar-info">
+                          <!-- card header -->
+                          <div class="card-header">
+                            <h3>Latest test schedules</h3>
+                          </div>
+                            <div class="card-content">
+                              
+                              <dl>
+                                <dt>Webdesign</dt>
+                                <dd>HTML - 19 jan 2019</dd>
+                              </dl>
+                              <dl>
+                                <dt>Aptitude</dt>
+                                <dd>Model-3 - 19 jan 2019</dd>
+                              </dl>
+                              <dl>
+                                <dt>Webdesign</dt>
+                                <dd>HTML - 19 jan 2019</dd>
+                              </dl>
+                              <dl>
+                                <dt>Aptitude</dt>
+                                <dd>Model-3 - 19 jan 2019</dd>
+                              </dl>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Batch Students -->
+                  <div class="col-md-12">
+                    <div class="card top-bar-warning">
+                      <div class="card-header">
+                        <h3>Batch Students</h3>
+                      </div>
+                      <div class="card-content">
+                        <div class="table-responsive">
+                          <table class="table batchStudents">
+                            <thead>
+                              <tr>
+                                <th class="text-capitalize">s no</th>
+                                <th class="text-capitalize">Student Name</th>
+                                <th class="text-capitalize">Topic Status</th>
+                                <th class="text-capitalize">Practical Status</th>
+                                <th class="text-capitalize">Test results</th>
+                                <th class="text-capitalize text-center">view</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>1</td>
+                                <td class="text-capitalize">xyz</td>
+                                <td>
+                                  <span>7/9</span>
+                                  <div class="progress custom-progress">
+                                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:60%">60%
+                                    </div>
+                                  </div>
+                                </td>
+                                <td>
+                                  <span>10/12</span>
+                                  <div class="progress custom-progress">
+                                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:90%">90%
+                                    </div>
+                                  </div>
+                                </td>
+                                <td>
+                                  <span>7/12 tests</span>
+                                  <div class="progress custom-progress">
+                                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:50%">50%
+                                    </div>
+                                  </div>
+                                </td>
+                                <td class="text-center">
+                                  <a href="faculty-pages/student-profile.html" class="btn btn-link p-0 view-icon">
+                                    <i class="fa fa-eye" aria-hidden="true"></i>
+                                  </a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>1</td>
+                                <td class="text-capitalize">xyz</td>
+                                <td>
+                                  <span>7/9</span>
+                                  <div class="progress custom-progress">
+                                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:60%">60%
+                                    </div>
+                                  </div>
+                                </td>
+                                <td>
+                                  <span>10/12</span>
+                                  <div class="progress custom-progress">
+                                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:90%">90%
+                                    </div>
+                                  </div>
+                                </td>
+                                <td>
+                                  <span>7/12 tests</span>
+                                  <div class="progress custom-progress">
+                                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:50%">50%
+                                    </div>
+                                  </div>
+                                </td>
+                                <td class="text-center">
+                                  <a href="faculty-pages/student-profile.html" class="btn btn-link p-0 view-icon">
+                                    <i class="fa fa-eye" aria-hidden="true"></i>
+                                  </a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>1</td>
+                                <td class="text-capitalize">xyz</td>
+                                <td>
+                                  <span>7/9</span>
+                                  <div class="progress custom-progress">
+                                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:60%">60%
+                                    </div>
+                                  </div>
+                                </td>
+                                <td>
+                                  <span>10/12</span>
+                                  <div class="progress custom-progress">
+                                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:90%">90%
+                                    </div>
+                                  </div>
+                                </td>
+                                <td>
+                                  <span>7/12 tests</span>
+                                  <div class="progress custom-progress">
+                                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:50%">50%
+                                    </div>
+                                  </div>
+                                </td>
+                                <td class="text-center">
+                                  <a href="faculty-pages/student-profile.html" class="btn btn-link p-0 view-icon">
+                                    <i class="fa fa-eye" aria-hidden="true"></i>
+                                  </a>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- js includes -->
+    <!-- jquery library -->
+    <script src='js/jquery-3.3.1.min.js'></script>
+
+    <!-- Latest bootstrap compiled JavaScript -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- slick slider -->
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script>
+      // bacthe slider
+      $('.batches-slider').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,205 @@
+ERROR - 2023-11-21 04:53:40 --> mysqli_sql_exception: Table 'cmschamps_awa.ci_users' doesn't exist in /home/cmschamps/public_html/awa/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/cmschamps/public_html/awa/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /home/cmschamps/public_html/awa/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/cmschamps/public_html/awa/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/cmschamps/public_html/awa/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/cmschamps/public_html/awa/system/Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/cmschamps/public_html/awa/system/BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 /home/cmschamps/public_html/awa/app/Controllers/AuthController.php(23): CodeIgniter\BaseModel->first()
+#7 /home/cmschamps/public_html/awa/system/CodeIgniter.php(942): App\Controllers\AuthController->auth()
+#8 /home/cmschamps/public_html/awa/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#9 /home/cmschamps/public_html/awa/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/cmschamps/public_html/awa/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-11-21 04:53:40 --> Table 'cmschamps_awa.ci_users' doesn't exist
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `ci_users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH/Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 4 APPPATH/Controllers/AuthController.php(23): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\AuthController->auth()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-21 04:53:43 --> mysqli_sql_exception: Table 'cmschamps_awa.ci_users' doesn't exist in /home/cmschamps/public_html/awa/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/cmschamps/public_html/awa/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /home/cmschamps/public_html/awa/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/cmschamps/public_html/awa/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/cmschamps/public_html/awa/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/cmschamps/public_html/awa/system/Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/cmschamps/public_html/awa/system/BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 /home/cmschamps/public_html/awa/app/Controllers/AuthController.php(23): CodeIgniter\BaseModel->first()
+#7 /home/cmschamps/public_html/awa/system/CodeIgniter.php(942): App\Controllers\AuthController->auth()
+#8 /home/cmschamps/public_html/awa/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#9 /home/cmschamps/public_html/awa/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/cmschamps/public_html/awa/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-11-21 04:53:43 --> Table 'cmschamps_awa.ci_users' doesn't exist
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `ci_users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH/Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 4 APPPATH/Controllers/AuthController.php(23): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\AuthController->auth()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-21 04:53:47 --> mysqli_sql_exception: Table 'cmschamps_awa.ci_users' doesn't exist in /home/cmschamps/public_html/awa/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/cmschamps/public_html/awa/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /home/cmschamps/public_html/awa/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/cmschamps/public_html/awa/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/cmschamps/public_html/awa/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/cmschamps/public_html/awa/system/Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/cmschamps/public_html/awa/system/BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 /home/cmschamps/public_html/awa/app/Controllers/AuthController.php(23): CodeIgniter\BaseModel->first()
+#7 /home/cmschamps/public_html/awa/system/CodeIgniter.php(942): App\Controllers\AuthController->auth()
+#8 /home/cmschamps/public_html/awa/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#9 /home/cmschamps/public_html/awa/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/cmschamps/public_html/awa/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-11-21 04:53:47 --> Table 'cmschamps_awa.ci_users' doesn't exist
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `ci_users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH/Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 4 APPPATH/Controllers/AuthController.php(23): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\AuthController->auth()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-21 04:53:59 --> mysqli_sql_exception: Table 'cmschamps_awa.ci_users' doesn't exist in /home/cmschamps/public_html/awa/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/cmschamps/public_html/awa/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /home/cmschamps/public_html/awa/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/cmschamps/public_html/awa/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/cmschamps/public_html/awa/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/cmschamps/public_html/awa/system/Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/cmschamps/public_html/awa/system/BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 /home/cmschamps/public_html/awa/app/Controllers/AuthController.php(23): CodeIgniter\BaseModel->first()
+#7 /home/cmschamps/public_html/awa/system/CodeIgniter.php(942): App\Controllers\AuthController->auth()
+#8 /home/cmschamps/public_html/awa/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#9 /home/cmschamps/public_html/awa/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/cmschamps/public_html/awa/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-11-21 04:53:59 --> Table 'cmschamps_awa.ci_users' doesn't exist
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `ci_users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH/Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 4 APPPATH/Controllers/AuthController.php(23): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\AuthController->auth()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-21 04:54:17 --> mysqli_sql_exception: Table 'cmschamps_awa.ci_users' doesn't exist in /home/cmschamps/public_html/awa/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/cmschamps/public_html/awa/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /home/cmschamps/public_html/awa/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/cmschamps/public_html/awa/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/cmschamps/public_html/awa/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/cmschamps/public_html/awa/system/Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/cmschamps/public_html/awa/system/BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 /home/cmschamps/public_html/awa/app/Controllers/AuthController.php(23): CodeIgniter\BaseModel->first()
+#7 /home/cmschamps/public_html/awa/system/CodeIgniter.php(942): App\Controllers\AuthController->auth()
+#8 /home/cmschamps/public_html/awa/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#9 /home/cmschamps/public_html/awa/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/cmschamps/public_html/awa/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-11-21 04:54:17 --> Table 'cmschamps_awa.ci_users' doesn't exist
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `ci_users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH/Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 4 APPPATH/Controllers/AuthController.php(23): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\AuthController->auth()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-21 05:30:59 --> Class "App\Controllers\Controller" not found
+in APPPATH/Controllers/admin/AdminController.php on line 8.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(312): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('/home/cmschamps/public_html/awa/app/Controllers/admin/AdminController.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\admin\\AdminController')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\admin\\AdminController')
+ 5 SYSTEMPATH/CodeIgniter.php(900): class_exists('\\App\\Controllers\\admin\\AdminController', true)
+ 6 SYSTEMPATH/CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-21 05:33:35 --> Class "App\Controllers\Controller" not found
+in APPPATH/Controllers/admin/AdminController.php on line 8.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(312): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('/home/cmschamps/public_html/awa/app/Controllers/admin/AdminController.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\admin\\AdminController')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\admin\\AdminController')
+ 5 SYSTEMPATH/CodeIgniter.php(900): class_exists('\\App\\Controllers\\admin\\AdminController', true)
+ 6 SYSTEMPATH/CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-21 05:34:19 --> Class "App\Controllers\Controller" not found
+in APPPATH/Controllers/admin/AdminController.php on line 8.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(312): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('/home/cmschamps/public_html/awa/app/Controllers/admin/AdminController.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\admin\\AdminController')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\admin\\AdminController')
+ 5 SYSTEMPATH/CodeIgniter.php(900): class_exists('\\App\\Controllers\\admin\\AdminController', true)
+ 6 SYSTEMPATH/CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-21 05:37:48 --> Class "App\Controllers\Controller" not found
+in APPPATH/Controllers/admin/AdminController.php on line 8.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(312): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('/home/cmschamps/public_html/awa/app/Controllers/admin/AdminController.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\admin\\AdminController')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\admin\\AdminController')
+ 5 SYSTEMPATH/CodeIgniter.php(900): class_exists('\\App\\Controllers\\admin\\AdminController', true)
+ 6 SYSTEMPATH/CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-21 05:38:45 --> Class "App\Controllers\Controller" not found
+in APPPATH/Controllers/admin/AdminController.php on line 8.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(312): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('/home/cmschamps/public_html/awa/app/Controllers/admin/AdminController.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\admin\\AdminController')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\admin\\AdminController')
+ 5 SYSTEMPATH/CodeIgniter.php(900): class_exists('\\App\\Controllers\\admin\\AdminController', true)
+ 6 SYSTEMPATH/CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-21 05:41:00 --> Class "App\Controllers\Controller" not found
+in APPPATH/Controllers/admin/AdminController.php on line 8.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(312): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('/home/cmschamps/public_html/awa/app/Controllers/admin/AdminController.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\admin\\AdminController')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\admin\\AdminController')
+ 5 SYSTEMPATH/CodeIgniter.php(900): class_exists('\\App\\Controllers\\admin\\AdminController', true)
+ 6 SYSTEMPATH/CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-21 05:44:14 --> Class "App\Controllers\Controller" not found
+in APPPATH/Controllers/admin/AdminController.php on line 8.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(312): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('/home/cmschamps/public_html/awa/app/Controllers/admin/AdminController.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\admin\\AdminController')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\admin\\AdminController')
+ 5 SYSTEMPATH/CodeIgniter.php(900): class_exists('\\App\\Controllers\\admin\\AdminController', true)
+ 6 SYSTEMPATH/CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()

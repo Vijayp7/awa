@@ -1,0 +1,213 @@
+.chat-wrapper{
+  height: -webkit-calc(100vh - 240px);
+  height: calc(100vh - 240px);
+  /*background: red;*/
+}
+.chat-wrapper > .card{
+  height: 100%;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.chat-wrapper > .card > div{
+  float: none;
+  overflow: auto;
+  padding: 0;
+  height: 100%;
+}
+.chat-wrapper > .card > div:first-child{
+  border-right: 1px solid rgba(0,0,0,0.1);
+}
+.chat-wrapper .dropdown-menu{
+  display: block;
+  position: static;
+  display: block;
+  width: 100%;
+  border:none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: 0;
+}
+.chat-wrapper .dropdown-menu li a:hover,
+.chat-wrapper .dropdown-menu li a:focus,
+.chat-wrapper .dropdown-menu li a:active,
+.chat-wrapper .dropdown-menu li a.active{
+  background: rgba(53, 200, 254,0.1);
+}
+.msg-flow{
+  position: relative;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          -webkit-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.convertions{
+  height: 100%;
+  overflow: auto;
+  padding: 30px;
+}
+.message-thread{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: space-between;
+      -ms-flex-pack: space-between;
+          -webkit-justify-content: space-between;
+          justify-content: space-between;
+}
+.msg{
+  margin: 0 0 20px 0;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          -webkit-justify-content: flex-start;
+          justify-content: flex-start;
+}
+.msg-date p{
+  color: 
+}
+.avatar{
+  width: 36px;
+  height: 36px;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
+}
+.avatar img{
+  width: 100%;
+  height: 100%;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
+}
+.msg_discription{
+  width:100%;
+  padding: 10px;
+  margin: 0 0 0 15px;
+  background: rgba(53, 200, 254,0.3);
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  position: relative;
+}
+.msg_discription:before{
+  content: '';
+  position: absolute;
+  left: -14px;
+  top: 7px;
+  border: 7px solid transparent;
+  border-right: 7px solid rgba(53, 200, 254,0.3);
+}
+.msg-time{
+  width: 80px;
+  text-align: right;
+}
+.riply-msg{
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          -webkit-justify-content: flex-end;
+          justify-content: flex-end;
+}
+.riply-msg .msg_discription{
+  margin: 0 15px 0 0;
+  background: rgba(53, 200, 254,0.1);
+}
+
+.riply-msg .msg_discription::before{
+  left: auto;
+  right: -14px;
+  border-right: 7px solid transparent;
+  border-left: 7px solid rgba(53, 200, 254,0.1);
+
+}
+.riply-msg .msg{
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          -webkit-justify-content: flex-end;
+          justify-content: flex-end;
+}
+
+
+.new-msg{
+  background: #fff;
+  -webkit-box-shadow: 0 -1px 1px rgba(0,0,0,0.1);
+          box-shadow: 0 -1px 1px rgba(0,0,0,0.1);
+  padding: 10px;
+}
+.msg-form{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          -webkit-align-items: center;
+          align-items: center;
+}
+.msg-form .form-group{
+  width: 100%;
+  margin: 0 20px 0 0;
+}
+
+.msg-form .form-group .form-control:focus{
+}
+.addAtchments button i{
+  font-size: 30px;
+  color: #000;
+}
+.custom-check input[type='checkbox']{
+  width: 20px;
+  height: 20px;
+}
+.unread-notification{
+  font-weight: bolder;
+}
+.notifictions-fiters{
+  position: absolute;
+  right: 0;
+  top: 0;
+
+}
+.notifictions-fiters button i{
+  font-size: 30px;
+}
+.notifictions-fiters .dropdown-menu{
+  left: auto;
+  right:5px;
+}
+.msg-img{
+  width: 100px;
+  height: 100px;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  margin:0 10px 10px 10px;
+}
+.atchemnt{
+  background: rgba(0, 0, 0, 0.03);
+  padding: 10px;
+  margin: 0 10px;
+  display: block;
+  cursor: pointer;
+}
+.atchemnt:hover{
+  text-decoration: none;
+  color: #337ab7;
+}
+.atchemnt span{
+  padding: 0 15px;
+}

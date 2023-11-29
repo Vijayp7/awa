@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Website Name</title>
+    <meta charset="utf-8"> 
+    <base href="../">
+    <!-- CSS -->
+    <!-- favicon -->
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+    <!-- components css -->
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+    <!-- slick slider -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <!-- custom css stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <!-- responsive css stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <style>
+      #admWaitingList li,
+      #paymentsDoneList li,
+      #chequeAprvlDue li{
+        display: none;
+      }
+      .noContent{
+        color: #fa626b !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <!-- header -->
+      <header>
+        <nav class="navbar">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar1">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar1">
+              <form class="navbar-form navbar-left" role="search">
+                <button type="submit" class="btn btn-link"><i class="glyphicon glyphicon-search"></i></button>
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Search">
+                </div>
+              </form>
+              <ul class="ht-right">
+                <!-- notifications -->
+                <li class="dropdown menu-parent">
+                  <a class="btn btn-link dropdown-toggle noti-alert" type="button" id="notifictions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <i class="fa fa-bell-o" aria-hidden="true"></i>
+                    <!-- alert -->
+                    <small></small>
+                  </a>
+                  <ul class="dropdown-menu custom-menu" aria-labelledby="notifictions">
+                    <!--menu header -->
+                    <li class="custom-menu-header">Notifications</li>
+                    <!--menu body -->
+                    <li class="scrollable-container">
+                      <!-- notification -->
+                      <a href="#" class="notification-content unread">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content unread">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <!--menu fooster -->
+                    <li class="custom-menu-footer">
+                      <a href="notifications.html">See all notifications</a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- messages -->
+                <li class="dropdown menu-parent">
+                  <a class="btn btn-link dropdown-toggle" type="button" id="messages" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <!-- alert -->
+                    <small></small>
+                  </a>
+                  <ul class="dropdown-menu custom-menu" aria-labelledby="notifictions">
+                    <!--menu header -->
+                    <li class="custom-menu-header">messages</li>
+                    <!--menu body -->
+                    <li class="scrollable-container">
+                      <!-- notification -->
+                      <a href="#" class="notification-content unread">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content unread">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <!--menu fooster -->
+                    <li class="custom-menu-footer">
+                      <a href="inbox.html">See all messages</a>
+                    </li>
+                  </ul>
+                </li>
+                
+                <!-- profile -->
+                <li class="dropdown menu-parent">
+                  <a href="javascript:void(0)" class="btn btn-link dropdown-toggle" type="button" id="profile-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <span class="avatar"><img src="images/avatar.png" alt=""></span>
+                  </a>
+                  <!-- dropdown menu -->
+                  <ul class="dropdown-menu profile-menu" aria-labelledby="profile-menu">
+                    <li>
+                      <a href="javascript:void(0)">
+                        <span class="avatar">
+                          <img src="images/avatar.png" alt="">
+                        </span>
+                        <span>Jhon Deo</span>
+                      </a>
+                    </li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="profile-view.html"><i class="fa fa-user" aria-hidden="true"></i>view profile</a></li>
+                    <li><a href="inbox.html"><i class="fa fa-envelope" aria-hidden="true"></i>My inbox</a></li>
+                    <li><a href="pracicles-list.html"><i class="fa fa-tasks" aria-hidden="true"></i>my tasks</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i>logout</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- main navigation starts-->
+      <div class="header-nav">
+        <nav class="navbar bg-5" id="sticky-nav">
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li class="active">
+                <a href="accountant/acunt-dashboard.html">Dashboard</a>
+              </li>
+              <li><a href="accountant/admission-to-approve.html">Admission to Approve</a></li>
+              <li><a href="accountant/accountant-enrollment.html">enrolled Students</a></li>
+              <li><a href="accountant/cheque-clearence.html">Cheques for Clearence</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <!-- main navigation ends here-->
+      <main>
+        <div class="content-wrapper">
+          <div class="content-wrapper-before bg-5"></div>
+          <!-- page title -->
+          <div class="content-header">
+            <h2>Dashboard</h2>
+            <div class="header-elements rc-filters">
+              <div>
+                <label>sort by branch</label>
+                <select class="text-capitalize form-control">
+                  <option class="text-capitalize">all</option>
+                  <option class="text-capitalize">hyderabad</option>
+                  <option class="text-capitalize">secunderabad</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <!-- content -->
+          <div class="content-body">
+            <div class="row flex-row">
+              <!-- admissions waiting for approval  -->
+              <div class="col-md-6">
+                <div class="card">
+                  <div class="card-header top-bar-green">
+                    <h3>admissions waiting for approval</h3>
+                    <div class="studnt-num">
+                      <i class="fa fa-user" aria-hidden="true"></i>&nbsp;05
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <div class="table-responsive">
+                      <table class="table table-striped custom-table">
+                        <thead>
+                          <tr>
+                            <th class="text-capitalize">s no</th>
+                            <th class="text-capitalize">name</th>
+                            <th class="text-capitalize">course</th>
+                            <th class="text-capitalize">branch</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td class="text-capitalize">pradeep</td>
+                            <td class="text-capitalize">web designing</td>
+                            <td class="text-capitalize">hyd</td>
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td class="text-capitalize">pradeep</td>
+                            <td class="text-capitalize">web designing</td>
+                            <td class="text-capitalize">hyd</td>
+                          </tr>
+                          <tr>
+                            <td>3</td>
+                            <td class="text-capitalize">pradeep</td>
+                            <td class="text-capitalize">web designing</td>
+                            <td class="text-capitalize">hyd</td>
+                          </tr>
+                          <tr>
+                            <td>4</td>
+                            <td class="text-capitalize">pradeep</td>
+                            <td class="text-capitalize">web designing</td>
+                            <td class="text-capitalize">hyd</td>
+                          </tr>
+                          <tr>
+                            <td>5</td>
+                            <td class="text-capitalize">pradeep</td>
+                            <td class="text-capitalize">web designing</td>
+                            <td class="text-capitalize">hyd</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="text-right m-tb-10">
+                      <a href="accountant/admission-to-approve.html" class="btn btn-orange text-capitalize">more</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- cheque to approval due on today -->
+              <div class="col-md-6">
+                <div class="card">
+                  <div class="card-header top-bar-green">
+                    <h3>cheque to approval due on today</h3>
+                    <div class="studnt-num">
+                      <i class="fa fa-user" aria-hidden="true"></i>&nbsp;05
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <div class="table-responsive">
+                      <table class="table table-striped custom-table">
+                        <thead>
+                          <tr>
+                            <th class="text-capitalize">s no</th>
+                            <th class="text-capitalize">name</th>
+                            <th class="text-capitalize">cheque no</th>
+                            <th class="text-capitalize">amount</th>
+                            <th class="text-capitalize">date on check</th>
+                            <th class="text-center text-capitalize">action</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td class="text-capitalize">pradeep</td>
+                            <td class="text-capitalize">12345678</td>
+                            <td>20000</td>
+                            <td>20-03-19</td>
+                            <td class="text-center">
+                              <a href="" class="btn btn-sm btn-info text-capitalize">approve</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td class="text-capitalize">pradeep</td>
+                            <td class="text-capitalize">12345678</td>
+                            <td>20000</td>
+                            <td>20-03-19</td>
+                            <td class="text-center">
+                              <a href="" class="btn btn-sm btn-info text-capitalize">approve</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>3</td>
+                            <td class="text-capitalize">pradeep</td>
+                            <td class="text-capitalize">12345678</td>
+                            <td>20000</td>
+                            <td>20-03-19</td>
+                            <td class="text-center">
+                              <a href="" class="btn btn-sm btn-info text-capitalize">approve</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>4</td>
+                            <td class="text-capitalize">pradeep</td>
+                            <td class="text-capitalize">12345678</td>
+                            <td>20000</td>
+                            <td>20-03-19</td>
+                            <td class="text-center">
+                              <a href="" class="btn btn-sm btn-info text-capitalize">approve</a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="text-right m-tb-10">
+                      <a href="accountant/cheque-clearence.html" class="btn btn-orange text-capitalize">more</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- pending payments for this month -->
+              <div class="col-md-6">
+                <div class="card">
+                  <div class="card-header top-bar-warning">
+                    <h3 class="m-0 text-capitalize">pending payments for this month</h3>
+                    <div class="header-elements">
+                      <h3 class="p-tb-10">total amount :&nbsp;<strong>120000</strong></h3>
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <div class="table-responsive">
+                      <table class="table table-striped custom-table">
+                        <thead>
+                          <tr>
+                            <th class="text-capitalize">s no</th>
+                            <th class="text-capitalize">name</th>
+                            <th class="text-capitalize">due amount</th>
+                            <th class="text-capitalize">due date</th>
+                            <th class="text-capitalize text-center">branch</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td class="text-capitalize">pradeep</td>
+                            <td>20000</td>
+                            <td>20-03-19</td>
+                            <td class="text-center">secunderabd</td>
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td class="text-capitalize">pradeep</td>
+                            <td>20000</td>
+                            <td>20-03-19</td>
+                            <td class="text-center">secunderabd</td>
+                          </tr>
+                          <tr>
+                            <td>3</td>
+                            <td class="text-capitalize">pradeep</td>
+                            <td>20000</td>
+                            <td>20-03-19</td>
+                            <td class="text-center">secunderabd</td>
+                          </tr>
+                          <tr>
+                            <td>4</td>
+                            <td class="text-capitalize">pradeep</td>
+                            <td>20000</td>
+                            <td>20-03-19</td>
+                            <td class="text-center">secunderabd</td>
+                          </tr>
+                          <tr>
+                            <td>5</td>
+                            <td class="text-capitalize">pradeep</td>
+                            <td>20000</td>
+                            <td>20-03-19</td>
+                            <td class="text-center">secunderabd</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="text-right m-tb-10">
+                      <a href="accountant/accountant-enrollment.html" class="btn btn-orange text-capitalize">more</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- over due payemnts till date -->
+              <div class="col-md-6">
+                <div class="card">
+                  <div class="card-header top-bar-danger">
+                    <h3 class="m-0 text-capitalize">over due payemnts till date</h3>
+                    <div class="header-elements">
+                      <h3 class="p-tb-10">total amount :&nbsp;<strong>120000</strong></h3>
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <div class="table-responsive">
+                      <table class="table table-striped custom-table">
+                        <thead>
+                          <tr>
+                            <th class="text-capitalize">s no</th>
+                            <th class="text-capitalize">name</th>
+                            <th class="text-capitalize">due amount</th>
+                            <th class="text-capitalize">due date</th>
+                            <th class="text-capitalize text-center">branch</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td class="text-capitalize">pradeep</td>
+                            <td>20000</td>
+                            <td>20-03-19</td>
+                            <td class="text-center">secunderabd</td>
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td class="text-capitalize">pradeep</td>
+                            <td>20000</td>
+                            <td>20-03-19</td>
+                            <td class="text-center">secunderabd</td>
+                          </tr>
+                          <tr>
+                            <td>3</td>
+                            <td class="text-capitalize">pradeep</td>
+                            <td>20000</td>
+                            <td>20-03-19</td>
+                            <td class="text-center">secunderabd</td>
+                          </tr>
+                          <tr>
+                            <td>4</td>
+                            <td class="text-capitalize">pradeep</td>
+                            <td>20000</td>
+                            <td>20-03-19</td>
+                            <td class="text-center">secunderabd</td>
+                          </tr>
+                          <tr>
+                            <td>5</td>
+                            <td class="text-capitalize">pradeep</td>
+                            <td>20000</td>
+                            <td>20-03-19</td>
+                            <td class="text-center">secunderabd</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- list of applicants rejected -->
+              <div class="col-md-6">
+                <div class="card">
+                  <div class="card-header top-bar-green">
+                    <h3 class="m-0 text-capitalize">list of applicants rejected</h3>
+                  </div>
+                  <div class="card-content">
+                    <div class="table-responsive">
+                      <table class="table table-striped custom-table">
+                        <thead>
+                          <tr>
+                            <th class="text-capitalize">s no</th>
+                            <th class="text-capitalize">name</th>
+                            <th class="text-capitalize">course</th>
+                            <th class="text-capitalize">reason</th>
+                            <th class="text-capitalize text-center">branch</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td class="text-capitalize">pradeep</td>
+                            <td class="text-capitalize">web designing</td>
+                            <td>lorem ipsum dolor</td>
+                            <td class="text-center">secunderabd</td>
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td class="text-capitalize">pradeep</td>
+                            <td class="text-capitalize">web designing</td>
+                            <td>lorem ipsum dolor</td>
+                            <td class="text-center">secunderabd</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- list of studnets blocked -->
+              <div class="col-md-6">
+                <div class="card">
+                  <div class="card-header top-bar-danger">
+                    <h3 class="m-0 text-capitalize">unpaid blocked students</h3>
+                  </div>
+                  <div class="card-content">
+                    <div class="table-responsive">
+                      <table class="table table-striped custom-table">
+                        <thead>
+                          <tr>
+                            <th class="text-capitalize">s no</th>
+                            <th class="text-capitalize">name</th>
+                            <th class="text-capitalize">due amount</th>
+                            <th class="text-capitalize">due date</th>
+                            <th class="text-capitalize text-center">branch</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td class="text-capitalize">pradeep</td>
+                            <td>20000</td>
+                            <td>20-03-19</td>
+                            <td class="text-center">secunderabd</td>
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td class="text-capitalize">pradeep</td>
+                            <td>20000</td>
+                            <td>20-03-19</td>
+                            <td class="text-center">secunderabd</td>
+                          </tr>
+                          <tr>
+                            <td>3</td>
+                            <td class="text-capitalize">pradeep</td>
+                            <td>20000</td>
+                            <td>20-03-19</td>
+                            <td class="text-center">secunderabd</td>
+                          </tr>
+                          <tr>
+                            <td>4</td>
+                            <td class="text-capitalize">pradeep</td>
+                            <td>20000</td>
+                            <td>20-03-19</td>
+                            <td class="text-center">secunderabd</td>
+                          </tr>
+                          <tr>
+                            <td>5</td>
+                            <td class="text-capitalize">pradeep</td>
+                            <td>20000</td>
+                            <td>20-03-19</td>
+                            <td class="text-center">secunderabd</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- js includes -->
+    <!-- jquery library -->
+    <script src='js/jquery-3.3.1.min.js'></script>
+
+    <!-- Latest bootstrap compiled JavaScript -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- slick slider -->
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    
+  </body>
+</html>

@@ -1,0 +1,160 @@
+CRITICAL - 2023-11-20 11:10:07 --> "dateFilter" filter must have a matching alias defined.
+in SYSTEMPATH/Filters/Filters.php on line 580.
+ 1 SYSTEMPATH/Filters/Filters.php(580): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('dateFilter')
+ 2 SYSTEMPATH/Filters/Filters.php(263): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+ 3 SYSTEMPATH/Filters/Filters.php(174): CodeIgniter\Filters\Filters->initialize('')
+ 4 SYSTEMPATH/CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-20 11:10:07 --> "dateFilter" filter must have a matching alias defined.
+in SYSTEMPATH/Filters/Filters.php on line 580.
+ 1 SYSTEMPATH/Filters/Filters.php(580): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('dateFilter')
+ 2 SYSTEMPATH/Filters/Filters.php(263): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+ 3 SYSTEMPATH/Filters/Filters.php(174): CodeIgniter\Filters\Filters->initialize('')
+ 4 SYSTEMPATH/CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-20 11:10:07 --> "dateFilter" filter must have a matching alias defined.
+in SYSTEMPATH/Filters/Filters.php on line 580.
+ 1 SYSTEMPATH/Filters/Filters.php(580): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('dateFilter')
+ 2 SYSTEMPATH/Filters/Filters.php(263): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+ 3 SYSTEMPATH/Filters/Filters.php(174): CodeIgniter\Filters\Filters->initialize('')
+ 4 SYSTEMPATH/CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-20 13:49:29 --> The namespace delimiter is a backslash (\), not a slash (/). Route handler: "\App\Controllers\admin/Admin::employees"
+in SYSTEMPATH/Router/Router.php on line 479.
+ 1 SYSTEMPATH/Router/Router.php(479): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App\\Controllers\\admin/Admin::employees')
+ 2 SYSTEMPATH/Router/Router.php(186): CodeIgniter\Router\Router->checkRoutes('admin/employees')
+ 3 SYSTEMPATH/CodeIgniter.php(823): CodeIgniter\Router\Router->handle('admin/employees')
+ 4 SYSTEMPATH/CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-20 13:57:05 --> Class "App\Controllers\Admin\BaseController" not found
+in APPPATH/Controllers/Admin.php on line 7.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(312): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('/home/cmschamps/public_html/awa/app/Controllers/Admin.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin')
+ 5 SYSTEMPATH/CodeIgniter.php(900): class_exists('\\App\\Controllers\\Admin', true)
+ 6 SYSTEMPATH/CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-20 13:57:39 --> Class "App\Controllers\Admin\BaseController" not found
+in APPPATH/Controllers/Admin.php on line 7.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(312): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('/home/cmschamps/public_html/awa/app/Controllers/Admin.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin')
+ 5 SYSTEMPATH/CodeIgniter.php(900): class_exists('\\App\\Controllers\\Admin', true)
+ 6 SYSTEMPATH/CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-20 13:59:43 --> The namespace delimiter is a backslash (\), not a slash (/). Route handler: "\App\Controllers\admin/Admin::employees"
+in SYSTEMPATH/Router/Router.php on line 479.
+ 1 SYSTEMPATH/Router/Router.php(479): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App\\Controllers\\admin/Admin::employees')
+ 2 SYSTEMPATH/Router/Router.php(186): CodeIgniter\Router\Router->checkRoutes('admin/employees')
+ 3 SYSTEMPATH/CodeIgniter.php(823): CodeIgniter\Router\Router->handle('admin/employees')
+ 4 SYSTEMPATH/CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-20 13:59:59 --> Class "App\Controllers\Admin\BaseController" not found
+in APPPATH/Controllers/admin/Admin.php on line 7.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(312): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('/home/cmschamps/public_html/awa/app/Controllers/admin/Admin.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\admin\\Admin')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\admin\\Admin')
+ 5 SYSTEMPATH/CodeIgniter.php(900): class_exists('\\App\\Controllers\\admin\\Admin', true)
+ 6 SYSTEMPATH/CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-20 14:00:46 --> Class "App\admin\Controllers\BaseController" not found
+in APPPATH/Controllers/admin/Admin.php on line 7.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(312): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('/home/cmschamps/public_html/awa/app/Controllers/admin/Admin.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\admin\\Admin')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\admin\\Admin')
+ 5 SYSTEMPATH/CodeIgniter.php(900): class_exists('\\App\\Controllers\\admin\\Admin', true)
+ 6 SYSTEMPATH/CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-20 14:01:10 --> Class "App\Controllers\admin\BaseController" not found
+in APPPATH/Controllers/admin/Admin.php on line 7.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(312): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('/home/cmschamps/public_html/awa/app/Controllers/admin/Admin.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\admin\\Admin')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\admin\\Admin')
+ 5 SYSTEMPATH/CodeIgniter.php(900): class_exists('\\App\\Controllers\\admin\\Admin', true)
+ 6 SYSTEMPATH/CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-20 14:02:55 --> Cannot declare class App\Controllers\admin\Admin because the name is already in use
+in APPPATH/Controllers/admin/Admin.php on line 7.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-11-20 14:26:35 --> Class "App\Models\UserModel" not found
+in APPPATH/Controllers/AuthController.php on line 22.
+ 1 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\AuthController->auth()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-20 14:27:14 --> Class "App\Models\UserModel" not found
+in APPPATH/Controllers/AuthController.php on line 22.
+ 1 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\AuthController->auth()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-20 14:27:41 --> Class "App\Models\UserModel" not found
+in APPPATH/Controllers/AuthController.php on line 22.
+ 1 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\AuthController->auth()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-20 14:28:43 --> Class "App\Models\UserModel" not found
+in APPPATH/Controllers/AuthController.php on line 22.
+ 1 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\AuthController->auth()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-20 14:29:36 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in /home/cmschamps/public_html/awa/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /home/cmschamps/public_html/awa/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 /home/cmschamps/public_html/awa/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home/cmschamps/public_html/awa/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/cmschamps/public_html/awa/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/cmschamps/public_html/awa/system/Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/cmschamps/public_html/awa/system/BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 /home/cmschamps/public_html/awa/app/Controllers/AuthController.php(23): CodeIgniter\BaseModel->first()
+#7 /home/cmschamps/public_html/awa/system/CodeIgniter.php(942): App\Controllers\AuthController->auth()
+#8 /home/cmschamps/public_html/awa/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#9 /home/cmschamps/public_html/awa/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/cmschamps/public_html/awa/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in /home/cmschamps/public_html/awa/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /home/cmschamps/public_html/awa/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home/cmschamps/public_html/awa/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/cmschamps/public_html/awa/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /home/cmschamps/public_html/awa/system/Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/cmschamps/public_html/awa/system/BaseModel.php(662): CodeIgniter\Model->doFirst()
+#5 /home/cmschamps/public_html/awa/app/Controllers/AuthController.php(23): CodeIgniter\BaseModel->first()
+#6 /home/cmschamps/public_html/awa/system/CodeIgniter.php(942): App\Controllers\AuthController->auth()
+#7 /home/cmschamps/public_html/awa/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#8 /home/cmschamps/public_html/awa/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/cmschamps/public_html/awa/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-20 14:29:36 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `ci_users`
+WHERE `email` IS NULL
+ LIMIT 1', [], false)
+ 3 SYSTEMPATH/Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/AuthController.php(23): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\AuthController->auth()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()

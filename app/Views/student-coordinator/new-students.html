@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Website Name</title>
+    <meta charset="utf-8"> 
+    <base href="../">
+    
+    <!-- CSS -->
+    <!-- favicon -->
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+    <!-- components css -->
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+    <!-- slick slider -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <!-- custom css stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <!-- responsive css stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <style>
+      .panel-title{
+        padding: 15px;
+      }
+      .panel-title .header-elements{
+        position: absolute;
+        top: 8px;
+      }
+
+      .modal-body .customradio{
+        width: auto;
+      }
+      .modal-body  .customradio > span{
+        padding-left: 35px;
+      }
+      .modal-body  .customradio > input{
+        width: 100%;
+        height: 100%;
+      }
+      .mt-0{
+        margin-top: 0;
+      }
+      .modal-lg{
+        width: 95% !important;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <!-- header -->
+      <header>
+        <nav class="navbar">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar1">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar1">
+              <form class="navbar-form navbar-left" role="search">
+                <button type="submit" class="btn btn-link"><i class="glyphicon glyphicon-search"></i></button>
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Search">
+                </div>
+              </form>
+              <ul class="ht-right">
+                <!-- notifications -->
+                <li class="dropdown menu-parent">
+                  <a href="#" class="btn btn-link dropdown-toggle noti-alert" type="button" id="notifictions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <i class="fa fa-bell-o" aria-hidden="true"></i>
+                    <!-- alert -->
+                    <small></small>
+                  </a>
+                  <ul class="dropdown-menu custom-menu" aria-labelledby="notifictions">
+                    <!--menu header -->
+                    <li class="custom-menu-header">Notifications</li>
+                    <!--menu body -->
+                    <li class="scrollable-container">
+                      <!-- notification -->
+                      <a href="#" class="notification-content unread">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content unread">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <!--menu fooster -->
+                    <li class="custom-menu-footer">
+                      <a href="notifications.html">See all notifications</a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- messages -->
+                <li class="dropdown menu-parent">
+                  <a href="#" class="btn btn-link dropdown-toggle" type="button" id="messages" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <!-- alert -->
+                    <small></small>
+                  </a>
+                  <ul class="dropdown-menu custom-menu" aria-labelledby="notifictions">
+                    <!--menu header -->
+                    <li class="custom-menu-header">messages</li>
+                    <!--menu body -->
+                    <li class="scrollable-container">
+                      <!-- notification -->
+                      <a href="#" class="notification-content unread">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content unread">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <!--menu fooster -->
+                    <li class="custom-menu-footer">
+                      <a href="inbox.html">See all messages</a>
+                    </li>
+                  </ul>
+                </li>
+                
+                <!-- profile -->
+                <li class="dropdown menu-parent">
+                  <a href="javascript:void(0)" class="btn btn-link dropdown-toggle" type="button" id="profile-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <span class="avatar"><img src="images/avatar.png" alt=""></span>
+                  </a>
+                  <!-- dropdown menu -->
+                  <ul class="dropdown-menu profile-menu" aria-labelledby="profile-menu">
+                    <li>
+                      <a href="javascript:void(0)">
+                        <span class="avatar">
+                          <img src="images/avatar.png" alt="">
+                        </span>
+                        <span>Jhon Deo</span>
+                      </a>
+                    </li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="profile-view.html"><i class="fa fa-user" aria-hidden="true"></i>view profile</a></li>
+                    <li><a href="inbox.html"><i class="fa fa-envelope" aria-hidden="true"></i>My inbox</a></li>
+                    <li><a href="pracicles-list.html"><i class="fa fa-tasks" aria-hidden="true"></i>my tasks</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i>logout</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- main navigation starts-->
+      <div class="header-nav">
+        <nav class="navbar bg-6" id="sticky-nav">
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li>
+                <a href="student-coordinator/tasks.html">my tasks</a>
+              </li>
+              <li class="active dropdown menu-parent">
+                <a href="javascript:void(0)">unassigned students</a>
+                <ul class="dropdown-menu dropdown-menu-right custom-menu">
+                  <li>
+                    <a href="student-coordinator/new-students.html" class="text-capitalize notification-content">new students</a>
+                  </li>
+                  <li>
+                  <a href="student-coordinator/old-students.html" class="text-capitalize notification-content">old studnets</a>
+                </li>
+                </ul>
+              </li>
+              <li class="dropdown menu-parent">
+                <a href="javascript:void(0)">Batches</a>
+                <ul class="dropdown-menu dropdown-menu-right custom-menu">
+                  <li>
+                    <a href="student-coordinator/batch-list.html" class="text-capitalize notification-content">ongoing bacthes</a>
+                  </li>
+                  <li>
+                    <a href="student-coordinator/unassigned-bacthes.html" class="text-capitalize notification-content">unassigned bacthes</a>
+                  </li>
+                  <li>
+                    <a href="student-coordinator/expired-bacthes.html" class="text-capitalize notification-content">expired bacthes</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="student-coordinator/sc-students-list.html">students</a>
+              </li>
+              <li>
+                <a href="student-coordinator/student-reviews.html">Student reviews</a>
+              </li>
+              <li>
+                <a href="student-coordinator/sc-faculty-list.html">faculties</a>
+              </li>
+              <li>
+                <a href="student-coordinator/weekly-sessions.html">weekly sessions</a>
+              </li>
+              <li>
+                <a href="student-coordinator/pending-topics.html">pending topics</a>
+              </li>
+              <li>
+                <a href="student-coordinator/add-event.html">News / Events</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <!-- main navigation ends here-->
+      <main>
+        <div class="content-wrapper">
+          <div class="content-wrapper-before bg-6"></div>
+          <!-- page title -->
+          <div class="content-header">
+            <h2 class="text-capitalize">New students</h2>
+            <div class="header-elements">
+              <div class="pull-right form-group m-0">
+                <select class="form-control text-capitalize">
+                  <option disabled="" selected="" class="text-capitalize">sort by course</option>
+                  <option class="text-capitalize">web designing</option>
+                  <option class="text-capitalize">web devolpement</option>
+                  <option class="text-capitalize">full stack</option>
+                  <option class="text-capitalize">android</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <!-- content -->
+          <div class="content-body">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="card">
+                  <div class="card-header">
+                    <h3 class="m-0 text-info text-capitalize">Web designing</h3>
+                  </div>
+                  <div class="card-content">
+                    <div class="panel-group" id="accordion">
+                      <div class="panel panel-default">
+                        <div class="panel-heading p-0">
+                          <h4 class="panel-title">
+                            <a class="text-capitalize text-bold" data-toggle="collapse" data-parent="#accordion" href="#collapse1">unassigned students&nbsp;<span>(10)</span>&nbsp;<i class="glyphicon glyphicon-menu-down"></i></a>
+                            <div class="header-elements">
+                              <div class="form-group selctbox-filter">
+                                <button class="btn btn-primary btn-sm text-capitalize" data-toggle="modal" data-target="#addtoBatchModal">add to batch</button>
+                                <button class="btn btn-primary btn-sm text-capitalize" type="button" data-toggle="modal" data-target="#addEngagementModal">add to Engagement</button>
+                              </div>
+                            </div>
+                          </h4>
+                        </div>
+                        <div id="collapse1" class="panel-collapse collapse">
+                          <div class="table-responsive">
+                            <table class="table table-striped">
+                              <thead>
+                                <tr>
+                                  <th class="text-capitalize"></th>
+                                  <th class="text-capitalize">name</th>
+                                  <th class="text-capitalize">phone no</th>
+                                  <th class="text-capitalize">joining date</th>
+                                  <th class="text-capitalize">modules list</th>
+                                  <th class="text-capitalize">preferable time</th>
+                                  <th class="text-capitalize">engagement time</th>
+                                  <th class="text-capitalize">remaining days</th>
+                                  <th class="text-capitalize">action</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    <div class="customradio">
+                                      <input type="checkbox" name="selectComapny">
+                                      <span></span>
+                                    </div>
+                                  </td>
+                                  <td class="text-capitalize">Pradeep</td>
+                                  <td>9876543210</td>
+                                  <td>31-01-2020</td>
+                                  <td>
+                                    <div style="max-width: 200px;">
+                                      <span class="badge badge-primary">html</span>
+                                      <span class="badge badge-secondary">css</span>
+                                      <span class="badge badge-info">javascript</span>
+                                      <span class="badge badge-success">jquery</span>
+                                      <span class="badge badge-warning">sass</span>
+                                      <span class="badge badge-primary">bootstrap</span>
+                                      <span class="badge badge-info">angular js</span>
+                                    </div>
+                                  </td>
+                                  <td>10:00 AM</td>
+                                  <td>10:00 AM</td>
+                                  <td>---</td>
+                                  <td>
+                                    <a href='student-coordinator/add-batch.html' class="btn btn-default text-capitalize">view</a>
+                                    <button class="btn btn-sm btn-danger text-capitalize">remove from engagement</button>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <div class="customradio">
+                                      <input type="checkbox" name="selectComapny">
+                                      <span></span>
+                                    </div>
+                                  </td>
+                                  <td class="text-capitalize">abhinay</td>
+                                  <td>9876543210</td>
+                                  <td>31-01-2020</td>
+                                  <td>
+                                    <div style="max-width: 200px;">
+                                      <span class="badge badge-primary">html</span>
+                                      <span class="badge badge-secondary">css</span>
+                                      <span class="badge badge-info">javascript</span>
+                                      <span class="badge badge-success">jquery</span>
+                                      <span class="badge badge-warning">sass</span>
+                                      <span class="badge badge-primary">bootstrap</span>
+                                      <span class="badge badge-info">angular js</span>
+                                    </div>
+                                  </td>
+                                  <td>10:00 AM</td>
+                                  <td>10:00 AM</td>
+                                  <td>10 days</td>
+                                  <td>
+                                    <a href='student-coordinator/add-batch.html' class="btn btn-default text-capitalize">view</a>
+                                    <button class="btn btn-sm btn-danger text-capitalize">remove from engagement</button>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="panel-heading p-0">
+                          <h4 class="panel-title">
+                            <a class="text-capitalize text-bold" data-toggle="collapse" data-parent="#accordion" href="#collapse2">assigned students&nbsp;<span>(10)</span>&nbsp;<i class="glyphicon glyphicon-menu-down"></i></a>
+                          </h4>
+                        </div>
+                        <div id="collapse2" class="panel-collapse collapse">
+                          <div class="table-responsive">
+                            <table class="table table-striped">
+                              <thead>
+                                <tr>
+                                  <th class="text-capitalize">name</th>
+                                  <th class="text-capitalize">phone no</th>
+                                  <th class="text-capitalize">joining date</th>
+                                  <th class="text-capitalize">module list</th>
+                                  <th class="text-capitalize">batch</th>
+                                  <th class="text-capitalize">assigned modules</th>
+                                  <th class="text-capitalize">action</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>Pradeep</td>
+                                  <td>9876543210</td>
+                                  <td>31-01-2020</td>
+                                  <td>
+                                    <div style="max-width: 200px;">
+                                      <span class="badge badge-primary">html</span>
+                                      <span class="badge badge-secondary">css</span>
+                                      <span class="badge badge-info">javascript</span>
+                                      <span class="badge badge-success">jquery</span>
+                                      <span class="badge badge-warning">sass</span>
+                                    </div>
+                                  </td>
+                                  <td>webde-01</td>
+                                  <td>
+                                    <div style="max-width: 200px;">
+                                      <span class="badge badge-primary">html</span>
+                                      <span class="badge badge-secondary">css</span>
+                                      <span class="badge badge-primary">bootstrap</span>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <a href='student-coordinator/sc-student-detailes.html' class="btn btn-default text-capitalize">view</a>
+                                    <button class="btn btn-sm btn-danger text-capitalize" type="button" data-toggle='modal' data-target='#removeFromBatch'>remove from batch</button>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>Pradeep</td>
+                                  <td>9876543210</td>
+                                  <td>31-01-2020</td>
+                                  <td>
+                                    <div style="max-width: 200px;">
+                                      <span class="badge badge-primary">html</span>
+                                      <span class="badge badge-secondary">css</span>
+                                      <span class="badge badge-info">javascript</span>
+                                      <span class="badge badge-success">jquery</span>
+                                      <span class="badge badge-warning">sass</span>
+                                    </div>
+                                  </td>
+                                  <td>webde-01</td>
+                                  <td>
+                                    <div style="max-width: 200px;">
+                                      <span>---</span>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <a href='student-coordinator/sc-student-detailes.html' class="btn btn-default text-capitalize">view</a>
+                                    <button class="btn btn-sm btn-danger text-capitalize" type="button" data-toggle='modal' data-target='#removeFromBatch'>remove from batch</button>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-header">
+                    <h3 class="m-0 text-info text-capitalize">Web development</h3>
+                  </div>
+                  <div class="card-content">
+                    <div class="panel-group" id="accordion3">
+                      <div class="panel panel-default">
+                        <div class="panel-heading p-0">
+                          <h4 class="panel-title">
+                            <a class="text-capitalize text-bold" data-toggle="collapse" data-parent="#accordion3" href="#collapse3">unassigned students&nbsp;<span>(10)</span>&nbsp;<i class="glyphicon glyphicon-menu-down"></i></a>
+                            <div class="header-elements">
+                              <div class="form-group selctbox-filter">
+                                <button class="btn btn-primary btn-sm text-capitalize" data-toggle='modal' data-target="#addtoBatchModal">add to batch</button>
+                                <button class="btn btn-primary btn-sm text-capitalize" type="button" data-toggle='modal' data-target="#addEngagementModal">add to Engagement</button>
+                              </div>
+                            </div>
+                          </h4>
+                        </div>
+                        <div id="collapse3" class="panel-collapse collapse">
+                          <div class="table-responsive">
+                            <table class="table table-striped">
+                              <thead>
+                                <tr>
+                                  <th class="text-capitalize"></th>
+                                  <th class="text-capitalize">name</th>
+                                  <th class="text-capitalize">phone no</th>
+                                  <th class="text-capitalize">joining date</th>
+                                  <th class="text-capitalize">modules list</th>
+                                  <th class="text-capitalize">preferable time</th>
+                                  <th class="text-capitalize">engagement time</th>
+                                  <th class="text-capitalize">remaining days</th>
+                                  <th class="text-capitalize">action</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    <div class="customradio">
+                                      <input type="checkbox" name="selectComapny">
+                                      <span></span>
+                                    </div>
+                                  </td>
+                                  <td class="text-capitalize">Pradeep</td>
+                                  <td>9876543210</td>
+                                  <td>31-01-2020</td>
+                                  <td>
+                                    <div style="max-width: 200px;">
+                                      <span class="badge badge-primary">html</span>
+                                      <span class="badge badge-secondary">css</span>
+                                      <span class="badge badge-info">javascript</span>
+                                      <span class="badge badge-success">jquery</span>
+                                      <span class="badge badge-warning">sass</span>
+                                      <span class="badge badge-primary">bootstrap</span>
+                                      <span class="badge badge-info">angular js</span>
+                                    </div>
+                                  </td>
+                                  <td>10:00 AM</td>
+                                  <td>10:00 AM</td>
+                                  <td>---</td>
+                                  <td>
+                                    <a href='student-coordinator/add-batch.html' class="btn btn-default text-capitalize">view</a>
+                                    <button class="btn btn-sm btn-danger text-capitalize">remove from engagement</button>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <div class="customradio">
+                                      <input type="checkbox" name="selectComapny">
+                                      <span></span>
+                                    </div>
+                                  </td>
+                                  <td class="text-capitalize">abhinay</td>
+                                  <td>9876543210</td>
+                                  <td>31-01-2020</td>
+                                  <td>
+                                    <div style="max-width: 200px;">
+                                      <span class="badge badge-primary">html</span>
+                                      <span class="badge badge-secondary">css</span>
+                                      <span class="badge badge-info">javascript</span>
+                                      <span class="badge badge-success">jquery</span>
+                                      <span class="badge badge-warning">sass</span>
+                                      <span class="badge badge-primary">bootstrap</span>
+                                      <span class="badge badge-info">angular js</span>
+                                    </div>
+                                  </td>
+                                  <td>10:00 AM</td>
+                                  <td>10:00 AM</td>
+                                  <td>10 days</td>
+                                  <td>
+                                    <a href='student-coordinator/add-batch.html' class="btn btn-default text-capitalize">view</a>
+                                    <button class="btn btn-sm btn-danger text-capitalize">remove from engagement</button>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="panel-heading p-0">
+                          <h4 class="panel-title">
+                            <a class="text-capitalize text-bold" data-toggle="collapse" data-parent="#accordion3" href="#collapse4">assigned students&nbsp;<span>(10)</span>&nbsp;<i class="glyphicon glyphicon-menu-down"></i></a>
+                          </h4>
+                        </div>
+                        <div id="collapse4" class="panel-collapse collapse">
+                          <div class="table-responsive">
+                            <table class="table table-striped">
+                              <thead>
+                                <tr>
+                                  <th class="text-capitalize">name</th>
+                                  <th class="text-capitalize">phone no</th>
+                                  <th class="text-capitalize">joining date</th>
+                                  <th class="text-capitalize">module list</th>
+                                  <th class="text-capitalize">batch</th>
+                                  <th class="text-capitalize">assigned modules</th>
+                                  <th class="text-capitalize">action</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>Pradeep</td>
+                                  <td>9876543210</td>
+                                  <td>31-01-2020</td>
+                                  <td>
+                                    <div style="max-width: 200px;">
+                                      <span class="badge badge-primary">html</span>
+                                      <span class="badge badge-secondary">css</span>
+                                      <span class="badge badge-info">javascript</span>
+                                      <span class="badge badge-success">jquery</span>
+                                      <span class="badge badge-warning">sass</span>
+                                    </div>
+                                  </td>
+                                  <td>webde-01</td>
+                                  <td>
+                                    <div style="max-width: 200px;">
+                                      <span class="badge badge-primary">html</span>
+                                      <span class="badge badge-secondary">css</span>
+                                      <span class="badge badge-primary">bootstrap</span>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <a href='student-coordinator/sc-student-detailes.html' class="btn btn-default text-capitalize">view</a>
+                                    <button class="btn btn-sm btn-danger text-capitalize" type="button" data-toggle='modal' data-target='#removeFromBatch'>remove from batch</button>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>Pradeep</td>
+                                  <td>9876543210</td>
+                                  <td>31-01-2020</td>
+                                  <td>
+                                    <div style="max-width: 200px;">
+                                      <span class="badge badge-primary">html</span>
+                                      <span class="badge badge-secondary">css</span>
+                                      <span class="badge badge-info">javascript</span>
+                                      <span class="badge badge-success">jquery</span>
+                                      <span class="badge badge-warning">sass</span>
+                                    </div>
+                                  </td>
+                                  <td>webde-01</td>
+                                  <td>
+                                    <div style="max-width: 200px;">
+                                      <span>---</span>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <a href='student-coordinator/sc-student-detailes.html' class="btn btn-default text-capitalize">view</a>
+                                    <button class="btn btn-sm btn-danger text-capitalize" type="button" data-toggle='modal' data-target='#removeFromBatch'>remove from batch</button>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    
+
+    <!-- Remove from batch modal -->
+    <div id="removeFromBatch" class="modal fade in" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title text-capitalize">Remove from batch</h4>
+          </div>
+          <div class="modal-body">
+              <h3 class="text-center text-info">Are you sure to remove the student from this batch</h3>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-default text-capitalize text-capitalize" data-dismiss="modal">cancel</button>
+            <button type="submit" class="btn btn-default text-capitalize text-capitalize btn-primary">Remove</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- add to enagement modal -->
+    <div id="addEngagementModal" class="modal fade in" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title text-capitalize">Add to Engagement</h4>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <h3 class="mt-0">select timings</h3>
+              <div class="form-group">
+                <div class="customradio">
+                  <input type="radio" name="selectComapny">
+                  <span>9:00 am - 10 am</span>
+                </div>
+                <div class="customradio">
+                  <input type="radio" name="selectComapny">
+                  <span>10:00 am - 11 am</span>
+                </div>
+                <div class="customradio">
+                  <input type="radio" name="selectComapny">
+                  <span>11:00 am - 12 pm</span>
+                </div>
+                <div class="customradio">
+                  <input type="radio" name="selectComapny">
+                  <span>3:00 pm - 4 pm</span>
+                </div>
+              </div>
+              <div class="modal-footer p-tb-10 mt-0">
+                <button type="submit" class="btn btn-default text-capitalize text-capitalize" data-dismiss="modal">cancel</button>
+                <button type="submit" class="btn btn-default text-capitalize text-capitalize btn-primary">Add</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /add to enagement modal -->
+    
+    <!-- addtoBatchModal -->
+    <div id="addtoBatchModal" class="modal fade" role="dialog">
+      <div class="modal-dialog" style="width: 1000px;">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title text-capitalize">Add to batch</h4>
+          </div>
+          <div class="modal-body">
+            <div class="panel-group" id="accordion2">
+              <div class="panel panel-default">
+                <div class="panel-heading" data-toggle="collapse" data-parent="#accordion2" href="#students_list">
+                  <h4 class="m-0 text-capitalize">students list<i class="glyphicon glyphicon-menu-down pull-right"></i></h4>
+                </div>
+                <div id="students_list" class="panel-collapse collapse">
+                  <div class="table-responsive p-10">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th class="text-capitalize">s no</th>
+                          <th class="text-capitalize">Studnet Name</th>
+                          <th class="text-capitalize">modules</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>Pradeep</td>
+                          <td>
+                            <div>
+                              <span class="badge badge-primary">html</span>
+                              <span class="badge badge-secondary">css</span>
+                              <span class="badge badge-info">javascript</span>
+                              <span class="badge badge-success">jquery</span>
+                              <span class="badge badge-warning">sass</span>
+                              <span class="badge badge-primary">bootstrap</span>
+                              <span class="badge badge-info">angular js</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>abhinay</td>
+                          <td>
+                            <div>
+                              <span class="badge badge-primary">html</span>
+                              <span class="badge badge-secondary">css</span>
+                              <span class="badge badge-info">javascript</span>
+                              <span class="badge badge-success">jquery</span>
+                              <span class="badge badge-warning">sass</span>
+                              <span class="badge badge-primary">bootstrap</span>
+                              <span class="badge badge-info">angular js</span>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- bacthes category -->
+            <div class="card topics-tab-menu topics-tab-menu2 blv-block p-10">
+              <ul class="nav nav-pills">
+                <li class="active"><a data-toggle="tab" href="#runningBatches" aria-expanded="true">running batches&nbsp;<span class="text-bold">(10)</span></a></li>
+                <li><a data-toggle="tab" href="#frshBatches" aria-expanded="false">Fresh batches&nbsp;<span class="text-bold">(2)</span></a></li>
+              </ul>
+              <div class="tab-content">
+                <div id="runningBatches" class="tab-pane fade in active">
+                  <!-- batch card -->
+                  <div class="card top-bar-green">
+                    <div class="card-content stuSummary">
+                      <div class="topbar">
+                        <div class="summary-heading">
+                          <h3>web-012367&nbsp;<br><strong>10:00 am - 11:00 am</strong></h3>
+                        </div>
+                        <ul class="studActvStats1">
+                          <!-- attended -->
+                          <li><b class="text-capitalize">module start date</b>
+                          <span>15-02-2020</span>
+                          </li>
+                          <!-- attendedence -->
+                          <li>
+                            <b class="text-capitalize">faculty</b>
+                            <span>Pradeep</span>
+                          </li>
+                          <li>
+                            <b class="text-capitalize">No.of students</b>
+                            <span>6</span>
+                          </li>
+                        </ul>
+                        <a role="button" data-toggle="collapse" data-parent="#stuSummary" href="#summary1" aria-expanded="false" aria-controls="summary1" class="glyphicon glyphicon-chevron-down collapsed"></a>
+                      </div>
+                      <div id="summary1" class="faculty-detailes collapse" aria-expanded="false" style="height: 1px;">
+                        <form>
+                          <div class="form-group">
+                            <label class="text-capitalize">Select modules</label>
+                            <div class="branches-check">
+                              <div class="customradio">
+                                <input type="checkbox" name="selectComapny">
+                                <span class="text-uppercase">html</span>
+                              </div>
+                              <div class="customradio">
+                                <input type="checkbox" name="selectComapny">
+                                <span class="text-uppercase">css</span>
+                              </div>
+                              <div class="customradio">
+                                <input type="checkbox" name="selectComapny">
+                                <span class="text-uppercase">bootstrap</span>
+                              </div>
+                              <div class="customradio">
+                                <input type="checkbox" name="selectComapny">
+                                <span class="text-uppercase">javascript</span>
+                              </div>
+                              <div class="customradio">
+                                <input type="checkbox" name="selectComapny">
+                                <span class="text-uppercase">jquery</span>
+                              </div>
+                              <div class="customradio">
+                                <input type="checkbox" name="selectComapny">
+                                <span class="text-uppercase">php</span>
+                              </div>
+                              <div class="customradio">
+                                <input type="checkbox" name="selectComapny">
+                                <span class="text-uppercase">Angular js</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <button class="btn btn-success text-capitalize">add to batch</button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- batch card -->
+                  <!-- batch card -->
+                  <div class="card top-bar-warning">
+                    <div class="card-content stuSummary">
+                      <div class="topbar">
+                        <div class="summary-heading">
+                          <h3>web-012367&nbsp;<br><strong>10:00 am - 11:00 am</strong></h3>
+                        </div>
+                        <ul class="studActvStats1">
+                          <!-- attended -->
+                          <li><b class="text-capitalize">module start date</b>
+                          <span>15-02-2020</span>
+                          </li>
+                          <!-- attendedence -->
+                          <li>
+                            <b class="text-capitalize">faculty</b>
+                            <span>Pradeep</span>
+                          </li>
+                          <li>
+                            <b class="text-capitalize">No.of students</b>
+                            <span>6</span>
+                          </li>
+                        </ul>
+                        <a role="button" data-toggle="collapse" data-parent="#stuSummary" href="#summary2" aria-expanded="false" aria-controls="summary1" class="glyphicon glyphicon-chevron-down collapsed"></a>
+                      </div>
+                      <div id="summary2" class="faculty-detailes collapse" aria-expanded="false" style="height: 1px;">
+                        <form>
+                          <div class="form-group">
+                            <label class="text-capitalize">Select modules</label>
+                            <div class="branches-check">
+                              <div class="customradio">
+                                <input type="checkbox" name="selectComapny">
+                                <span class="text-uppercase">html</span>
+                              </div>
+                              <div class="customradio">
+                                <input type="checkbox" name="selectComapny">
+                                <span class="text-uppercase">css</span>
+                              </div>
+                              <div class="customradio">
+                                <input type="checkbox" name="selectComapny">
+                                <span class="text-uppercase">bootstrap</span>
+                              </div>
+                              <div class="customradio">
+                                <input type="checkbox" name="selectComapny">
+                                <span class="text-uppercase">javascript</span>
+                              </div>
+                              <div class="customradio">
+                                <input type="checkbox" name="selectComapny">
+                                <span class="text-uppercase">jquery</span>
+                              </div>
+                              <div class="customradio">
+                                <input type="checkbox" name="selectComapny">
+                                <span class="text-uppercase">php</span>
+                              </div>
+                              <div class="customradio">
+                                <input type="checkbox" name="selectComapny">
+                                <span class="text-uppercase">Angular js</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <button class="btn btn-success text-capitalize">add to batch</button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- batch card -->
+                </div>
+                <div id="frshBatches" class="tab-pane fade in">
+                  <!-- batch card -->
+                  <div class="card top-bar-green">
+                    <div class="card-content stuSummary">
+                      <div class="topbar">
+                        <div class="summary-heading">
+                          <h3>web-012367&nbsp;<br><strong>10:00 am - 11:00 am</strong></h3>
+                        </div>
+                        <ul class="studActvStats1">
+                          <!-- attended -->
+                          <li><b class="text-capitalize">module start date</b>
+                          <span>15-02-2020</span>
+                          </li>
+                          <!-- attendedence -->
+                          <li>
+                            <b class="text-capitalize">faculty</b>
+                            <span>Pradeep</span>
+                          </li>
+                          <li>
+                            <b class="text-capitalize">No.of students</b>
+                            <span>6</span>
+                          </li>
+                        </ul>
+                        <a role="button" data-toggle="collapse" data-parent="#stuSummary" href="#summary3" aria-expanded="false" aria-controls="summary1" class="glyphicon glyphicon-chevron-down collapsed"></a>
+                      </div>
+                      <div id="summary3" class="faculty-detailes collapse" aria-expanded="false" style="height: 1px;">
+                        <form>
+                          <div class="form-group">
+                            <label class="text-capitalize">Select modules</label>
+                            <div class="branches-check">
+                              <div class="customradio">
+                                <input type="checkbox" name="selectComapny">
+                                <span class="text-uppercase">html</span>
+                              </div>
+                              <div class="customradio">
+                                <input type="checkbox" name="selectComapny">
+                                <span class="text-uppercase">css</span>
+                              </div>
+                              <div class="customradio">
+                                <input type="checkbox" name="selectComapny">
+                                <span class="text-uppercase">bootstrap</span>
+                              </div>
+                              <div class="customradio">
+                                <input type="checkbox" name="selectComapny">
+                                <span class="text-uppercase">javascript</span>
+                              </div>
+                              <div class="customradio">
+                                <input type="checkbox" name="selectComapny">
+                                <span class="text-uppercase">jquery</span>
+                              </div>
+                              <div class="customradio">
+                                <input type="checkbox" name="selectComapny">
+                                <span class="text-uppercase">php</span>
+                              </div>
+                              <div class="customradio">
+                                <input type="checkbox" name="selectComapny">
+                                <span class="text-uppercase">Angular js</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <button class="btn btn-success text-capitalize">add to batch</button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- batch card -->
+                  <!-- batch card -->
+                  <div class="card top-bar-warning">
+                    <div class="card-content stuSummary">
+                      <div class="topbar">
+                        <div class="summary-heading">
+                          <h3>web-012367&nbsp;<br><strong>10:00 am - 11:00 am</strong></h3>
+                        </div>
+                        <ul class="studActvStats1">
+                          <!-- attended -->
+                          <li><b class="text-capitalize">module start date</b>
+                          <span>15-02-2020</span>
+                          </li>
+                          <!-- attendedence -->
+                          <li>
+                            <b class="text-capitalize">faculty</b>
+                            <span>Pradeep</span>
+                          </li>
+                          <li>
+                            <b class="text-capitalize">No.of students</b>
+                            <span>6</span>
+                          </li>
+                        </ul>
+                        <a role="button" data-toggle="collapse" data-parent="#stuSummary" href="#summary4" aria-expanded="false" aria-controls="summary4" class="glyphicon glyphicon-chevron-down collapsed"></a>
+                      </div>
+                      <div id="summary4" class="faculty-detailes collapse" aria-expanded="false" style="height: 1px;">
+                        <form>
+                          <div class="form-group">
+                            <label class="text-capitalize">Select modules</label>
+                            <div class="branches-check">
+                              <div class="customradio">
+                                <input type="checkbox" name="selectComapny">
+                                <span class="text-uppercase">html</span>
+                              </div>
+                              <div class="customradio">
+                                <input type="checkbox" name="selectComapny">
+                                <span class="text-uppercase">css</span>
+                              </div>
+                              <div class="customradio">
+                                <input type="checkbox" name="selectComapny">
+                                <span class="text-uppercase">bootstrap</span>
+                              </div>
+                              <div class="customradio">
+                                <input type="checkbox" name="selectComapny">
+                                <span class="text-uppercase">javascript</span>
+                              </div>
+                              <div class="customradio">
+                                <input type="checkbox" name="selectComapny">
+                                <span class="text-uppercase">jquery</span>
+                              </div>
+                              <div class="customradio">
+                                <input type="checkbox" name="selectComapny">
+                                <span class="text-uppercase">php</span>
+                              </div>
+                              <div class="customradio">
+                                <input type="checkbox" name="selectComapny">
+                                <span class="text-uppercase">Angular js</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <button class="btn btn-success text-capitalize">add to batch</button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- batch card -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /addtoBatchModal -->
+
+    <!-- js includes -->
+    <!-- jquery library -->
+    <script src='js/jquery-3.3.1.min.js'></script>
+
+    <!-- Latest bootstrap compiled JavaScript -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- slick slider -->
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    
+  </body>
+</html>

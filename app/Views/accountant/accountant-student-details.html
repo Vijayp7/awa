@@ -1,0 +1,1219 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Website Name</title>
+    <meta charset="utf-8"> 
+    <base href="../">
+    <!-- CSS -->
+    <!-- favicon -->
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+    <!-- components css -->
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+    <!-- slick slider -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <!-- custom css stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <!-- responsive css stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    
+    <style>
+      #receivedBlk{
+        display: none;
+      }
+      .row.card > .card-content{
+        padding: 15px 0 !important;
+        clear: both;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <!-- header -->
+      <header>
+        <nav class="navbar">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar1">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar1">
+              <form class="navbar-form navbar-left" role="search">
+                <button type="submit" class="btn btn-link"><i class="glyphicon glyphicon-search"></i></button>
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Search">
+                </div>
+              </form>
+              <ul class="ht-right">
+                <!-- notifications -->
+                <li class="dropdown menu-parent">
+                  <a class="btn btn-link dropdown-toggle noti-alert" type="button" id="notifictions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <i class="fa fa-bell-o" aria-hidden="true"></i>
+                    <!-- alert -->
+                    <small></small>
+                  </a>
+                  <ul class="dropdown-menu custom-menu" aria-labelledby="notifictions">
+                    <!--menu header -->
+                    <li class="custom-menu-header">Notifications</li>
+                    <!--menu body -->
+                    <li class="scrollable-container">
+                      <!-- notification -->
+                      <a href="#" class="notification-content unread">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content unread">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <!--menu fooster -->
+                    <li class="custom-menu-footer">
+                      <a href="notifications.html">See all notifications</a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- messages -->
+                <li class="dropdown menu-parent">
+                  <a class="btn btn-link dropdown-toggle" type="button" id="messages" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <!-- alert -->
+                    <small></small>
+                  </a>
+                  <ul class="dropdown-menu custom-menu" aria-labelledby="notifictions">
+                    <!--menu header -->
+                    <li class="custom-menu-header">messages</li>
+                    <!--menu body -->
+                    <li class="scrollable-container">
+                      <!-- notification -->
+                      <a href="#" class="notification-content unread">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content unread">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <!--menu fooster -->
+                    <li class="custom-menu-footer">
+                      <a href="inbox.html">See all messages</a>
+                    </li>
+                  </ul>
+                </li>
+                
+                <!-- profile -->
+                <li class="dropdown menu-parent">
+                  <a href="javascript:void(0)" class="btn btn-link dropdown-toggle" type="button" id="profile-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <span class="avatar"><img src="images/avatar.png" alt=""></span>
+                  </a>
+                  <!-- dropdown menu -->
+                  <ul class="dropdown-menu profile-menu" aria-labelledby="profile-menu">
+                    <li>
+                      <a href="javascript:void(0)">
+                        <span class="avatar">
+                          <img src="images/avatar.png" alt="">
+                        </span>
+                        <span>Jhon Deo</span>
+                      </a>
+                    </li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="profile-view.html"><i class="fa fa-user" aria-hidden="true"></i>view profile</a></li>
+                    <li><a href="inbox.html"><i class="fa fa-envelope" aria-hidden="true"></i>My inbox</a></li>
+                    <li><a href="pracicles-list.html"><i class="fa fa-tasks" aria-hidden="true"></i>my tasks</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i>logout</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- main navigation starts-->
+      <div class="header-nav">
+        <nav class="navbar bg-5" id="sticky-nav">
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li>
+                <a href="accountant/acunt-dashboard.html">Dashboard</a>
+              </li>
+              <li><a href="accountant/admission-to-approve.html">Admission to Approve</a></li>
+              <li><a href="accountant/accountant-enrollment.html">enrolled Students</a></li>
+              <li><a href="accountant/cheque-clearence.html">Cheques for Clearence</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <!-- main navigation ends here-->
+      <main>
+        <div class="content-header bg-5">
+          <div class="row m-0">
+            <div class="col-md-6">
+              <h2 class="text-capitalize">Student details</h2>
+            </div>
+          </div>
+        </div>
+        <div class="tab-content">
+          <div class="content-wrapper acc-content active" id="tab1">
+            <div class="content-wrapper-before content-wrapper-before-2 bg-5"></div>
+            <div class="content-body student-info">
+              <div class="row flex-row">
+                <div class="col-md-4">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="card bg-gradient-danger">
+                        <div class="card-content">
+                          <div class="row">
+                            <div class="col-md-4 m-tb-20">
+                              <div class="refer-icon">
+                                <img src="images/refer.png" alt="">
+                              </div>
+                            </div>
+                            <div class="col-md-8 refer-content">
+                              <h4 class="m-0"><span class="h3 text-capitalize">total</span><br>12000/-</h4>
+                            </div>
+                            <div class="col-md-12 filets-nav">
+                              <ul class="payment-deatils">
+                                <li>
+                                  <span>paid</span>
+                                  <span>&nbsp;:&nbsp;2000</span>
+                                </li>
+                                <li>
+                                  <span>balance</span>
+                                  <span>&nbsp;:&nbsp;10,000</span>
+                                </li>
+                              </ul>
+                            </div>
+                            
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <!-- personal information -->
+                      <div class="card">
+                        <div class="student-block">
+                          <div class="profile-pic">
+                            <img src="images/avatar.png" alt="">
+                          </div>
+                          <!-- studnt name -->
+                          <div class="text-capitalize idNo">Pradeep</div>
+                          <div class="text-capitalize idNo">id no : 123</div>
+                        </div>
+                        <div class="card-content">
+                          <ul class="studInfo m-0">
+                            <li>
+                              <div class="text-bold text-capitalize">
+                                <i class="glyphicon glyphicon-user"></i>gender</div>
+                              <div class="text-capitalize">male</div>
+                            </li>
+                            <li>
+                              <div class="text-bold text-capitalize">
+                                <i class="glyphicon glyphicon-calendar"></i>dob</div>
+                              <div class="text-capitalize">16-09-1995</div>
+                            </li>
+                            <li>
+                              <div class="text-bold text-capitalize">
+                                <i class="glyphicon glyphicon-certificate"></i>qualification</div>
+                              <div class="text-capitalize">Degree</div>
+                            </li>
+                            <li>
+                              <div class="text-bold text-capitalize">
+                                <i class="glyphicon glyphicon-phone-alt"></i>mobile no</div>
+                              <div class="text-capitalize">9876543210</div>
+                            </li>
+                            <li>
+                              <div class="text-bold text-capitalize">
+                                <i class="glyphicon glyphicon-phone-alt"></i>alt mobile no</div>
+                              <div class="text-capitalize">9876543210</div>
+                            </li>
+                            
+                            <li>
+                              <div class="text-bold text-capitalize">
+                                <i class="glyphicon glyphicon-envelope"></i>maill id</div>
+                              <div class="text-capitalize">info@gmail.com</div>
+                            </li>
+
+                            <li>
+                              <div class="text-bold text-capitalize">
+                                <i class="glyphicon glyphicon-map-marker"></i>Adress</div>
+                              <div class="text-capitalize">basheerbagh</div>
+                            </li>
+                            <li>
+                              <div class="text-bold text-capitalize">
+                                <i class="glyphicon glyphicon-credit-card"></i>Aadhar card</div>
+                              <div class="text-capitalize">1234567890</div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <div class="row card">
+                    <div class="card-header">
+                      <h3 class="text-capitalize">enrollment 1</h3>
+                    </div>
+                    <div class="card-content enrollment_blk">
+                      <div class="col-md-5 p-0">
+                        <!-- course information -->
+                        <div class="card">
+                          <div class="card-header">
+                            <h3>cource details</h3>
+                          </div>
+                          <div class="student-block no-bg courseInf-block">
+                            <div class="profile-pic">
+                              <img src="images/web-designing.png" alt="">
+                            </div>
+                            <!-- skills -->
+                            <div class="text-uppercase skils-column">
+                              <span class="badge">html</span>
+                              <span class="badge">css</span>
+                              <span class="badge">javscript</span>
+                            </div>
+                          </div>
+                          <div class="card-content">
+                            <ul class="studInfo couInfo m-0">
+                              <li><b>start date :</b><span>12-03-2019</span>
+                              </li>
+                              <li><b>end date :</b><span>12-06-2019</span>
+                              </li><li><b>comment :</b><span>lorem ipsum dolor spli emit</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <!-- course status -->
+                        <div class="card">
+                          <div class="card-header">
+                            <h3 class="text-capitalize">course status</h3>
+                          </div>
+                          <div class="card-content">
+                            <ul class="course-info attendence-info">
+                              <li>classes attended :&nbsp;<span>25 / 28</span>
+                              </li>
+                            </ul>
+                            
+                            <div class="students-results">
+                              <div>
+                                <p><strong class="text-success">80%</strong>&nbsp;course completed</p>
+                                <div class="progress">
+                                  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-7 p-0 border-left">
+                        <div class="card">
+                          <div class="card-header">
+                            <h3>Payment details</h3>
+                          </div>
+                          <div class="card-content">
+                            <div class="timeline m-tb-10 stuPaymentInfo">
+                              <div class="circle"></div>
+                              <ul>
+                                <li class="clearfix">
+                                  <div class="text-success">
+                                    <p>1
+                                      <sup>st&nbsp;</sup>installment<br><span class="black">10-02-2019</span>
+                                    </p>
+                                  </div>
+                                  <div class="text-success">5,000/-
+                                    <span class="text-muted">paid on :&nbsp;<small>10-03-19</small></span>
+                                  </div>
+                                </li>
+                                <li class="clearfix">
+                                  <div class="text-success hidden_blk">
+                                    <p>1<sup>st&nbsp;</sup>installment<br><span class="black">10-02-2019</span></p></div>
+                                  <div class="text-success">5,000/-&nbsp;<small class="badge badge-danger">due</small>
+                                  <button class="btn btn-orange btn-sm text-capitalize" type="button" data-toggle="modal" data-target="#paymentsModal">update payment</button></div>
+                                </li>
+                                
+                                <li class="clearfix">
+                                  <div class="text-success"><p>2<sup>rd&nbsp;</sup>installment<br><span class="black">10-03-2019</span></p></div>
+                                  <div class="text-success">5,000/-
+                                    <button class="btn btn-orange btn-sm text-capitalize" type="button" data-toggle="modal" data-target="#updateCheckModal">update check</button>
+                                  </div>
+                                </li>
+                                <li class="clearfix">
+                                  <div class="text-success"><p>3<sup>nd&nbsp;</sup>installment<br><span class="black">10-03-2019</span></p></div>
+                                  <div class="text-success">5,000/-
+                                  </div>
+                                </li>
+                              </ul>
+                              <div class="circle"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row card">
+                    <div class="card-header">
+                      <h3 class="text-capitalize">enrollment 2</h3>
+                    </div>
+                    <div class="card-content enrollment_blk">
+                      <div class="col-md-5 p-0">
+                        <!-- course information -->
+                        <div class="card">
+                          <div class="student-block no-bg courseInf-block">
+                            <div class="profile-pic">
+                              <img src="images/web-designing.png" alt="">
+                            </div>
+                            <!-- skills -->
+                            <div class="text-uppercase skils-column">
+                              <span class="badge">html</span>
+                              <span class="badge">css</span>
+                              <span class="badge">javscript</span>
+                            </div>
+                          </div>
+                          <div class="card-content">
+                            <ul class="studInfo couInfo m-0">
+                              <li><b>start date :</b><span>12-03-2019</span>
+                              </li>
+                              <li><b>end date :</b><span>12-06-2019</span>
+                              </li><li><b>comment :</b><span>lorem ipsum dolor spli emit</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <!-- course status -->
+                        <div class="card">
+                          <div class="card-header">
+                            <h3 class="text-capitalize">course status</h3>
+                          </div>
+                          <div class="card-content">
+                            <ul class="course-info attendence-info">
+                              <li>classes attended :&nbsp;<span>25 / 28</span>
+                              </li>
+                            </ul>
+                            
+                            <div class="students-results">
+                              <div>
+                                <p><strong class="text-success">80%</strong>&nbsp;course completed</p>
+                                <div class="progress">
+                                  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-7 p-0 border-left">
+                        <div class="card">
+                          <div class="card-header">
+                            <h3>Payment details</h3>
+                          </div>
+                          <div class="card-content">
+                            <div class="timeline m-tb-10 stuPaymentInfo">
+                              <div class="circle"></div>
+                              <ul>
+                                <li class="clearfix">
+                                  <div class="text-success">
+                                    <p>1
+                                      <sup>st&nbsp;</sup>installment<br><span class="black">10-02-2019</span>
+                                    </p>
+                                  </div>
+                                  <div class="text-success">5,000/-
+                                    <span class="text-muted">paid on :&nbsp;<small>10-03-19</small></span>
+                                  </div>
+                                </li>
+                                <li class="clearfix">
+                                  <div class="text-success hidden_blk">
+                                    <p>1<sup>st&nbsp;</sup>installment<br><span class="black">10-02-2019</span></p></div>
+                                  <div class="text-success">5,000/-&nbsp;<small class="badge badge-danger">due</small>
+                                  <button class="btn btn-orange btn-sm text-capitalize" type="button" data-toggle="modal" data-target="#paymentsModal">update payment</button></div>
+                                </li>
+                                
+                                <li class="clearfix">
+                                  <div class="text-success"><p>2<sup>rd&nbsp;</sup>installment<br><span class="black">10-03-2019</span></p></div>
+                                  <div class="text-success">5,000/-
+                                    <button class="btn btn-orange btn-sm text-capitalize" type="button" data-toggle="modal" data-target="#updateCheckModal">update check</button>
+                                  </div>
+                                </li>
+                                <li class="clearfix">
+                                  <div class="text-success"><p>3<sup>nd&nbsp;</sup>installment<br><span class="black">10-03-2019</span></p></div>
+                                  <div class="text-success">5,000/-
+                                  </div>
+                                </li>
+                              </ul>
+                              <div class="circle"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="content-wrapper acc-content" id="tab2">
+            <div class="content-wrapper-before content-wrapper-before-2 bg-5"></div>
+            <div class="content-body student-info">
+              <div class="row flex-row">
+                <div class="col-md-4">
+                  <div class="row">
+                    
+                    <div class="col-md-12">
+                      <!-- personal information -->
+                      <div class="card">
+                        <div class="student-block">
+                          <div class="profile-pic">
+                            <img src="images/avatar.png" alt="">
+                          </div>
+                          <!-- studnt name -->
+                          <div class="text-capitalize idNo">Pradeep</div>
+                          <div class="text-capitalize idNo">id no : 123</div>
+                        </div>
+                        <div class="card-content">
+                          <ul class="studInfo m-0">
+                            <li>
+                              <div class="text-bold text-capitalize">
+                                <i class="glyphicon glyphicon-user"></i>gender</div>
+                              <div class="text-capitalize">male</div>
+                            </li>
+                            <li>
+                              <div class="text-bold text-capitalize">
+                                <i class="glyphicon glyphicon-calendar"></i>dob</div>
+                              <div class="text-capitalize">16-09-1995</div>
+                            </li>
+                            <li>
+                              <div class="text-bold text-capitalize">
+                                <i class="glyphicon glyphicon-certificate"></i>qualification</div>
+                              <div class="text-capitalize">Degree</div>
+                            </li>
+                            <li>
+                              <div class="text-bold text-capitalize">
+                                <i class="glyphicon glyphicon-phone-alt"></i>mobile no</div>
+                              <div class="text-capitalize">9876543210</div>
+                            </li>
+                            <li>
+                              <div class="text-bold text-capitalize">
+                                <i class="glyphicon glyphicon-phone-alt"></i>alt mobile no</div>
+                              <div class="text-capitalize">9876543210</div>
+                            </li>
+                            
+                            <li>
+                              <div class="text-bold text-capitalize">
+                                <i class="glyphicon glyphicon-envelope"></i>maill id</div>
+                              <div class="text-capitalize">info@gmail.com</div>
+                            </li>
+
+                            <li>
+                              <div class="text-bold text-capitalize">
+                                <i class="glyphicon glyphicon-map-marker"></i>Adress</div>
+                              <div class="text-capitalize">basheerbagh</div>
+                            </li>
+                            <li>
+                              <div class="text-bold text-capitalize">
+                                <i class="glyphicon glyphicon-credit-card"></i>Aadhar card</div>
+                              <div class="text-capitalize">1234567890</div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <!-- course information -->
+                      <div class="card">
+                        <div class="student-block no-bg courseInf-block">
+                          
+                          <div class="profile-pic">
+                            <img src="images/web-designing.png" alt="">
+                          </div>
+                          <!-- skills -->
+                          <div class="text-uppercase skils-column">
+                            <span class="badge">html</span>
+                            <span class="badge">css</span>
+                            <span class="badge">javscript</span>
+                          </div>
+                        </div>
+                        <div class="card-content">
+                          <ul class="studInfo couInfo m-0">
+                            <li><b>start date :</b><span>12-03-2019</span>
+                            </li>
+                            <li><b>end date :</b><span>12-06-2019</span>
+                            </li><li><b>comment :</b><span>lorem ipsum dolor spli emit</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="card">
+                        <div class="card-header">
+                          <h3 class="text-capitalize">course status</h3>
+                        </div>
+                        <div class="card-content">
+                          <ul class="course-info attendence-info">
+                            <li>classes attended :&nbsp;<span>25 / 28</span>
+                            </li>
+                          </ul>
+                          
+                          <div class="students-results">
+                            <div>
+                              <p><strong class="text-success">80%</strong>&nbsp;course completed</p>
+                              <div class="progress">
+                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <div class="row">
+                    <div class="col-md-7">
+                      <div class="card">
+                        <div class="card-header">
+                          <h3>Payment details</h3>
+                        </div>
+                        <div class="card-content">
+                          <div class="timeline m-tb-10 stuPaymentInfo">
+                            <div class="circle"></div>
+                            <ul>
+                              <li class="clearfix">
+                                <div class="text-success">
+                                  <p>1
+                                    <sup>st&nbsp;</sup>installment<br><span class="black">10-02-2019</span>
+                                  </p>
+                                </div>
+                                <div class="text-success">5,000/-
+                                  <span class="text-muted">paid on :&nbsp;<small>10-03-19</small></span>
+                                </div>
+                              </li>
+                              <li class="clearfix">
+                                <div class="text-success hidden_blk">
+                                  <p>1<sup>st&nbsp;</sup>installment<br><span class="black">10-02-2019</span></p></div>
+                                <div class="text-success">5,000/-&nbsp;<small class="badge badge-danger">due</small>
+                                <button class="btn btn-orange btn-sm text-capitalize" type="button" data-toggle="modal" data-target="#paymentsModal">update payment</button></div>
+                              </li>
+                              
+                              <li class="clearfix">
+                                <div class="text-success"><p>2<sup>rd&nbsp;</sup>installment<br><span class="black">10-03-2019</span></p></div>
+                                <div class="text-success">5,000/-
+                                  <button class="btn btn-orange btn-sm text-capitalize" type="button" data-toggle="modal" data-target="#updateCheckModal">update check</button>
+                                </div>
+                              </li>
+                              <li class="clearfix">
+                                <div class="text-success"><p>3<sup>nd&nbsp;</sup>installment<br><span class="black">10-03-2019</span></p></div>
+                                <div class="text-success">5,000/-
+                                </div>
+                              </li>
+                            </ul>
+                            <div class="circle"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-5">
+                      <div class="card bg-gradient-danger">
+                        <div class="card-content">
+                          <div class="row">
+                            <div class="col-md-4 m-tb-20">
+                              <div class="refer-icon">
+                                <img src="images/refer.png" alt="">
+                              </div>
+                            </div>
+                            <div class="col-md-8 refer-content">
+                              <h4 class="m-0"><span class="h3 text-capitalize">total</span><br>10000/-</h4>
+                            </div>
+                            <div class="col-md-12 filets-nav">
+                              <ul class="payment-deatils">
+                                <li>
+                                  <span>paid</span>
+                                  <span>&nbsp;:&nbsp;2000</span>
+                                </li>
+                                <li>
+                                  <span>balance</span>
+                                  <span>&nbsp;:&nbsp;10,000</span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </main>
+    </div>
+    
+    <!-- updateCheckModal -->
+    <div id="updateCheckModal" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-lg">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title text-capitalize">update check status</h4>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <div class="row update_check">
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label class="text-capitalize">cheque number</label>
+                    <p class="m-0 text-bold">9876543210</p>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label class="text-capitalize">bank name</label>
+                    <p class="m-0 text-bold">axis</p>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label class="text-capitalize">date</label>
+                    <p class="m-0 text-bold">10-03-2020</p>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <h3 class="text-capitalize m-tb-20">bank details</h3>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label class="text-capitalize">Cheque deposited on</label>
+                    <p class="m-0 text-bold">05-03-2020</p>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label class="text-capitalize">bank name</label>
+                    <p class="m-0 text-bold">axis</p>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label class="text-capitalize">account number</label>
+                    <p class="m-0 text-bold">1234567898877654</p>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label class="text-left">Counter slip</label>
+                    <p><a href="images/logo.png" download="file" class="btn btn-primary btn-sm">download counter slip</a></p>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label class="m-tb-10">Check status</label>
+                    <select class="form-control text-capitalize">
+                      <option class="text-capitalize">waiting</option>
+                      <option class="text-capitalize">received</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label class="text-capitalize m-tb-10">transaction id</label>
+                    <input type="text" class="form-control">
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label class="text-capitalize m-tb-10">vocher number</label>
+                    <input type="number" class="form-control">
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <button class="btn btn-success text-capitalize">submit</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Modal -->
+    <div id="paymentsModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Accounts Approve Students</h4>
+          </div>
+          <div class="modal-body">
+            <div>
+              <label class="text-capitalize">select payment method</label>
+              <ul class="nav nav-pills payment_tabs">
+                <li class="active"><a data-toggle="tab" href="#cashPayment">bank deposits</a></li>
+                <li><a data-toggle="tab" href="#chequePayment">cheque</a></li>
+                <li><a data-toggle="tab" href="#onlinePayment">online</a></li>
+              </ul>
+              <div class="tab-content p-tb-10">
+                <div id="cashPayment" class="tab-pane fade in active">
+                  <form>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="">Enter amount</label>
+                          <input type="number" class="form-control" value="10000">
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label class="text-capitalize">Select deposited category</label>
+                          <div class="branches-check">
+                            <div class="customradio">
+                              <input type="radio" name="selectComapny">
+                              <span class="text-uppercase">bank to bank transfer</span>
+                            </div>
+                            <div class="customradio">
+                              <input type="radio" name="selectComapny">
+                              <span class="text-uppercase">deposited by student</span>
+                            </div>
+                            <div class="customradio">
+                              <input type="radio" name="selectComapny">
+                              <span class="text-uppercase">deposited by accountant</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label class="text-capitalize">bank name</label>
+                          <select name="" id="" class="form-control">
+                            <option disabled="" selected="">Select bank</option>
+                            <option>axis</option>
+                            <option>hdfc</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label class="text-capitalize">account number</label>
+                          <select name="" id="" class="form-control">
+                            <option disabled="" selected="">Select account number</option>
+                            <option>0123456789</option>
+                            <option>9876543210</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label class="text-capitalize">Deposited date</label>
+                          <input type="date" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label class="text-capitalize">transaction id</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label class="text-capitalize">vocher number</label>
+                          <input type="number" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <button class="btn btn-success text-capitalize">submit</button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div id="chequePayment" class="tab-pane fade">
+                  <form action="">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="">Enter amount</label>
+                          <input type="number" class="form-control" value="10000">
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <h3 class="text-capitalize m-tb-10">cheque details</h3>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label class="text-capitalize">cheque number</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label class="text-capitalize">issued bank name</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label class="text-capitalize">date on check</label>
+                          <input type="date" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <h3 class="text-capitalize m-tb-10">bank details</h3>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label class="text-capitalize">Cheque deposited on</label>
+                          <input type="date" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label class="text-capitalize">Deposited bank name</label>
+                          <select class="form-control">
+                            <option>bank name</option>
+                            <option>bank name</option>
+                            <option>bank name</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group file-upload">
+                          <label class="text-left">Upload Counter slip</label>
+                          <div class="file-select">
+                            <div class="file-select-button" id="fileName">Choose File</div>
+                            <div class="file-select-name" id="noFile">No file chosen...</div> 
+                            <input type="file" name="chooseFile" id="chooseFile">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label class="text-capitalize">account number</label>
+                          <select name="" id="" class="form-control">
+                            <option disabled="" selected="">Select account number</option>
+                            <option>0123456789</option>
+                            <option>9876543210</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="col-md-6 p-0">
+                          <div class="form-group">
+                            <label class="m-tb-10">Check status</label>
+                            <select class="form-control text-capitalize" id="selectStatus">
+                              <option class="text-capitalize">waiting</option>
+                              <option class="text-capitalize" value="receivedBlk">received</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-12 p-0 statusBlk" id="receivedBlk">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label class="text-capitalize m-tb-10">transaction id</label>
+                            <input type="text" class="form-control">
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label class="text-capitalize m-tb-10">vocher number</label>
+                            <input type="number" class="form-control">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <button class="btn btn-success text-capitalize">submit</button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div id="onlinePayment" class="tab-pane fade">
+                  <form action="">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="">Enter amount</label>
+                          <input type="number" class="form-control" value="10000">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label>Amount transfer to</label>
+                          <!--Size dropdown menu-->
+                          <select id="paymentSelcted" class="form-control text-capitalize">
+                            <option disabled selected>select</option>
+                            <option class="text-capitalize" value="">Google pay</option>
+                            <option class="text-capitalize" value="">Phonepay</option>
+                            <option class="text-capitalize" value="">paytm</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label class="text-capitalize">mobile number</label>
+                          <select name="" id="" class="form-control">
+                            <option disabled="" selected="">Select mobile number</option>
+                            <option>0123456789</option>
+                            <option>9876543210</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label class="text-capitalize">Bank name</label>
+                          <p class="m-tb-10 text-primary">Axis bank</p>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label class="text-capitalize">transaction id</label>
+                              <input type="text" class="form-control">
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label class="text-capitalize">vocher number</label>
+                              <input type="number" class="form-control">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <button class="btn btn-success text-capitalize">submit</button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- js includes -->
+    <!-- jquery library -->
+    <script src='js/jquery-3.3.1.min.js'></script>
+
+    <!-- Latest bootstrap compiled JavaScript -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    
+    <script src='js/main.js'></script>
+    <script>
+      $(document).ready(function(){
+        $(document).ready(function(){
+
+          //hides dropdown content
+          $(".output").hide();
+          
+          //unhides first option content
+          $("#bankPay").show();
+          
+          //listen to dropdown for change
+          $("#paymentSelcted").change(function(){
+            //rehide content on change
+            $('.output').hide();
+            //unhides current item
+            $('#'+$(this).val()).show();
+          });
+          
+        });
+        
+      });
+    </script>
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.acc-tab a').click(function(event){
+          event.preventDefault();
+          $(this).tab('show');
+        });
+
+        $(function() {
+          $('#selectStatus').change(function(){
+            $(".statusBlk").hide();
+            $('#' + $(this).val()).show();
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Website Name</title>
+    <meta charset="utf-8"> 
+    <base href="../">
+   
+    <!-- CSS -->
+    <!-- favicon -->
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+    <!-- components css -->
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+    <!-- custom css stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <!-- responsive css stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+   
+  </head>
+  <body>
+    <div id="wrapper">
+      <!-- header -->
+      <header>
+        <nav class="navbar">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar1">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar1">
+              <form class="navbar-form navbar-left" role="search">
+                <button type="submit" class="btn btn-link"><i class="glyphicon glyphicon-search"></i></button>
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Search">
+                </div>
+              </form>
+              <ul class="ht-right">
+                <!-- notifications -->
+                <li class="dropdown menu-parent">
+                  <a class="btn btn-link dropdown-toggle noti-alert" type="button" id="notifictions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <i class="fa fa-bell-o" aria-hidden="true"></i>
+                    <!-- alert -->
+                    <small></small>
+                  </a>
+                  <ul class="dropdown-menu custom-menu" aria-labelledby="notifictions">
+                    <!--menu header -->
+                    <li class="custom-menu-header">Notifications</li>
+                    <!--menu body -->
+                    <li class="scrollable-container">
+                      <!-- notification -->
+                      <a href="#" class="notification-content unread">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content unread">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <!--menu fooster -->
+                    <li class="custom-menu-footer">
+                      <a href="notifications.html">See all notifications</a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- messages -->
+                <li class="dropdown menu-parent">
+                  <a class="btn btn-link dropdown-toggle" type="button" id="messages" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <!-- alert -->
+                    <small></small>
+                  </a>
+                  <ul class="dropdown-menu custom-menu" aria-labelledby="notifictions">
+                    <!--menu header -->
+                    <li class="custom-menu-header">messages</li>
+                    <!--menu body -->
+                    <li class="scrollable-container">
+                      <!-- notification -->
+                      <a href="#" class="notification-content unread">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content unread">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <!--menu fooster -->
+                    <li class="custom-menu-footer">
+                      <a href="inbox.html">See all messages</a>
+                    </li>
+                  </ul>
+                </li>
+                
+                <!-- profile -->
+                <li class="dropdown menu-parent">
+                  <a href="javascript:void(0)" class="btn btn-link dropdown-toggle" type="button" id="profile-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <span class="avatar"><img src="images/avatar.png" alt=""></span>
+                  </a>
+                  <!-- dropdown menu -->
+                  <ul class="dropdown-menu profile-menu" aria-labelledby="profile-menu">
+                    <li>
+                      <a href="javascript:void(0)">
+                        <span class="avatar">
+                          <img src="images/avatar.png" alt="">
+                        </span>
+                        <span>Jhon Deo</span>
+                      </a>
+                    </li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="profile-view.html"><i class="fa fa-user" aria-hidden="true"></i>view profile</a></li>
+                    <li><a href="inbox.html"><i class="fa fa-envelope" aria-hidden="true"></i>My inbox</a></li>
+                    <li><a href="pracicles-list.html"><i class="fa fa-tasks" aria-hidden="true"></i>my tasks</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i>logout</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- main navigation starts-->
+      <div class="header-nav">
+        <nav class="navbar bg-6" id="sticky-nav">
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li>
+                <a href="student-coordinator/tasks.html">my tasks</a>
+              </li>
+              <li class="dropdown menu-parent">
+                <a href="javascript:void(0)">unassigned students</a>
+                <ul class="dropdown-menu dropdown-menu-right custom-menu">
+                  <li>
+                    <a href="student-coordinator/new-students.html" class="text-capitalize notification-content">new students</a>
+                  </li>
+                  <li>
+                  <a href="student-coordinator/old-students.html" class="text-capitalize notification-content">old studnets</a>
+                </li>
+                </ul>
+              </li>
+              <li class="dropdown menu-parent">
+                <a href="javascript:void(0)">Batches</a>
+                <ul class="dropdown-menu dropdown-menu-right custom-menu">
+                  <li>
+                    <a href="student-coordinator/batch-list.html" class="text-capitalize notification-content">ongoing bacthes</a>
+                  </li>
+                  <li>
+                    <a href="student-coordinator/unassigned-bacthes.html" class="text-capitalize notification-content">unassigned bacthes</a>
+                  </li>
+                  <li>
+                    <a href="student-coordinator/expired-bacthes.html" class="text-capitalize notification-content">expired bacthes</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="student-coordinator/sc-students-list.html">students</a>
+              </li>
+              <li class="active">
+                <a href="student-coordinator/student-reviews.html">Student reviews</a>
+              </li>
+              <li>
+                <a href="student-coordinator/sc-faculty-list.html">faculties</a>
+              </li>
+              <li>
+                <a href="student-coordinator/weekly-sessions.html">weekly sessions</a>
+              </li>
+              <li>
+                <a href="student-coordinator/pending-topics.html">pending topics</a>
+              </li>
+              <li>
+                <a href="student-coordinator/add-event.html">News / Events</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <!-- main navigation ends here-->
+      <main>
+        <div class="content-wrapper">
+          <div class="content-wrapper-before bg-6"></div>
+          <div class="content-header">
+            <h2 class="text-capitalize">student reviews <strong class="list-count">(20)</strong></h2>
+          </div>
+          <div class="content-body">
+            <div class="card p-10">
+              <div class="row">
+                <!-- batch search code -->
+                <div class="col-md-4 form-group m-0">
+                  <label class="text-capitalize">sort by branch</label><br>
+                  <select class="text-capitalize form-control">
+                    <option class="text-capitalize">all</option>
+                    <option class="text-capitalize">hyderabad</option>
+                    <option class="text-capitalize">secunderabad</option>
+                  </select>
+                </div>
+                <!-- batch search code -->
+                <div class="col-md-4 form-group m-0">
+                  <label class="text-capitalize">sort by faculty</label><br>
+                  <select class="text-capitalize form-control">
+                    <option class="text-capitalize">all</option>
+                    <option class="text-capitalize">pradeep</option>
+                    <option class="text-capitalize">abhinay</option>
+                    <option class="text-capitalize">vinay</option>
+                  </select>
+                </div>
+                <!-- batch search code -->
+                <div class="col-md-4 form-group m-0">
+                  <label class="text-capitalize">sort by reviews</label>
+                    <select class="text-capitalize form-control">
+                      <option class="text-capitalize">waiting for reviews</option>
+                      <option class="text-capitalize">submited reviews</option>
+                    </select>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="table-responsive">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th class="text-uppercase">id no</th>
+                      <th class="text-capitalize">student name</th>
+                      <th class="text-capitalize">course</th>
+                      <th class="text-capitalize">branch</th>
+                      <th class="text-capitalize">batch name</th>
+                      <th class="text-capitalize">faculty name</th>
+                      <th class="text-capitalize">reviews</th>
+                      <th class="text-capitalize text-center">action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>190
+                      </td>
+                      <td class="text-capitalize">pradeep</td>
+                      <td class="text-capitalize">webdesigning</td>
+                      <td class="text-capitalize">hyderabd</td>
+                      <td class="text-capitalize">web-01</td>
+                      <td class="text-capitalize">pradeep<i class="fa fa-plus" title="abhinay , mahesh"></i></td>
+                      <td class="text-capitalize">
+                        <ul class="rating-logos">
+                          <li>
+                            <a href="#" class="inActive">
+                              <img src="images/jd.png" alt="just dial">
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <img src="images/sulekha.png" alt="sulekha">
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" class="inActive">
+                              <img src="images/urbanPro.png" alt="urbanPro">
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <img src="images/fb.png" alt="facebook">
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <img src="images/gplus.png" alt="google plus">
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <img src="images/youtube.png" alt="youtube">
+                            </a>
+                          </li>
+                        </ul>
+                      </td>
+                      <td class="text-center">
+                        <button class="btn btn-primary text-capitalize" data-toggle="modal" data-target="#reviewInfo">review</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>12</td>
+                      <td class="text-capitalize">pradeep</td>
+                      <td class="text-capitalize">webdesigning</td>
+                      <td class="text-capitalize">hyderabd</td>
+                      <td class="text-capitalize">web-01</td>
+                      <td class="text-capitalize">pradeep<i class="fa fa-plus" title="abhinay , mahesh"></i></td>
+                      <td class="text-capitalize">
+                        <ul class="rating-logos">
+                          <li>
+                            <a href="#">
+                              <img src="images/jd.png" alt="just dial">
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <img src="images/sulekha.png" alt="sulekha">
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <img src="images/urbanPro.png" alt="urbanPro">
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <img src="images/fb.png" alt="facebook">
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <img src="images/gplus.png" alt="google plus">
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <img src="images/youtube.png" alt="youtube">
+                            </a>
+                          </li>
+                        </ul>
+                      </td>
+                      <td class="text-center">
+                        <button class="btn btn-primary text-capitalize" data-toggle="modal" data-target="#reviewInfo">review</button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <!-- side widget -->
+          <div clla></div>
+        </div>
+      </main>
+    </div>
+
+    <!-- reviewInfo -->
+    <div id="reviewInfo" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-lg">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">student Review</h4>
+          </div>
+          <div class="modal-body">
+            <div class="table-responsive">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th class="text-capitalize">select</th>
+                    <th class="text-capitalize">category</th>
+                    <th class="text-capitalize">date</th>
+                    <th class="text-capitalize">branch</th>
+                    <th class="text-capitalize">link</th>
+                    <th class="text-capitalize">action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- just dial -->
+                  <tr>
+                    <td class="text-capitalize">
+                      <div class="customradio">
+                        <input type="checkbox" name="selectComapny">
+                        <span></span>
+                      </div>
+                    </td>
+                    <td>
+                      <img src="images/jd.png" alt="just dial" width="30px" height="30px">
+                    </td>
+                    <td><input type="date" class="form-control"></td>
+                    <td class="text-capitalize">
+                      <select class="form-control text-capitalize">
+                        <option class="text-capitalize">All</option>
+                        <option class="text-capitalize">Hyderabad</option>
+                        <option class="text-capitalize">secunderbad</option>
+                      </select>
+                    </td>
+                    <td>
+                      <input type="text" class="form-control" class="m-tb-10">
+                    </td>
+                    <td>
+                      <button type="button" class="btn btn-primary text-capitalize">submit</button>
+                    </td>
+                  </tr>
+                  <!-- sulekha -->
+                  <tr>
+                    <td class="text-capitalize">
+                      <div class="customradio">
+                        <input type="checkbox" name="selectComapny">
+                        <span></span>
+                      </div>
+                    </td>
+                    <td>
+                      <img src="images/sulekha.png" alt="sulekha" width="30px" height="30px">
+                    </td>
+                    <td><input type="date" class="form-control"></td>
+                    <td class="text-capitalize">
+                      <select class="form-control text-capitalize">
+                        <option class="text-capitalize">All</option>
+                        <option class="text-capitalize">Hyderabad</option>
+                        <option class="text-capitalize">secunderbad</option>
+                      </select>
+                    </td>
+                    <td>
+                      <input type="text" class="form-control" class="m-tb-10">
+                    </td>
+                    <td>
+                      <button type="button" class="btn btn-primary text-capitalize">submit</button>
+                    </td>
+                  </tr>
+                  <!-- urban pro -->
+                  <tr>
+                    <td class="text-capitalize">
+                      <div class="customradio">
+                        <input type="checkbox" name="selectComapny">
+                        <span></span>
+                      </div>
+                    </td>
+                    <td>
+                      <img src="images/urbanPro.png" alt="sulekha" width="30px" height="30px">
+                    </td>
+                    <td><input type="date" class="form-control"></td>
+                    <td class="text-capitalize">
+                      <select class="form-control text-capitalize">
+                        <option class="text-capitalize">All</option>
+                        <option class="text-capitalize">Hyderabad</option>
+                        <option class="text-capitalize">secunderbad</option>
+                      </select>
+                    </td>
+                    <td>
+                      <input type="text" class="form-control" class="m-tb-10">
+                    </td>
+                    <td>
+                      <button type="button" class="btn btn-primary text-capitalize">submit</button>
+                    </td>
+                  </tr>
+                  <!-- facebook -->
+                  <tr>
+                    <td class="text-capitalize">
+                      <div class="customradio">
+                        <input type="checkbox" name="selectComapny">
+                        <span></span>
+                      </div>
+                    </td>
+                    <td>
+                      <img src="images/fb.png" alt="sulekha" width="30px" height="30px">
+                    </td>
+                    <td><input type="date" class="form-control"></td>
+                    <td class="text-capitalize">
+                      <select class="form-control text-capitalize">
+                        <option class="text-capitalize">All</option>
+                        <option class="text-capitalize">Hyderabad</option>
+                        <option class="text-capitalize">secunderbad</option>
+                      </select>
+                    </td>
+                    <td>
+                      <input type="text" class="form-control" class="m-tb-10">
+                    </td>
+                    <td>
+                      <button type="button" class="btn btn-primary text-capitalize">submit</button>
+                    </td>
+                  </tr>
+                  <!-- google plus -->
+                  <tr>
+                    <td class="text-capitalize">
+                      <div class="customradio">
+                        <input type="checkbox" name="selectComapny">
+                        <span></span>
+                      </div>
+                    </td>
+                    <td>
+                      <img src="images/gplus.png" alt="sulekha" width="30px" height="30px">
+                    </td>
+                    <td><input type="date" class="form-control"></td>
+                    <td class="text-capitalize">
+                      <select class="form-control text-capitalize">
+                        <option class="text-capitalize">All</option>
+                        <option class="text-capitalize">Hyderabad</option>
+                        <option class="text-capitalize">secunderbad</option>
+                      </select>
+                    </td>
+                    <td>
+                      <input type="text" class="form-control" class="m-tb-10">
+                    </td>
+                    <td>
+                      <button type="button" class="btn btn-primary text-capitalize">submit</button>
+                    </td>
+                  </tr>
+                  <!-- youtube -->
+                  <tr>
+                    <td class="text-capitalize">
+                      <div class="customradio">
+                        <input type="checkbox" name="selectComapny">
+                        <span></span>
+                      </div>
+                    </td>
+                    <td>
+                      <a href="https://www.youtube.com/watch?v=6TFYGJ5NZZU" title="click here to show review"><img src="images/youtube.png" alt="sulekha" width="30px" height="30px"></a>
+                    </td>
+                    <td><input type="date" class="form-control"></td>
+                    <td class="text-capitalize">
+                      <select class="form-control text-capitalize">
+                        <option class="text-capitalize">All</option>
+                        <option class="text-capitalize">Hyderabad</option>
+                        <option class="text-capitalize">secunderbad</option>
+                      </select>
+                    </td>
+                    <td>
+                      <input type="text" class="form-control" class="m-tb-10">
+                    </td>
+                    <td>
+                      <button type="button" class="btn btn-primary text-capitalize">submit</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- js includes -->
+    <!-- jquery library -->
+    <script src='js/jquery-3.3.1.min.js'></script>
+
+    <!-- Latest bootstrap compiled JavaScript -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

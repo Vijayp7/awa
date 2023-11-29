@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Website Name</title>
+    <meta charset="utf-8"> 
+    <base href="../">
+    
+    <!-- CSS -->
+    <!-- favicon -->
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+    <!-- components css -->
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+    <!-- custom css stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <!-- responsive css stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+   
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <nav class="navbar">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar1">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar1">
+              <form class="navbar-form navbar-left" role="search">
+                <button type="submit" class="btn btn-link"><i class="glyphicon glyphicon-search"></i></button>
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Search">
+                </div>
+              </form>
+              <ul class="ht-right">
+                <!-- notifications -->
+                <li class="dropdown menu-parent">
+                  <a class="btn btn-link dropdown-toggle noti-alert" type="button" id="notifictions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <i class="fa fa-bell-o" aria-hidden="true"></i>
+                    <!-- alert -->
+                    <small></small>
+                  </a>
+                  <ul class="dropdown-menu custom-menu" aria-labelledby="notifictions">
+                    <!--menu header -->
+                    <li class="custom-menu-header">Notifications</li>
+                    <!--menu body -->
+                    <li class="scrollable-container">
+                      <!-- notification -->
+                      <a href="#" class="notification-content unread">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content unread">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <!--menu fooster -->
+                    <li class="custom-menu-footer">
+                      <a href="student/notifications.html">See all notifications</a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- messages -->
+                <li class="dropdown menu-parent">
+                  <a class="btn btn-link dropdown-toggle" type="button" id="messages" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <!-- alert -->
+                    <small></small>
+                  </a>
+                  <ul class="dropdown-menu custom-menu" aria-labelledby="notifictions">
+                    <!--menu header -->
+                    <li class="custom-menu-header">messages</li>
+                    <!--menu body -->
+                    <li class="scrollable-container">
+                      <!-- notification -->
+                      <a href="#" class="notification-content unread">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content unread">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="notification-content">
+                        <div class="media">
+                          <div class="media-left media-middle av">
+                            <span class="avatar">
+                              <img src="images/avatar.png" class="media-object">
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Jhon Deo</h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                            <small class="text-muted">03:50 pm</small>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <!--menu fooster -->
+                    <li class="custom-menu-footer">
+                      <a href="student/inbox.html">See all messages</a>
+                    </li>
+                  </ul>
+                </li>
+                
+                <!-- profile -->
+                <li class="dropdown menu-parent">
+                  <a href="javascript:void(0)" class="btn btn-link dropdown-toggle" type="button" id="profile-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <span class="avatar"><img src="images/avatar.png" alt=""></span>
+                  </a>
+                  <!-- dropdown menu -->
+                  <ul class="dropdown-menu profile-menu" aria-labelledby="profile-menu">
+                    <li>
+                      <a href="javascript:void(0)">
+                        <span class="avatar">
+                          <img src="images/avatar.png" alt="">
+                        </span>
+                        <span>Jhon Deo</span>
+                      </a>
+                    </li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="student/profile-view.html"><i class="fa fa-user" aria-hidden="true"></i>view profile</a></li>
+                    <li><a href="student/inbox.html"><i class="fa fa-envelope" aria-hidden="true"></i>My inbox</a></li>
+                    <li><a href="student/pracicles-list.html"><i class="fa fa-tasks" aria-hidden="true"></i>my tasks</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i>logout</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- presesnt banner  due-->
+      <div class="alert alert-danger alert-dismissible m-0 alert-overdanger">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <strong>Danger!</strong>&nbsp;Your Payment Amount - 15000 Due by 16th Jan - 2019
+      </div>
+      <div class="alert alert-danger alert-dismissible m-0">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <strong>Danger!</strong>&nbsp;Your Payment Amount - 15000 Due by 16th Jan - 2019
+      </div>
+      <!-- navigation -->
+      <div class="header-nav">
+          <nav class="navbar bg-1" id="sticky-nav">
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="student/index.html">Dashboard</a></li>
+                <li>
+                  <a href="student/myTrainingTopics.html">My Training topics</a>
+                </li>
+                <li><a href="student/pracicles-list.html">My Practicals list</a></li>
+                <li><a href="student/myPerformence.html">my cource / performence</a></li>
+                <li class="dropdown menu-parent">
+                  <a href="student/news-events.html">News / events</a>
+                </li>
+                <li><a href="student/apply-job.html">Apply for job</a></li>
+                <li><a href="student/terms-conditions.html">terms and conditions</a></li>
+              </ul>
+            </div>
+          </nav>
+      </div>
+      <!-- main content -->
+      <main>
+        <div class="content-wrapper">
+          <div class="content-wrapper-before bg-1"></div>
+          <!-- header -->
+          <div class="content-header">
+            <h2>Dashboard</h2>
+          </div>
+          <div class="content-body">
+            <div class="row">
+              <!-- secdules -->
+              <div class="col-md-9 sechuldes">
+                <div class="clearfix">
+                  <!-- Today Module Topics -->
+                  <div class="col-md-4">
+                    <div class="card card2">
+                      <!-- card header -->
+                      <div class="card-header">
+                        <h3>Today Module Topics</h3>
+                      </div>
+                      <!-- card-content -->
+                      <div class="card-content">
+                        <ul class="list-items">
+                          <li>lorem ipsum</li>
+                          <li>lorem ipsum</li>
+                          <li>lorem ipsum</li>
+                          <li>lorem ipsum</li>
+                          <li>lorem ipsum</li>
+                        </ul>
+                      </div>
+                      <div class="card-footer">
+                        <div class="row">
+                          <div class="pull-right">
+                            <h5 class="text-capitalize m-0 text-muted">total time</h5>
+                            <h5 class="text-capitalize m-0">1:00hrs</h5>
+                          </div>
+                          <div class="pull-right">
+                            <h5 class="text-capitalize m-0 text-muted">Faculty</h5>
+                            <h5 class="text-capitalize m-0">Pradeep</h5>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Today Aptitude Topics -->
+                  <div class="col-md-4">
+                    <div class="card card2">
+                      <!-- card header -->
+                      <div class="card-header">
+                        <h3>Today Aptitude Topics</h3>
+                      </div>
+                      <!-- card-content -->
+                      <div class="card-content">
+                        <ul class="list-items">
+                          <li>lorem ipsum</li>
+                          <li>lorem ipsum</li>
+                          <li>lorem ipsum</li>
+                          <li>lorem ipsum</li>
+                          <li>lorem ipsum</li>
+                        </ul>
+                      </div>
+                      <div class="card-footer">
+                        <div class="row">
+                          <div class="pull-right">
+                            <h5 class="text-capitalize m-0 text-muted">total time</h5>
+                            <h5 class="text-capitalize m-0">1:00hrs</h5>
+                          </div>
+                          <div class="pull-right">
+                            <h5 class="text-capitalize m-0 text-muted">Faculty</h5>
+                            <h5 class="text-capitalize m-0">Pradeep</h5>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Today Practicals-->
+                  <div class="col-md-4">
+                    <div class="card card2">
+                      <!-- card header -->
+                      <div class="card-header">
+                        <h3>Today Practicals</h3>
+                      </div>
+                      <!-- card-content -->
+                      <div class="card-content">
+                        <ul class="list-items">
+                          <li>lorem ipsum</li>
+                          <li>lorem ipsum</li>
+                          <li>lorem ipsum</li>
+                          <li>lorem ipsum</li>
+                          <li>lorem ipsum</li>
+                        </ul>
+                      </div>
+                      <div class="card-footer">
+                        <div class="row">
+                          <div class="pull-right">
+                            <h5 class="text-capitalize m-0 text-muted">Deadline</h5>
+                            <h5 class="text-capitalize m-0">22-07-2019</h5>
+                          </div>
+                          <div class="pull-right">
+                            <h5 class="text-capitalize m-0 text-muted">Lab Faculty</h5>
+                            <h5 class="text-capitalize m-0">Pradeep</h5>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- This Week Session -->
+                <div class="col-md-6">
+                  <div class="card card-up">
+                    <!-- card header -->
+                    <div class="card-header">
+                      <h3>This Week Session<span class="text-muted">&nbsp;(22-02-2019)&nbsp;</span></h3>
+                      <div class="card-header-icon">
+                        <img src="images/session.png" alt="">
+                      </div>
+                    </div>
+                    <div class="card-content">
+                      <div class="title">Topic Name</div>
+                      <dl>
+                        <dt>Description:</dt>
+                        <dd> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</dd>
+                      </dl>
+                    </div>
+                  </div>
+                </div>
+                <!-- Latest test schedules -->
+                <div class="col-md-6">
+                  <div class="card">
+                    <!-- card header -->
+                    <div class="card-header">
+                      <h3>Latest test schedules</h3>
+                      <div class="card-header-icon">
+                        <img src="images/calender.png" alt="">
+                      </div>
+                    </div>
+                    <div class="card-content p-0">
+                      <div class="tabs-wrapper">
+                          <ul class="nav nav-pills nav-stacked flex-container testsTabs">
+                            <li class="active"><a data-toggle="tab" href="#tdyTests" class="text-capitalize" aria-expanded="false">today tests</a></li>
+                            <li class=""><a data-toggle="tab" href="#upcmngtest" class="text-capitalize" aria-expanded="false">upcoming tests</a></li>
+                            <li><a data-toggle="tab" href="#pndngTests" class="text-capitalize" aria-expanded="true">pending tests</a></li>
+                          </ul>
+                          <div class="tab-content">
+                            <div id="tdyTests" class="tab-pane fade in active">
+                              <div id="myCarousel" class="carousel slide testsSlide" data-ride="carousel">
+                                <!-- Indicators -->
+                                <ol class="carousel-indicators">
+                                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                                  <li data-target="#myCarousel" data-slide-to="2"></li>
+                                </ol>
+
+                                <!-- Wrapper for slides -->
+                                <div class="carousel-inner">
+                                  <div class="item active">
+                                    <div class="carousel-caption">
+                                      <h3 class="text-uppercase"><small>module:&nbsp;</small>html</h3>
+                                      <button class="btn btn-success text-capitalize">attend</button>
+                                    </div>
+                                  </div>
+                                  <div class="item">
+                                    <div class="carousel-caption">
+                                      <h3 class="text-uppercase">practical</h3>
+                                      <button id="attendBtn" class="btn btn-success text-capitalize">attend</button>
+                                      <div class="row p-tb-10" id="attendData">
+                                        <div class="col-md-6">
+                                          <button type="button" class="btn btn-default" data-toggle='modal' data-target='#fileUplaodModal'>Upload project</button>
+                                        </div>
+                                        <div class="col-md-6">
+                                         <button type="button" class="btn btn-default" data-toggle='modal' data-target='#taskDetailsMOdal'>task details</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="item">
+                                    <div class="carousel-caption">
+                                      <h3 class="text-uppercase">javascript</h3>
+                                      <button class="btn btn-success text-capitalize">attend</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div id="upcmngtest" class="tab-pane fade in">
+                              <div class="card-content">
+                                <dl>
+                                  <dt>Webdesign</dt>
+                                  <dd>HTML - 19 jan 2019</dd>
+                                </dl>
+                                <dl>
+                                  <dt>Aptitude</dt>
+                                  <dd>Model-3 - 19 jan 2019</dd>
+                                </dl>
+                                <dl>
+                                  <dt>Webdesign</dt>
+                                  <dd>HTML - 19 jan 2019</dd>
+                                </dl>
+                                <div>
+                                  <button class="btn btn-default text-capitalize">more</button>
+                                </div>
+                              </div>    
+                            </div>
+                            <div id="pndngTests" class="tab-pane fade in">
+                              <div class="card-content">
+                                <div class="clearfix">
+                                  <dl class="col-md-12 p-0">
+                                    <dt>html</dt>
+                                    <dd>Model-3 - 19 jan 2019</dd>
+                                  </dl>
+                                </div>
+                                <div class="clearfix">
+                                  <dl class="col-md-12 p-0">
+                                    <dt>css</dt>
+                                    <dd>Model-3 - 19 jan 2019</dd>
+                                  </dl>
+                                </div>
+                                <div class="clearfix">
+                                  <dl class="col-md-12 p-0">
+                                    <dt>javascript</dt>
+                                    <dd>Model-3 - 19 jan 2019</dd>
+                                  </dl>
+                                </div>
+                                <div>
+                                  <button class="btn btn-default text-capitalize">more</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- refer friend and news updates -->
+              <div class="col-md-3 sd_rht">
+                <!-- refer friend -->
+                <div class="col-md-12">
+                  <div class="card card-up bg-gradient-danger">
+                    <!-- card header -->
+                    <div class="card-header">
+                      <h3 class="white">Refer & Earn</h3>
+                      <!-- refer button -->
+                      <a href="#" class="btn btn-default refer-link">Mail to Friend</a>
+                    </div>
+                    <div class="card-content">
+                      <div class="row">
+                        <div class="col-md-3">
+                          <div class="refer-icon">
+                            <img src="images/refer.png" alt="">
+                          </div>
+                        </div>
+                        <div class="col-md-9 refer-content">
+                          <h4>12000/-</h4>
+                          <p>Refer your friend and get prize</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- News and Updates -->
+                <div class="col-md-12">
+                  <div class="card card-up">
+                    <!-- card header -->
+                    <div class="card-header">
+                      <h3>News and Updates</h3>
+                    </div>
+                    <div class="card-content">
+                      <div class="updates">
+                        <ul>
+                          <li>Job fair on 21st feb<a href="#" class="
+                          label label-primary">view</a></li>
+                          <li>Mega event on 20th jan<a href="#" class="
+                          label label-primary">view</a></li>
+                          <li>Job fair on 21st feb<a href="#" class="
+                          label label-primary">view</a></li>
+                          <li>Mega event on 20th jan<a href="#" class="
+                          label label-primary">view</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <!-- wraper ends here -->
+
+    <!-- approve class modal -->
+    <div id="classApprove" class="modal fade modal-middle" role="dialog" data-backdrop="static">
+      <div class="modal-dialog modal-dialog-centered modal-sm">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Approve class</h4>
+          </div>
+          <div class="modal-body">
+            <h4 class="">Batch ID: BI1</h4>
+            <h4 class="">Faculty :name</h4>
+            <h4 class="">Class name</h4>
+            <ul class="list-items">
+              <li class="text-muted">html</li>
+              <li class="text-muted">css</li>
+              <li class="text-muted">bootstrap</li>
+              <li class="text-muted">javascript</li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <div class="clearfix">
+              <button class="btn btn-success pull-left" data-toggle="modal" data-target="#classRate" data-dismiss="modal">Approve</button>            
+              <button id="rejectClass" class="btn btn-danger" data-toggle="modal" data-target="#classReject" data-dismiss="modal">Reject</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- Rejecet class Reason popups -->
+    <div id="classRate" class="modal fade modal-middle" role="dialog">
+      <div class="modal-dialog modal-dialog-centered modal-sm">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Rating</h4>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-12">
+                <label>Rate this class</label><br>
+                <div class="star-rating">
+                  <span class="fa fa-star-o" data-rating="1"></span>
+                  <span class="fa fa-star-o" data-rating="2"></span>
+                  <span class="fa fa-star-o" data-rating="3"></span>
+                  <span class="fa fa-star-o" data-rating="4"></span>
+                  <span class="fa fa-star-o" data-rating="5"></span>
+                  <input type="hidden" name="whatever1" class="rating-value" value="0">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="clearfix">
+              <button class="btn btn-default pull-left" data-toggle="modal" data-target="#classApprove" data-dismiss="modal">Cancel</button>            
+              <button class="btn btn-success" data-dismiss="modal">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Rejecet class Reason popups -->
+    <div id="classReject" class="modal fade modal-middle" role="dialog">
+      <div class="modal-dialog modal-dialog-centered modal-sm">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Reject class</h4>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div>
+                <label>select a reason</label>
+                <select class="form-control">
+                  <option>reason 1</option>
+                  <option>reason 2</option>
+                  <option>reason 3</option>
+                  <option>reason 4</option>
+                </select>
+                <div class="othr-reason">
+                  <label>others</label>
+                  <textarea class="form-control"></textarea>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <div class="clearfix">
+              <button class="btn btn-default pull-left" data-toggle="modal" data-target="#classApprove" data-dismiss="modal">Cancel</button>            
+              <button class="btn btn-success" data-dismiss="modal">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- upload file popup-->
+    <div class="modal fade" id="fileUplaodModal" role="dialog">
+      <div class="modal-dialog modal-md">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Upload your files</h4>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="file-upload">
+                <label class="text-left text-capitalize">Upload your file</label>
+                <div class="file-select">
+                  <div class="file-select-button" id="fileName">Choose File</div>
+                  <div class="file-select-name" id="noFile">No file chosen...</div> 
+                  <input type="file" name="chooseFile" id="chooseFile">
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Write your comment</label>
+                <textarea class="form-control"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- task detailes modal -->
+    <div id="taskDetailsMOdal" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-md">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title text-capitalize">task details</h4>
+          </div>
+          <div class="modal-body">
+            <h4>heading</h4>
+            <p class="m-tb-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.</p>
+            <p class="m-tb-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- js includes -->
+    <!-- jquery library -->
+    <script src='js/jquery-3.3.1.min.js'></script>
+
+    <!-- Latest bootstrap compiled JavaScript -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- custom js  -->
+    <script src='js/main.js'></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        // approve class modal
+        $("#classApprove").modal('show');
+
+        $("#attendBtn").click(function(){
+          $("#attendData").show();
+        });
+
+      });
+    </script>
+  </body>
+</html>
